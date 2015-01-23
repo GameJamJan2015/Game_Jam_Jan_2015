@@ -1,6 +1,5 @@
 package box2dLight;
 
-import main.World;
 import shaders.LightShader;
 
 import com.badlogic.gdx.Gdx;
@@ -14,6 +13,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
+import wdwdn.World;
 
 /**
  * Handler that manages everything related to lights updating and rendering

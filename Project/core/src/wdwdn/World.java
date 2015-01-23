@@ -1,4 +1,4 @@
-package main;
+package wdwdn;
 
 import box2dLight.Light;
 import box2dLight.PointLight;
@@ -39,6 +39,11 @@ public class World {
         /** BOX2D LIGHT STUFF END */
     }
 
+    public void update(float delta) {
+        rayHandler.update();
+    }
+
+    // Box2d lights
     void initPointLights() {
         clearLights();
         for (int i = 0; i < 128; i++) {
@@ -65,9 +70,7 @@ public class World {
         }
     }
 
-
     // GETTERS AND SETTER //
-
 
     public RayHandler getRayHandler() {
         return rayHandler;

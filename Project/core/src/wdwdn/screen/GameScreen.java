@@ -1,12 +1,15 @@
 package wdwdn.screen;
 
+import wdwdn.World;
+
 /**
  * Created by Simon on 1/23/2015.
  */
 public class GameScreen extends Screen {
+    private World world;
+
     @Override
     public void show() {
-
     }
 
     @Override

@@ -1,4 +1,4 @@
-package main;
+package wdwdn;
 
 /**
  * Created by Simon on 1/23/2015.
