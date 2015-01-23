@@ -27,6 +27,9 @@ public class World {
     float sunDirection = -90f;
 
     public World() {
+        // Init
+
+
         /** BOX2D LIGHT STUFF BEGIN */
         RayHandler.setGammaCorrection(true);
         RayHandler.useDiffuseLight(true);
