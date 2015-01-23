@@ -8,7 +8,7 @@ import com.badlogic.gdx.math.Vector2;
 public class GameEntity {
 
     public Vector2 getPosition() {
-        return null;
+        return Vector2.Zero;
     }
 
     public float getAngle() {

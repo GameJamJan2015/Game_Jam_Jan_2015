@@ -3,6 +3,7 @@ package wdwdn;
 import box2dLight.Light;
 import box2dLight.PointLight;
 import box2dLight.RayHandler;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -22,21 +23,23 @@ public class World {
     /** BOX2D LIGHT STUFF */
     RayHandler rayHandler;
 
-    ArrayList<Light> lights = new ArrayList<Light>(128);
+    private ArrayList<Light> lights = new ArrayList<Light>(128);
 
     float sunDirection = -90f;
 
     public World() {
         // Init
-
+        for (int i = 0; i < 128; i ++) {
+            balls.add(new GameEntity());
+        }
 
         /** BOX2D LIGHT STUFF BEGIN */
         RayHandler.setGammaCorrection(true);
         RayHandler.useDiffuseLight(true);
 
         rayHandler = new RayHandler(this);
-        rayHandler.setAmbientLight(0f, 0f, 0f, 0.2f);
-        rayHandler.setBlurNum(3);
+        rayHandler.setAmbientLight(0f, 0f, 0f, 0.5f);
+        //rayHandler.setBlurNum(3);
 
         initPointLights();
         /** BOX2D LIGHT STUFF END */
@@ -51,9 +54,9 @@ public class World {
         clearLights();
         for (int i = 0; i < 128; i++) {
             PointLight light = new PointLight(
-                    rayHandler, 0, null, 64, 0f, 0f);
+                    rayHandler, 16, Color.BLUE, 1, 0f, 0f);
 
-            light.attachToBody(balls.get(i), 32 / 2f, 32 / 2f);
+            light.attachToBody(balls.get(i), 0, 0);
             light.setColor(
                     MathUtils.random(),
                     MathUtils.random(),
