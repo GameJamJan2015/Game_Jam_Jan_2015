@@ -1,5 +1,5 @@
 
-package com.caresilabs.screen;
+package wdwdn.screen;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;

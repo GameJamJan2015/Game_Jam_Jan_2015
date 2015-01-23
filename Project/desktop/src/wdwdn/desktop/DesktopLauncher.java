@@ -1,12 +1,14 @@
-package com.caresilabs.wdwdn.desktop;
+package wdwdn.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.caresilabs.wdwdn.WhatToDo;
+import wdwdn.WDWDNStarter;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		new LwjglApplication(new WhatToDo(), config);
+		config.vSyncEnabled = true;
+		config.samples = 4;
+		new LwjglApplication(new WDWDNStarter(), config);
 	}
 }

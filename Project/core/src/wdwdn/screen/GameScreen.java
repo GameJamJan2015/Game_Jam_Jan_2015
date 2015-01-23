@@ -1,4 +1,4 @@
-package com.caresilabs.screen;
+package wdwdn.screen;
 
 /**
  * Created by Simon on 1/23/2015.
