@@ -306,7 +306,8 @@ public class World {
                     TiledMapTileLayer.Cell cell = ((TiledMapTileLayer) layer).getCell(x, y);
                     if (cell != null) {
                         if (cell.getTile().getId() == 11 || cell.getTile().getId() == 10) {
-                            ((TiledMapTileLayer) layer).setCell(x, y, null);
+                           // ((TiledMapTileLayer) layer).setCell(x, y, null);
+                            cell.getTile().getProperties().put("Collision", "false");
                         }
                     }
                 }
@@ -334,6 +335,11 @@ public class World {
                 for (int x = startX; x <= endX; x++) {
                     TiledMapTileLayer.Cell cell = ((TiledMapTileLayer) layer).getCell(x, y);
                     if (cell != null) {
+                        if (((TiledMapTileLayer) layer).getCell(x, y).getTile().getProperties().containsKey("Collision")) {
+                            if (((TiledMapTileLayer) layer).getCell(x, y).getTile().getProperties().get("Collision").toString().toLowerCase().equals("false"))
+                                continue;
+                        }
+
                         Rectangle rect = rectPool.obtain();
                         rect.set(x, y, 1, 1);
                         tiles.add(rect);
