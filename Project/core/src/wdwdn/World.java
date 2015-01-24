@@ -28,6 +28,8 @@ import java.util.ArrayList;
 public class World {
     private ArrayList<GameEntity> entities = new ArrayList<GameEntity>(128);
     private Player player;
+    private Light playerLight;
+    private Light ambLight;
     private TiledMap map;
 
     private float stateTime;
@@ -61,7 +63,7 @@ public class World {
         RayHandler.setGammaCorrection(true);
         //RayHandler.useDiffuseLight(true);
         rayHandler = new RayHandler(this);
-        rayHandler.setAmbientLight(0f, 0f, 0f, 0.01f);
+        rayHandler.setAmbientLight(0f, 0f, 0f, 0.00f);
         rayHandler.setCulling(true);
         rayHandler.setBlurNum(10);
 
@@ -98,6 +100,12 @@ public class World {
         player.setVelocity(vel.x, vel.y);
 
         player.update(delta);
+
+        if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) {
+            playerLight.setDistance(3);
+        } else {
+            playerLight.setDistance(0);
+        }
     }
 
     private boolean isLightning = false;
@@ -113,10 +121,11 @@ public class World {
 
         if (isLightning) {
             float a = (float) Math.sin(stateTime * 5.5f)*.35f;
-            rayHandler.setAmbientLight(1, 1, 0, a);
+            ambLight.setColor(1, 1, 0, a);
+            //rayHandler.setAmbientLight(1, 1, 0, a);
             if (a < -.01f) {
                 isLightning = false;
-                rayHandler.setAmbientLight(1, 1, 1, .02f);
+                ambLight.setColor(1, 1, 1, .06f);
             }
         }
     }
@@ -174,12 +183,23 @@ public class World {
     // Box2d lights
     void initPointLights() {
         clearLights();
-        Light light = new PointLight(rayHandler, 32, Color.WHITE, 3, 0, 0);
+        Light light = new PointLight(rayHandler, 32, new Color(1,1,1,.5f), 0, 0, 0);
 
         light.setSoft(true);
-        light.setSoftnessLength(10);
+        light.setSoftnessLength(2);
         light.attachToBody(player);
         lights.add(light);
+        playerLight = light;
+
+
+        // ambient
+        Light amb = new PointLight(rayHandler, 128, new Color(1,1,1,.04f), 8, 0, 0);
+
+        amb.setSoft(true);
+        amb.setSoftnessLength(10);
+        amb.attachToBody(player);
+        lights.add(amb);
+        ambLight = amb;
     }
 
     void clearLights() {
