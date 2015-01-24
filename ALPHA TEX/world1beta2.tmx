@@ -24,7 +24,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmFGOhCAUBMn+TPZic/8j7ZcJsAIPEPuh1Ullszqj0KWO+gkhfAAAAAAAAAAAAAAAAAAAAAAAAABgKb8LUM9pZ/DhC3z4Ah++wIcv8OELfPgCH77Axxxeo+4FF2nU3eAjjbobfKRRd4OTNOpe3tz9WdRd4SONuit8pFF3hY806q7wkUbdFT7SqLvCRxp1V/hIo+7qaT6+J9TW5ai78uxjZF/fbBu5j1re4GMmI/vCh28fPXmDjxkn+MCHuiuVD8t1HR9rKN1bxj20OIKPMeL8THSUBx++fBy50sfbnget16uzfvJ1rXB+2H3UerB0E07+D9Hy0raseZOPVg+WbkL0N0T/x+vxcY+PUvBxn4+RzPpoRd2l0sdKRvbTG3XvNR+9c505zlvpeefb+7k86u7V1yvL9kd91OZojdqFdx+j28ij7ng3H7O/Bcd31F3OEs+lNdfWsqtyxe+Huld8/I+6W3ykUXc74uITxt8nrsqq5w913y0XR1a8b/cUddf4SM//XThydt5/C+tm7kmtae2zNLYj+fV4J+L55Z3Ull397qm2jd6x5cebuuOVPiznmjWWz474iKPu947zo+Si1stZaveolnFYt7UTo3O2+LD+DtQye6zsxuicS+l5lrN0eMW1dCdq8+udc/49i4+7xrYLx1ys4OMeJ6GwLFQ+c0bv/e5dx8ruWPuv+WjF0mE+jlrUnXnkah9wr4/gYMxPZuZ5UD32p3HWcS2l50sY677Ucc/7RfU8no4l6jG+HVz4ARcAAAAAAADwJv4AKPs47w==
+   eJztmFuO6yAUBNH8RHdjs/8lzRcScHkcXm6Iq6XSTOzYgS7bif1xzn0AAAAAAAAAAAAAAAAAAAAAAAAAYCv/NqCe083g4yzwcRb4OAt8nAU+zgIfZ4GPs8DHHKdG3Qsu4qi7wUccdTf4iKPuBidx1L28uftc1F3hI466K3zEUXeFjzjqrvARR90VPuKou8JHHHVX+Iij7uoEH7/mtmz7SqmtS1F3dYqPVd2kblMfrXGou1K7WNmN3y7dT+7/VZ95G5bkelrloydv8GFxsup65fc1Gnys7cZvN5o3+2hd1/Gxj9L1KOyhhQ8+xgjzM9FRGnyc5cNnpY+33Q9ar1e5ftJ1rXB+2H3UerB04zKvXbC8tC9r3uSj1YOlGxf8dcHrcD0+nvFRCj6e8zGSWR+tqLtU+tjJyOf0Rt17zUfvXGeO81ZazwZa2/RE3b36emXZ/6iP2hytUbs43cfoPtKoO77Nx+x3gd9G3eUs4Vxac20tW5UV3x/qXvHxf9Td4iOOutsRFx83/jxxV3bdf6j7brnw2fG8/aSou8ZHfP7fgk/uvP8trJv5TWpN6zNLY/NJr8c3Ec4v7aS2bPWzp9o+eseWHm/qjnf6sJxr1ljeO+IjjLrfJ86PkotaL7nUfqNaxmHd102Mztniw/o9UMvssXIbo3MupedeztLhimvpTdTm1zvndDuLj6fGdgt+Llbw8YwTV1jmKu/J0ft796lj5Xas/dd8tGLpMB1HLerOTmS1D3jWhztgzN/MzP2geuzfRq7jWkr3lzDWfanjnueL6nl8O5aox/h2cHEOuAAAAAAAAIA38QfsWz3b
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
@@ -43,7 +43,7 @@
    eJzt2LsOgCAMBVBm+f//dZYoAz5o8ZwFRQeSxtvGUgAAAAAAAAAAAAAAAAAAANZSX7g+u+896737F9vsA8ACnsywq315dcwr2QVEJq+ALL7Mq1rMtMA48xX06bNz3M0jefYs9cihzSv5BQCQg3kZxvh2YlEPgHz8T5xjpGdG67PRznOHesRWm5Xc9JmYVs6QjNQjD3kGQMu8CwDwLvMWAAAAAMSyAxFLAp4=
   </data>
  </layer>
- <layer name="spawn" width="100" height="100" visible="0">
+ <layer name="objekt" width="100" height="100" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt0UENADAMxLDDsPHnWgJ9r5VmI4iUBAAAAAAAAAAAAAAAAAD+c6YDYKk7HUDLFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeKsAGhoAOQ==
   </data>
