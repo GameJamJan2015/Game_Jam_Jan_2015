@@ -1,7 +1,9 @@
 package wdwdn.screen;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.maps.tiled.TiledMapRenderer;
 import wdwdn.Assets;
+import wdwdn.LevelLoader;
 import wdwdn.World;
 import wdwdn.WorldRenderer;
 
@@ -14,7 +16,7 @@ public class GameScreen extends Screen {
 
     @Override
     public void show() {
-        this.world = new World();
+        this.world = new World(LevelLoader.LoadMap());
         this.renderer = new WorldRenderer(world);
     }
 

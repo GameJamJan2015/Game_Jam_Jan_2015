@@ -4,6 +4,7 @@ import box2dLight.ConeLight;
 import box2dLight.Light;
 import box2dLight.RayHandler;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.math.MathUtils;
 import wdwdn.entity.GameEntity;
 
@@ -13,10 +14,8 @@ import java.util.ArrayList;
  * Created by Simon on 1/23/2015.
  */
 public class World {
-    /**
-     * our boxes *
-     */
     private ArrayList<GameEntity> entities = new ArrayList<GameEntity>(128);
+    private TiledMap map;
 
     /**
      * BOX2D LIGHT STUFF
@@ -24,12 +23,16 @@ public class World {
     private RayHandler rayHandler;
     private ArrayList<Light> lights = new ArrayList<Light>(128);
 
-    public World() {
+    public World(TiledMap map) {
+        this.map = map;
         // Init
         for (int i = 0; i < 128; i++) {
             entities.add(new GameEntity());
         }
+        InitLights();
+    }
 
+    private void InitLights() {
         /** BOX2D LIGHT STUFF BEGIN */
         RayHandler.setGammaCorrection(true);
         //RayHandler.useDiffuseLight(true);
@@ -40,8 +43,7 @@ public class World {
         rayHandler.setBlurNum(10);
 
         initPointLights();
-        /** BOX2D LIGHT STUFF END */
-    }
+        /** BOX2D LIGHT STUFF END */}
 
     public void update(float delta) {
         rayHandler.update();
@@ -74,5 +76,9 @@ public class World {
 
     public RayHandler getRayHandler() {
         return rayHandler;
+    }
+
+    public TiledMap getMap() {
+        return map;
     }
 }
