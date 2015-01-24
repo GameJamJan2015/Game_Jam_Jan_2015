@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="15">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="20">
  <tileset firstgid="1" name="alpha_sprite_sheet" tilewidth="64" tileheight="64">
   <image source="alpha_sprite_sheet.png" width="512" height="512"/>
   <tile id="0">
@@ -30,7 +30,7 @@
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmNGKwjAQRYNvfpaI+/+fJAsKMkzSSTrJpMm5cNjW1tbc00TZe0rpDgAAAAAAAAAAAAAAAAAAAAAAAACwGR6JHsNKeCR6DCvhkegxrIRHosewEh6JHsNKeCR6DCvhkegxrIRHosdw5e6suX2wJLqXSB+PDz22Lce1/ehe8IEPfMyHV++lvvGR7z6Xh3Fb9lY6P/d+y7nRXY2eC948Ha+1s4+ejvBx7EOLXEdy55zdtqxXu/loeVZ7buf2o7uK8lHqydvBK3MfbT+6q1E+tBytV73nx87fH57rVTKcg486H9/XnoXjXqm5ZnRXo3y09OThXu4zP+o6OdsNPtp8pMy2t48Rz8DVyGXEeoUPn47wMdZHymzjY4wPLUfr1W/wcQ451r+GbrTXz/p4FY7hY7yPXeeH7EiLXK9K61fNvfBxriPteGs32rVKaxQ+xvtgfuBjZvAxF60+eqblPtE9evo4isWRF6nhPmmCHqPnR4/+8TG3j5prRPe4kg8ZfMT5KF3beh98jPFh5TZBj/hYd35oyfUjj/der6yJ7vEMsoPa/7fPhPbZo/vFx7V9/CJjXTN69VvKQ/z9TXSPnj60TrTXcg5lZ5ZuSznz2a5O7hltGbP2vtI86PGsXB18zIXnmJM4Pxfr967nZ7sKnmNOB9eQ4AMfs1MTTx+119vFh7dby/fHNyOflR35j+fvK8DHSuBjLvAxF/iYCy2l31vRnxcAAAAAAAAAAGBH3q3Ccb4=
+   eJztmmtuwyAQBlH+9ViJ5d7/SFWkWEJb3iysA7PSqDh2jfnG4CTKj3PuBwAAAAAAAAAAAAAAAAAAAAAAAABgMzTKegwroVHWY1gJjbIew0polPUYVkKjrMewEhplPYaV0CjrMayERlmP4ZuzK63Hh5KyzsXSx/PDiHbJ/tC2dS74wAc+7odW7qm88RHPPlbPwrbMLXV87P9LjrXOavZc0OZQPNfOPkY6wkfeR6jkOhI7prddsl7t5qPlXh3Zjm1bZ2XlI5WTtoMz0k9o2zqrWT5ClVuvRs+PnZ8fmuuVKzgGH3U+rteOxH6tqjmndVazfLTkpOFebjM/6jLpzQYfbT5cpF2bzfGhx/2OPkLVs16dXhsf9T40szm8v4dwg482Hy7SzmVziu3D5fvCx/+MQpVbr/ySDqQXfKSRY/3tyMlHzodaH2diHz7ivCKv5/rN+dh1fsiMQiXXq9T6VdMXPvoyCu1vzSZ0rtQahY/5Ppgf+Lgz+LgXrT5GVks/1jlq+jg/5PJJOdLCNfTjbpCj9fwYkT8+7u2j5hzWOa7kQxY+7Hykzl3aDz7m+CjlcYMc8bHu/AhVLB+5X/M37KH1qrSsc+xBZlD6ffsheIl27Hv4kYSu3TrfGT58D9f2y+P02v5x+KhDVuma8d53fa73HUlvLetVqk//r1/WOWr6SK3h/msxh1dJF63Vc23fTuwebRmzP09K5sGIe+Xb0fTxrtLnOj7Gj/nycf0uPlalz13Na/sWNMfsMueofR+ED535gY8+H6VVk18oN54f891eGb1cvmbeKzvyrtwaxT1t4yP3nhcf+NgN3wfrlT0xH6HP7PiY40OWn78s6+sFAAAAAAAAAADYkT8/43bV
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
@@ -38,7 +38,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmFlygzAUBN+fKxfL/Y+Un1DBipandSTTU9WVYGxA00aAX2b2AgAAAAAAAAAAAAAAAAAAAAAAAICpfE1APaaTwcde4GMv8LEX+NgLfOwFPvYCH3uBjz6+N0XdiwL7HbtN/N+zPras7gYf78vqbvDxvqzuRgU+tN2nsAn/x9Z536vuavW5sDo1+36yj1WO8BH3kZqrLLN+1BwW7ifc531Z3ZXq/ChlxfX+ydfzMK33RfgY46Nlvip1io9x50cp+FjrwzNfjaJmm+quVvlo6WmE+5L38L3qrmbj6WFUN7F94cPnwzNfrXLfs88TWTVfmeHD62NFN9fnWvNkH8xXWh+996FX8NFGb1K94mMvH1dG+uB5MD5fxfoJ15XC+eHzUerB041Flu32empb3uDjrwdPN3b7a7fl+3p8rPGRCj7W+WhJr49S1F0qfcykZT+1Ufee81E71p7veSml3wZKn6mJunv1fOXZfquP3Bi9UbvY3UfrNsKoOz7NR++14PqMuste7mMpjbX02qiMuH6oe8XH/6i7xcd71N22uHhZ+++JszLr+UPdd8nFU6LuGh/v5/8pXImd99+JdT33pN6U9pk6tivhfHwS9/GFneReG/3bU24btccWft/UHc/04TnXvPG8t8XHPep+V5wfKRe5XmLJ3aN6jsO7rZNoHbPHh/c6kEvvd+U0WsecSs2znKfDEXPpSeTGVzvm8HMeH6uO7RSusXjBxxonlnjNMu+JUXu/u+q7cjre/nM+SvF0GB5HLurOdmS0D1jrwzY45k+m53lQfeyfRqzjXFLPl9DWfarjmt8X1eP4dDxRH+PTwcU+4AIAAAAAAACexA9cl4DR
+   eJztmEuS4yAUBNk55li96fsfqTejaEzzeTwQBVZWRIYtS5ZEpYVsv0IILwAAAAAAAAAAAAAAAAAAAAAAAAC4lX83oB7TyeBjL/CxF/jYC3zsBT72Ah97gY+9wMcY35ui7kVB+D/2cONzy/rcsrobfLwvq7vBx/uyuhsV+NB2XyLc8Dy3zrqtuqvV14I3M/ZhOYa6K5WP3n7xMddHaa4KlfWz5rD0OOkx42V1V6rro5UV9/sn38/TeL8X4WOOD8981eoUH/Ouj1ZqnX4Ztmk9Ly2ru1L5sMxXs+jZp7qrVT48Pc1w3/Kebqvu6m4sPczqJncsfNh8WOarnuN8RXjzBB+vsGa+wkefjxXdXO/z5sk+Zs9X+OjzMfo99Ao+fNwVfOzl48pMH/wezM9XuX7Sda1wfdh8tHqwdBMyyyF6vbQva/Dx24OlmxA9hmg5Xo+PNT5Kwcc6H56M+mhF3aXSx270Rt27xYd1rCOf81Za/w203tMTdffq+cqyf6+P2hitUbvY3Yd3H2nUHZ/mY/RecL1H3eUo8VhaY229Nisz7h/qXvHxN+pu8fEedbceF69g/z9xdI63xnJsz/mo+265eErUXePj/fo/hSu56/67sG7VfFU7ZuncrqTz8UnE40s7qb1m8TTjvyjPuaWfN3XHd/qwXGvWWLb1+Iij7nfF9VFyUesll9p3VMt5WPd1Et4xW3xY7wO1jH5WTsM75lJ6fstZOpwxl55EbXy9Y07fZ/Gx6txO4RqLFXyscRIKr4XKNjl6v++u+qycjrX/mo9WLB2m51GLurMdme0D1voIG5zzJzPye1B97p9GruNaSr8vwdd9qeOe/xfV4/h0LFGf49PBxT7gAgAAAAAAAJ7ED647gf4=
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
@@ -54,7 +54,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2LsOgCAMBVBm+f//dZYoAz5o8ZwFRQeSxtvGUgAAAAAAAAAAAAAAAAAAANZSX7g+u+896737F9vsA8ACnsywq315dcwr2QVEJq+ALL7Mq1rMtMA48xX06bNz3M0jefYs9cihzSv5BQCQg3kZxvh2YlEPgHz8T5xjpGdG67PRznOHesRWm5Xc9JmYVs6QjNQjD3kGQMu8CwDwLvMWAAAAAMSyAxFLAp4=
+   eJzt2LsOgCAMBVBm+f//dZYoAz5o8ZwFRQeSxtvGUgAAAAAAAAAAAAAAAAAAANZSX7g+u+896737F9vsA8ACnsywq315dcwr2QVEJq+ALL7Mq1rMtMA48xX06bNz3M0jefYs9cihzSv5BQCQg3kZxvh2YlEPgHz8P5xjpGdG67PRznOHesRWm5Xc9J2YVs6QjNQjD3kGQMu8CwDwLvMWAAAAAMSyAxKTAog=
   </data>
  </layer>
  <objectgroup name="spawn" opacity="0.97">
@@ -62,15 +62,29 @@
   <object id="8" name="end" x="2444" y="5644" width="226" height="26"/>
  </objectgroup>
  <objectgroup name="notes">
-  <object id="9" name="note1" x="2712" y="2649.33" width="16" height="12"/>
   <object id="10" name="note2" x="2582.67" y="5080" width="20" height="14.6667"/>
+  <object id="15" name="notentoente" x="2764" y="2264" width="164" height="68">
+   <properties>
+    <property name="Dialog" value="15"/>
+   </properties>
+  </object>
+  <object id="17" name="flash2" x="2797.33" y="2561.33" width="96" height="29.3333">
+   <properties>
+    <property name="Flash" value="5"/>
+   </properties>
+  </object>
+  <object id="19" x="2124" y="2566" width="36" height="110">
+   <properties>
+    <property name="Dialog" value="14"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer name="notetiles" width="100" height="100">
   <properties>
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2zEBAAAIw7BZwL9ZPHDAQaKgBpoAAAAAAAAAAAAAAAAAAAAAzNR1AAAAAAAAAAAAAAAAAAAALPDVAgAAAAAAAMA/DdPwACM=
+   eJztzjEBAAAIA6BVsH9ZE+zVBxKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM18BwAAAAAAAACAcwu/jgAS
   </data>
  </layer>
 </map>
