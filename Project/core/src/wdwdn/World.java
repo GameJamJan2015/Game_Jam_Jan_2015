@@ -21,8 +21,10 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
+import wdwdn.entity.Dialog;
 import wdwdn.entity.GameEntity;
 import wdwdn.entity.Player;
+import wdwdn.screen.GameScreen;
 
 import java.util.ArrayList;
 
@@ -154,7 +156,7 @@ public class World {
 
         player.update(delta);
 
-        if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) {
+        if (Gdx.input.isKeyPressed(Input.Keys.SPACE) || GameScreen.dialog != null) {
             playerLight.setDistance(3);
         } else {
             playerLight.setDistance(0);
@@ -241,6 +243,17 @@ public class World {
 
                         if (rectangleObject.getName().equals("end")) {
                             isNextLevel = true;
+                        }
+
+                        if (rectangleObject.getProperties().containsKey("Dialog")) {
+                            String d = rectangleObject.getProperties().get("Dialog", String.class).trim();
+                            String[] ds = d.split(",");
+                            for(int i = 0; i < ds.length; i++) {
+                                ds[i] = Dialogs.Texts[Integer.parseInt(ds[i])];
+                            }
+                            GameScreen.dialog = new Dialog(ds);
+
+                            rectangleObject.getProperties().remove("Dialog");
                         }
                     }
                 }

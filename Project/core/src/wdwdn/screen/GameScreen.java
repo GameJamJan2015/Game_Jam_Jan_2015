@@ -17,7 +17,8 @@ public class GameScreen extends Screen {
     private World world;
     private WorldRenderer renderer;
     private int level;
-    Dialog dialog;
+
+    public static Dialog dialog;
     OrthographicCamera uiCam;
 
     public GameScreen(int level) {
@@ -46,7 +47,6 @@ public class GameScreen extends Screen {
         }
         
         if(dialog != null && dialog.removeDialog == true){
-        	
         	dialog = null;
         }
     }
