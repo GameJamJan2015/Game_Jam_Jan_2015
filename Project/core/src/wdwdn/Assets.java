@@ -16,7 +16,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
  */
 public class Assets {
     public static AssetManager manager;
-
+    public static Texture player;
     public static TextureRegion region;
     public static TextureRegion pixel;
 
@@ -41,13 +41,19 @@ public class Assets {
         param.magFilter = Texture.TextureFilter.Linear;
         manager.load("graphics/libgdx.png", Texture.class, param);
 
+        // Load item
+        param = new TextureLoader.TextureParameter();
+        param.minFilter = Texture.TextureFilter.Nearest;
+        param.magFilter = Texture.TextureFilter.Nearest;
+        manager.load("graphics/walking_player_sheet.png", Texture.class, param);
+
 
         // Load Font
         BitmapFontLoader.BitmapFontParameter fontParam = new BitmapFontLoader.BitmapFontParameter();
         fontParam.genMipMaps = true;
         fontParam.minFilter = Texture.TextureFilter.MipMapLinearLinear;
         fontParam.magFilter = Texture.TextureFilter.Linear;
-        // TODO manager.load("", BitmapFont.class, fontParam);
+        manager.load("font/bit.fnt", BitmapFont.class, fontParam);
 
         // Music
         //manager.load("sound/music.mp3", Music.class);
@@ -56,14 +62,15 @@ public class Assets {
     public static void loadFinished() {
 
         Texture items = manager.get("graphics/libgdx.png", Texture.class);
+        player = manager.get("graphics/walking_player_sheet.png", Texture.class);
 
         loadRegions(items);
 
         // Load Font
-        //font = manager.get("font/", BitmapFont.class);
-        //font.setUseIntegerPositions(false);
+        font = manager.get("font/bit.fnt", BitmapFont.class);
+        font.setUseIntegerPositions(false);
 
-       // music = manager.get("sound/music.mp3");
+        // music = manager.get("sound/music.mp3");
         //music.setLooping(true);
         playMusic();
     }
@@ -73,19 +80,19 @@ public class Assets {
         pixel = new TextureRegion(item, 30, 30, 4, 4);
     }
 
-    public static void playSound (Sound sound) {
+    public static void playSound(Sound sound) {
         if (sound != null) if (prefs.getBoolean("sound", true)) sound.play(1);
     }
 
-    public static void playMusic () {
+    public static void playMusic() {
         if (music != null) if (prefs.getBoolean("music", false)) music.play();
     }
 
-    public static void PauseMusic () {
+    public static void PauseMusic() {
         if (music != null) music.pause();
     }
 
-    public static boolean ToggleMusic () {
+    public static boolean ToggleMusic() {
         prefs.putBoolean("music", !prefs.getBoolean("music", false));
         prefs.putBoolean("sound", !prefs.getBoolean("sound", true));
         prefs.flush();
@@ -99,7 +106,7 @@ public class Assets {
         return false;
     }
 
-    public static boolean isMusicEnabled () {
+    public static boolean isMusicEnabled() {
         return prefs.getBoolean("music", false);
     }
 

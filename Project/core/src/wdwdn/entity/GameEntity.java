@@ -47,7 +47,7 @@ public class GameEntity {
     }
 
     public void draw(Batch batch) {
-        batch.draw(Assets.pixel, bounds.x, bounds.y, bounds.width, bounds.height);
+       // batch.draw(Assets.pixel, bounds.x, bounds.y, bounds.width, bounds.height);
 
         if (sprite.getTexture() != null)
             sprite.draw(batch);

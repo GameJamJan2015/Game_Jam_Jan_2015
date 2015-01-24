@@ -22,6 +22,23 @@ public class DynamicEntity extends GameEntity {
     }
 
     public void setVelocity(float x, float y) {
+        if (y > 0)
+            setAnimation("walkup");
+        if (y < 0)
+            setAnimation("walkdown");
+        if (x != 0)
+            setAnimation("walk");
+
+        if (velocity.y > 0 && y == 0)
+            setAnimation("idleup");
+
+        if (velocity.y < 0 && y == 0)
+            setAnimation("idledown");
+
+        if (velocity.x != 0 && x == 0)
+            setAnimation("idledown");
+
+
         this.velocity.x = x;
         this.velocity.y = y;
     }

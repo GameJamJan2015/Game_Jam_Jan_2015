@@ -7,6 +7,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapLayers;
 import com.badlogic.gdx.maps.MapObject;
@@ -53,8 +54,41 @@ public class World {
         this.map = map;
         // Init
         player = new Player(0,0);
-        player.addAnimation("idle", new Animation(1, Assets.region));
-        player.setAnimation("idle");
+
+        Array<TextureRegion> walk = new Array<TextureRegion>();
+        for (int i = 0; i < 8; i++) {
+            walk.add(new TextureRegion(Assets.player, i*64,0,64,64));
+        }
+        player.addAnimation("walk", new Animation(.13f, walk));
+
+
+        Array<TextureRegion> idleup = new Array<TextureRegion>();
+        for (int i = 0; i < 2; i++) {
+            idleup.add(new TextureRegion(Assets.player, i*64,64,64,64));
+        }
+        player.addAnimation("idleup", new Animation(.5f, idleup));
+
+        Array<TextureRegion> idledown = new Array<TextureRegion>();
+        for (int i = 0; i < 2; i++) {
+            idledown.add(new TextureRegion(Assets.player, 128 + i*64,64,64,64));
+        }
+        player.addAnimation("idledown", new Animation(.5f, idledown));
+
+
+        Array<TextureRegion> walkdown = new Array<TextureRegion>();
+        for (int i = 0; i < 3; i++) {
+            walkdown.add(new TextureRegion(Assets.player, 256 + i*64,64,64,64));
+        }
+        player.addAnimation("walkdown", new Animation(.2f, walkdown));
+
+
+        Array<TextureRegion> walkup = new Array<TextureRegion>();
+        for (int i = 0; i < 3; i++) {
+            walkup.add(new TextureRegion(Assets.player,  i*64,128,64,64));
+        }
+        player.addAnimation("walkup", new Animation(.2f, walkup));
+
+        player.setAnimation("idledown");
 
         InitLights();
         LoadWorld();
@@ -96,16 +130,19 @@ public class World {
         }
     }
 
+    float speed = 1.5f;
     public void updatePlayer(float delta) {
         Vector2 vel = new Vector2();
         if (Gdx.input.isKeyPressed(Input.Keys.LEFT))
-            vel.x = -2;
+            vel.x = -1;
         if (Gdx.input.isKeyPressed(Input.Keys.RIGHT))
-            vel.x = 2;
+            vel.x = 1;
         if (Gdx.input.isKeyPressed(Input.Keys.UP))
-            vel.y = 2;
+            vel.y = 1;
         if (Gdx.input.isKeyPressed(Input.Keys.DOWN))
-            vel.y = -2;
+            vel.y = -1;
+
+        vel.nor().scl(speed);
 
         player.setVelocity(vel.x, vel.y);
 
