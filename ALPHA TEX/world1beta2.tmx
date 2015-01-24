@@ -17,12 +17,15 @@
  <tileset firstgid="86" name="tiles_sheet" tilewidth="64" tileheight="64">
   <image source="tiles_sheet.png" width="512" height="256"/>
  </tileset>
+ <tileset firstgid="118" name="furniture_sheet" tilewidth="64" tileheight="64">
+  <image source="furniture_sheet.png" width="256" height="192"/>
+ </tileset>
  <layer name="Tile Layer 2 - Golv" width="100" height="100">
   <properties>
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmNGKwjAQRYNvfpaI+/+fJAsKMkzSSTrJpMm5cNjW1tbc00TZe0rpDgAAAAAAAAAAAAAAAAAAAAAAAACwGR6JHsNKeCR6DCvhkegxrIRHosewEh6JHsNKeCR6DCvhkegxrIRHosdw5e6suX2wJLqXSB+PDz22Lce1/ehe8IEPfMyHV++lvvGR7z6Xh3Fb9lY6P/d+y7nRXY2eC948Ha+1s4+ejvBx7EOLXEdy55zdtqxXu/loeVZ7buf2o7uK8lHqydvBK3MfbT+6q1E+tBytV73nx87fH57rVTKcg486H9/XnoXjXqm5ZnRXo3y09OThXu4zP+o6OdsNPtp8pMy2t48Rz8DVyGXEeoUPn47wMdZHymzjY4wPLUfr1W/wcQ451r+GbrTXz/p4FY7hY7yPXeeH7EiLXK9K61fNvfBxriPteGs32rVKaxQ+xvtgfuBjZvAxF60+eqblPtE9evo4isWRF6nhPmmCHqPnR4/+8TG3j5prRPe4kg8ZfMT5KF3beh98jPFh5TZBj/hYd35oyfUjj/der6yJ7vEMsoPa/7fPhPbZo/vFx7V9/CJjXTN69VvKQ/z9TXSPnj60TrTXcg5lZ5ZuSznz2a5O7hltGbP2vtI86PGsXB18zIXnmJM4Pxfr967nZ7sKnmNOB9eQ4AMfs1MTTx+119vFh7dby/fHNyOflR35j+fvK8DHSuBjLvAxF/iYCy2l31vRnxcAAAAAAAAAAGBH3q3Ccb4=
+   eJztmNGKwjAQRYNvfpaI+/+fJAsuyOwknaSTTJqcC4dtbW3NPU2UvaeU7gAAAAAAAAAAAAAAAAAAAAAAAAAAm+GR6DGshEeix7ASHokew0p4JHoMK+GR6DGshEeix7ASHokew0p4JHoMV+7OmtsHS6J7ifTx+NBj23Jc24/uBR/4wMd8ePVe6hsf+e5zeRi3ZW+l83Pvt5wb3dXoueDN0/FaO/vo6Qgfxz60yHUkd87Zbct6tZuPlme153ZuP7qrKB+lnrwdvDL30fajuxrlQ8vRetV7fuz8/THjeoWP/908C8e9UnPN6K5G+WjpycO93Gd+1HVytht8tPlImW1vHyOegauRy4j1Ch8+HeFjrI+U2cbHGB9ajtar7+DjHHKsPw3daK+f9fEqHMPHeB+7zg/ZkRa5XpXWr5p74eNcR9rx1m60a5XWKHyM98H8wMfM4GMuWn30TMt9onv09HEUiyMvUsN90gQ9Rs+PHv3jY24fNdeI7nElHzL4iPNRurb1PvgY48PKbYIe8bHu/NCS60ce771eWRPd4xlkB7X/b58J7bNH94uPa/v4Rsa6ZvTqt5SH+Pud6B49fWidaK/lHMrOLN2WcuazXZ3cM9oyZu19pXnQ41m5OviYC88xJ3F+LtbvXc/PdhU8x5wOriHBBz5mpyaePmqvt4sPb7eW74+/jHxWduQ3nr+vAB8rgY+5wMdc4GMutJR+b0V/XgAAAAAAAAAAgB15A/fRcf8=
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
@@ -30,7 +33,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmFlygzAUBN+fKxfL/Y+Un1DBipandSTTU9WVYGxA00aAX2b2AgAAAAAAAAAAAAAAAAAAAAAAAICpfE1APaaTwcde4GMv8LEX+NgLfOwFPvYCH3uBjz6+N0XdiwL7HbtN/N+zPras7gYf78vqbvDxvqzuRgU+tN2nsAn/x9Z536vuavW5sHOe7GNHR0/ykZqrLLN+1BwW7ifc531Z3ZXq/ChlxfX+ydfzMK33RfgY46Nlvip1io9x50cp+FjrwzNfjaJmm+quVvlo6WmE+5L38L3qrmbj6WFUN7F94cPnwzNfrXLfs88TWTVfmeHD62NFN9fnWvNkH8xXWh+996FX8NFGb1K94mMvH1dG+uB5MD5fxfoJ15XC+eHzUerB041Flu32empb3uDjrwdPN3b7a7fl+3p8rPGRCj7W+WhJr49S1F0qfcykZT+1Ufee81E71p7veSml3wZKn6mJunv1fOXZfquP3Bi9UbvY3UfrNsKoOz7NR++14PqMuste7mMpjbX02qiMuH6oe8XH/6i7xcd71N22uHhZ+++JszLr+UPdd8nFU6LuGh/v5/8pXImd99+JdT33pN6U9pk6tivhfHwS9/GFneReG/3bU24btccWft/UHc/04TnXvPG8t8XHPep+V5wfKRe5XmLJ3aN6jsO7rZNoHbPHh/c6kEvvd+U0WsecSs2znKfDEXPpSeTGVzvm8HMeH6uO7RSusXjBxxonlnjNMu+JUXu/u+q7cjre/nM+SvF0GB5HLurOdmS0D1jrwzY45k+m53lQfeyfRqzjXFLPl9DWfarjmt8X1eP4dDxRH+PTwcU+4AIAAAAAAACexA/mmoBF
+   eJztmFlygzAUBN+fKxfL/Y+Un1DBipandSTTU9WVYGxA00aAX2b2AgAAAAAAAAAAAAAAAAAAAAAAAICpfE1APaaTwcde4GMv8LEX+NgLfOwFPvYCH3uBjz6+N0XdiwL7HbtN/N+zPras7gYf78vqbvDxvqzuRgU+tN2nsAn/x9Z536vuavW5sDo1+36yj1WO8BH3kZqrLLN+1BwW7ifc531Z3ZXq/ChlxfX+ydfzMK33RfgY46Nlvip1io9x50cp+FjrwzNfjaJmm+quVvlo6WmE+5L38L3qrmbj6WFUN7F94cPnwzNfrXLfs88TWTVfmeHD62NFN9fnWvNkH8xXWh+996FX8NFGb1K94mMvH1dG+uB5MD5fxfoJ15XC+eHzUerB041Flu32empb3uDjrwdPN3b7a7fl+3p8rPGRCj7W+WhJr49S1F0qfcykZT+1Ufee81E71p7veSml3wZKn6mJunv1fOXZfquP3Bi9UbvY3UfrNsKoOz7NR++14PqMuste7mMpjbX02qiMuH6oe8XH/6i7xcd71N22uHhZ+++JszLr+UPdd8nFU6LuGh/v5/8pXImd99+JdT33pN6U9pk6tivhfHwS9/GFneReG/3bU24btccWft/UHc/04TnXvPG8t8XHPep+V5wfKRe5XmLJ3aN6jsO7rZNoHbPHh/c6kEvvd+U0WsecSs2znKfDEXPpSeTGVzvm8HMeH6uO7RSusXjBxxonlnjNMu+JUXu/u+q7cjre/nM+SvF0GB5HLurOdmS0D1jrwzY45k+m53lQfeyfRqzjXFLPl9DWfarjmt8X1eP4dDxRH+PTwcU+4AIAAAAAAACexA9cl4DR
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
@@ -38,7 +41,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt20EKgzAQAMCAerS0F///1LZUkR5EaY1uzAwE9xBIcHVJxKQEAAAAAAAAAAAAAAAAADF1meO1Mbf0r0mfOV4bc0t/AGDWvFp79iSgcN6jY7jP5cuxT7c//12Ofbr9+cfWeqWu1UfOiUa9AkoRuV7dxkYMzdiIQT5iGcYGAABX1ab5u8BSzLGGDfHVTN+nPHMxRM1HrfUqaj7eaqxX8I/72RMAAIAddMnZg0j6VO/ZA+A43cJ1D/63B3JTY2KRD/g2rYVqWBM9zp4AAAAAAFCMJ6N7AyU=
+   eJzt2NEKgjAUANCgfCzqpU+tiPr3CiYkETNzetVz4LI9DDZ22dx1tQIAAAAAAAAAAAAAAACAmE6F+7k524xfkmvhfm7ONuMBgE/nZ1zGXgRM1Pv5KVGHqD+afrmvStQh6g+mzPd+WPYbunN+hmW/oTvnZ1gR93uXghjWKYhBPmI5pgAAgLm6ZVqGdc+0c/WqgzcpGF/UfCz1voqaj6XeV/CP/dgLAACAHlQpiGGbAqCk6kvbh/r/J0Ap7phY5AOa6rfQEt5Eh7EXAAAAAABMxgPuHyH2
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">
@@ -54,7 +57,11 @@
   <object id="8" name="end" x="2444" y="5644" width="226" height="26"/>
  </objectgroup>
  <objectgroup name="notes">
-  <object id="9" name="note1" x="2712" y="2649.33" width="16" height="12"/>
+  <object id="9" name="note1" x="2712" y="2649.33" width="16" height="12">
+   <properties>
+    <property name="Dialog" value="1,2,3"/>
+   </properties>
+  </object>
   <object id="10" name="note2" x="2582.67" y="5080" width="20" height="14.6667"/>
  </objectgroup>
  <layer name="notetiles" width="100" height="100">
