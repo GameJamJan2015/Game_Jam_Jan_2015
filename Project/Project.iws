@@ -74,10 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="World.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="World.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19250253" vertical-offset="5471" max-vertical-offset="12876">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5772" max-vertical-offset="12876">
               <caret line="158" column="81" selection-start-line="158" selection-start-column="81" selection-end-line="158" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,18 +89,18 @@
       <file leaf-file-name="world1beta2.tmx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/assets/graphics/world1beta2.tmx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2997">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3293">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dialogs.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Dialogs.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Dialogs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1036">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.6785714" vertical-offset="0" max-vertical-offset="1073">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -109,12 +109,10 @@
       <file leaf-file-name="GameScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1813" max-vertical-offset="3589">
-              <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="3367">
+              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,8 +121,8 @@
       <file leaf-file-name="Dialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/Dialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1887">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1036" max-vertical-offset="2072">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,10 +218,10 @@
         <option value="$PROJECT_DIR$/desktop/src/wdwdn/desktop/DesktopLauncher.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/SplashScreen.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/NextLevelScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/wdwdn/screen/GameScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/wdwdn/Dialogs.java" />
-        <option value="$PROJECT_DIR$/core/src/wdwdn/entity/Dialog.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/World.java" />
+        <option value="$PROJECT_DIR$/core/src/wdwdn/screen/GameScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/wdwdn/entity/Dialog.java" />
+        <option value="$PROJECT_DIR$/core/src/wdwdn/Dialogs.java" />
       </list>
     </option>
   </component>
@@ -831,8 +829,6 @@
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1173,18 +1169,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Dialogs.java">
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1036">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/Dialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1887">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5772" max-vertical-offset="12876">
+          <caret line="158" column="81" selection-start-line="158" selection-start-column="81" selection-end-line="158" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1193,7 +1181,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/assets/graphics/world1beta2.tmx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2997">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3293">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1201,23 +1189,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1591" max-vertical-offset="3589">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="3367">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/World.java">
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/Dialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19250253" vertical-offset="5471" max-vertical-offset="12876">
-          <caret line="158" column="81" selection-start-line="158" selection-start-column="81" selection-end-line="158" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1036" max-vertical-offset="2072">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Dialogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6785714" vertical-offset="0" max-vertical-offset="1073">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

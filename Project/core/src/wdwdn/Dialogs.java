@@ -16,7 +16,8 @@ public class Dialogs {
 			"Please, just let me die!",
 			"These monsters are relentless. Why am I even trying?",
 			"... The board of Directors has therefore decided that patient 13 should also receive antidepressants as such to help coping with ...",
-			"It's okay"
+			"It's okay",
+			"What? A wall?!"
 
 	}; 
 }

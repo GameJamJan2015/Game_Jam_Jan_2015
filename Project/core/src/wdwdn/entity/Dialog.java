@@ -15,23 +15,27 @@ public class Dialog {
     Vector2 pos;
     float time;
     public boolean removeDialog;
+    boolean keyFix = false;
 
     public Dialog(String... texts) {
         this.texts = texts;
+
+        if (Gdx.input.isKeyPressed(Keys.SPACE))
+            keyFix = true;
     }
 
     public void update(float delta) {
+        if (!Gdx.input.isKeyPressed(Keys.SPACE))
+            keyFix = false;
 
-        if (Gdx.input.isKeyJustPressed(Keys.SPACE)) {
+        if (Gdx.input.isKeyJustPressed(Keys.SPACE) && keyFix != true) {
 
             if (index + 1 >= texts.length) {
-
                 removeDialog = true;
             } else {
                 index++;
             }
         }
-
     }
 
     public void draw(Batch batch) {
@@ -41,7 +45,6 @@ public class Dialog {
         Assets.font.setScale(.4f);
         Assets.font.drawWrapped(batch, texts[index], 300, 150, 1280 - 600,
                 HAlignment.CENTER);
-
     }
 
 }
