@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="8">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="11">
  <tileset firstgid="1" name="alpha_sprite_sheet" tilewidth="64" tileheight="64">
   <image source="alpha_sprite_sheet.png" width="512" height="512"/>
   <tile id="0">
@@ -38,7 +38,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt3NEKgyAUAFCh9djYXvr/T93GirGHSLasa54Dkg+C0q2LSpYSAAAAAAAAAAAAAAAAAMTUF66v9ZnTviVD4fpanzntAWjD/egBVKJ7lsvRg4DKeY/24T7Xr8Q63fr8dyXW6dbnb7n5Sl5rj5gTjXwF1CJyvrpOhRi6qRCDeMQyTgUAAM7qkj77Akt19jVm1M9m3p/yzMUQNR6t5quo8XhpMV/BP25HDwAAADbQJ2cPIhlSu2cPgP30C9ct+N4eKE2OiUU84Ns8F2phTuQ/RgAAAABArgfSbQM2
+   eJzt20EKgzAQAMCAerS0F///1LZUkR5EaY1uzAwE9xBIcHVJxKQEAAAAAAAAAAAAAAAAADF1meO1Mbf0r0mfOV4bc0t/AGDWvFp79iSgcN6jY7jP5cuxT7c//12Ofbr9+cfWeqWu1UfOiUa9AkoRuV7dxkYMzdiIQT5iGcYGAABX1ab5u8BSzLGGDfHVTN+nPHMxRM1HrfUqaj7eaqxX8I/72RMAAIAddMnZg0j6VO/ZA+A43cJ1D/63B3JTY2KRD/g2rYVqWBM9zp4AAAAAAFCMJ6N7AyU=
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">
@@ -51,5 +51,18 @@
  </layer>
  <objectgroup name="spawn">
   <object id="3" name="player" x="2812" y="2248" width="60" height="44"/>
+  <object id="8" name="end" x="2444" y="5644" width="226" height="26"/>
  </objectgroup>
+ <objectgroup name="notes">
+  <object id="9" name="note1" x="2712" y="2649.33" width="16" height="12"/>
+  <object id="10" name="note2" x="2582.67" y="5080" width="20" height="14.6667"/>
+ </objectgroup>
+ <layer name="notetiles" width="100" height="100">
+  <properties>
+   <property name="Collision" value="False"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2zEBAAAIw7BZwL9ZPHDAQaKgBpoAAAAAAAAAAAAAAAAAAAAAzNR1AAAAAAAAAAAAAAAAAAAALPDVAgAAAAAAAMA/DdPwACM=
+  </data>
+ </layer>
 </map>

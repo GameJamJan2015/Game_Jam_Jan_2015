@@ -11,6 +11,8 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapLayers;
 import com.badlogic.gdx.maps.MapObject;
+import com.badlogic.gdx.maps.MapObjects;
+import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Intersector;
@@ -34,6 +36,8 @@ public class World {
     private Light ambLight;
     private TiledMap map;
 
+    public boolean isNextLevel = false;
+
     private float stateTime;
     /**
      * BOX2D LIGHT STUFF
@@ -53,38 +57,38 @@ public class World {
     public World(TiledMap map) {
         this.map = map;
         // Init
-        player = new Player(0,0);
+        player = new Player(0, 0);
 
         Array<TextureRegion> walk = new Array<TextureRegion>();
         for (int i = 0; i < 8; i++) {
-            walk.add(new TextureRegion(Assets.player, i*64,0,64,64));
+            walk.add(new TextureRegion(Assets.player, i * 64, 0, 64, 64));
         }
         player.addAnimation("walk", new Animation(.13f, walk));
 
 
         Array<TextureRegion> idleup = new Array<TextureRegion>();
         for (int i = 0; i < 2; i++) {
-            idleup.add(new TextureRegion(Assets.player, i*64,64,64,64));
+            idleup.add(new TextureRegion(Assets.player, i * 64, 64, 64, 64));
         }
         player.addAnimation("idleup", new Animation(.5f, idleup));
 
         Array<TextureRegion> idledown = new Array<TextureRegion>();
         for (int i = 0; i < 2; i++) {
-            idledown.add(new TextureRegion(Assets.player, 128 + i*64,64,64,64));
+            idledown.add(new TextureRegion(Assets.player, 128 + i * 64, 64, 64, 64));
         }
         player.addAnimation("idledown", new Animation(.5f, idledown));
 
 
         Array<TextureRegion> walkdown = new Array<TextureRegion>();
         for (int i = 0; i < 3; i++) {
-            walkdown.add(new TextureRegion(Assets.player, 256 + i*64,64,64,64));
+            walkdown.add(new TextureRegion(Assets.player, 256 + i * 64, 64, 64, 64));
         }
         player.addAnimation("walkdown", new Animation(.2f, walkdown));
 
 
         Array<TextureRegion> walkup = new Array<TextureRegion>();
         for (int i = 0; i < 3; i++) {
-            walkup.add(new TextureRegion(Assets.player,  i*64,128,64,64));
+            walkup.add(new TextureRegion(Assets.player, i * 64, 128, 64, 64));
         }
         player.addAnimation("walkup", new Animation(.2f, walkup));
 
@@ -97,8 +101,8 @@ public class World {
     private void LoadWorld() {
         MapObject pl = ((MapLayer) map.getLayers().get("spawn")).getObjects().get("player");
 
-        player.setX(pl.getProperties().get("x",Float.class) / 64f);
-        player.setY(pl.getProperties().get("y",Float.class) / 64f);
+        player.setX(pl.getProperties().get("x", Float.class) / 64f);
+        player.setY(pl.getProperties().get("y", Float.class) / 64f);
         player.update(0);
     }
 
@@ -115,6 +119,7 @@ public class World {
         /** BOX2D LIGHT STUFF END */}
 
     Rectangle prevRect;
+
     public void update(float delta) {
         stateTime += delta;
         prevRect = new Rectangle(player.getBounds());
@@ -131,6 +136,7 @@ public class World {
     }
 
     float speed = 1.5f;
+
     public void updatePlayer(float delta) {
         Vector2 vel = new Vector2();
         if (Gdx.input.isKeyPressed(Input.Keys.LEFT))
@@ -156,6 +162,7 @@ public class World {
     }
 
     private boolean isLightning = false;
+
     private void updateLights() {
         rayHandler.update();
 
@@ -167,7 +174,7 @@ public class World {
         }
 
         if (isLightning) {
-            float a = (float) Math.sin(stateTime * 5.5f)*.35f;
+            float a = (float) Math.sin(stateTime * 5.5f) * .35f;
             ambLight.setColor(1, 1, 0, a);
             //rayHandler.setAmbientLight(1, 1, 0, a);
             if (a < -.01f) {
@@ -191,18 +198,18 @@ public class World {
         for (Rectangle tile : tiles) {
             if (player.getBounds().overlaps(tile)) {
 
-                if (Math.abs(player.getPosition().x - (tile.getX() + tile.getWidth()/2)) > .1f) {
+                if (Math.abs(player.getPosition().x - (tile.getX() + tile.getWidth() / 2)) > .1f) {
                     player.setX(prevRect.x + player.getBounds().width / 2);
                     prevRect.x = player.getBounds().x;
                 }
 
-                if (Math.abs(player.getPosition().y - (tile.getY() + tile.getHeight()/2)) > .1f) {
+                if (Math.abs(player.getPosition().y - (tile.getY() + tile.getHeight() / 2)) > .1f) {
                     player.setY(prevRect.y + player.getBounds().height / 2);
                     prevRect.y = player.getBounds().y;
                 }
 
                 player.update(0);
-               // break;
+                // break;
             }
         }
 
@@ -215,15 +222,37 @@ public class World {
                 if (layer.getProperties().get("Collision").toString().toLowerCase().equals("false"))
                     continue;
             }
+
+            // obj
             if (layer instanceof TiledMapTileLayer == false) {
+                MapObjects objects = layer.getObjects();
+
+                // there are several other types, Rectangle is probably the most common one
+                for (RectangleMapObject rectangleObject : objects.getByType(RectangleMapObject.class)) {
+
+                    Rectangle rectangle = rectangleObject.getRectangle(); // map.getProperties().get("height", Integer.class) -
+                    rectangle = new Rectangle(rectangle.x / 64f, rectangle.y / 64f, rectangle.width / 64f, rectangle.height/64f);
+
+                    if (Intersector.overlaps(rectangle, player.getBounds())){
+                        // collision happened
+                        if (rectangleObject.getName().equals("note1")) {
+
+                        }
+
+                        if (rectangleObject.getName().equals("end")) {
+                            isNextLevel = true;
+                        }
+                    }
+                }
                 continue;
             }
 
+            // cell
             for (int y = startY; y <= endY; y++) {
                 for (int x = startX; x <= endX; x++) {
                     TiledMapTileLayer.Cell cell = ((TiledMapTileLayer) layer).getCell(x, y);
                     if (cell != null) {
-                        if (cell.getTile().getId() == 11) {
+                        if (cell.getTile().getId() == 11 || cell.getTile().getId() == 10) {
                             ((TiledMapTileLayer) layer).setCell(x, y, null);
                         }
                     }
@@ -264,7 +293,7 @@ public class World {
     // Box2d lights
     void initPointLights() {
         clearLights();
-        Light light = new PointLight(rayHandler, 32, new Color(1,1,1,.5f), 0, 0, 0);
+        Light light = new PointLight(rayHandler, 32, new Color(1, 1, 1, .5f), 0, 0, 0);
 
         light.setSoft(true);
         light.setSoftnessLength(2);
@@ -274,7 +303,7 @@ public class World {
 
 
         // ambient
-        Light amb = new PointLight(rayHandler, 128, new Color(1,1,1, .033f), 5.5f, 0, 0);
+        Light amb = new PointLight(rayHandler, 128, new Color(1, 1, 1, .033f), 5.5f, 0, 0);
 
         amb.setSoft(true);
         amb.setSoftnessLength(12);

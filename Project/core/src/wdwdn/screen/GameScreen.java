@@ -13,16 +13,26 @@ import wdwdn.WorldRenderer;
 public class GameScreen extends Screen {
     private World world;
     private WorldRenderer renderer;
+    private int level;
+
+    public GameScreen(int level) {
+        this.level = level;
+    }
 
     @Override
     public void show() {
-        this.world = new World(LevelLoader.LoadMap());
+        this.world = new World(LevelLoader.LoadMap(1));
         this.renderer = new WorldRenderer(world);
+
     }
 
     @Override
     public void update(float delta) {
         world.update(delta);
+
+        if (world.isNextLevel) {
+            setScreen(new NextLevelScreen(level + 1));
+        }
     }
 
     @Override

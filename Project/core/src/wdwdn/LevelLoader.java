@@ -8,7 +8,7 @@ import com.badlogic.gdx.maps.tiled.TmxMapLoader;
  * Created by Simon on 1/23/2015.
  */
 public class LevelLoader {
-    public static TiledMap LoadMap() {
+    public static TiledMap LoadMap(int level) {
         TmxMapLoader.Parameters parms = new TmxMapLoader.Parameters();
         parms.textureMagFilter = Texture.TextureFilter.Nearest;
         parms.textureMinFilter = Texture.TextureFilter.Nearest;
