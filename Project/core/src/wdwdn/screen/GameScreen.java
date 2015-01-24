@@ -17,7 +17,8 @@ public class GameScreen extends Screen {
     private World world;
     private WorldRenderer renderer;
     private int level;
-    Dialog dialog;
+
+    public static Dialog dialog;
     OrthographicCamera uiCam;
 
     public GameScreen(int level) {
@@ -26,9 +27,8 @@ public class GameScreen extends Screen {
 
     @Override
     public void show() {
-        this.world = new World(LevelLoader.LoadMap(1));
+        this.world = new World(LevelLoader.LoadMap(level));
         this.renderer = new WorldRenderer(world);
-        this.dialog = new Dialog("hej", "bajs"); 
         this.uiCam = new OrthographicCamera(1280, 720);
         uiCam.position.x = 1280 / 2;
         uiCam.position.y = 720/2;
@@ -46,7 +46,6 @@ public class GameScreen extends Screen {
         }
         
         if(dialog != null && dialog.removeDialog == true){
-        	
         	dialog = null;
         }
     }
@@ -59,14 +58,11 @@ public class GameScreen extends Screen {
     	 uiCam.update();
     	 getBatch().setProjectionMatrix(uiCam.combined  );
         getBatch().begin();
-        //getBatch().draw(Assets.region, 0,0,  10,10);
-        
+
         if(dialog != null)
         	dialog.draw(getBatch());
         
         getBatch().end();
-
-       
     }
 
     @Override
