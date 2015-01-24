@@ -3,6 +3,7 @@ package wdwdn;
 import box2dLight.Light;
 import box2dLight.PointLight;
 import box2dLight.RayHandler;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Color;
@@ -21,6 +22,8 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
+
+import wdwdn.entity.Enemy;
 import wdwdn.entity.GameEntity;
 import wdwdn.entity.Player;
 
@@ -104,6 +107,11 @@ public class World {
         player.setX(pl.getProperties().get("x", Float.class) / 64f);
         player.setY(pl.getProperties().get("y", Float.class) / 64f);
         player.update(0);
+        
+        
+        // load mah girl
+        
+        entities.add(new Enemy(this, player.getPosition().x, player.getPosition().y - 3, 1, 1, 4000));
     }
 
     private void InitLights() {
@@ -130,8 +138,13 @@ public class World {
     }
 
     private void updateEntities(float delta) {
-        for (GameEntity entity : entities) {
+        for (int i = 0; i < entities.size(); i++) {
+        	GameEntity entity = entities.get(i);
+        	
             entity.update(delta);
+            
+            if (entity.isRemoved())
+            	entities.remove(entity);
         }
     }
 

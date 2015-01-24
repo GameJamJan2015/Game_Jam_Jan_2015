@@ -43,6 +43,9 @@ public class WorldRenderer {
         batch.setProjectionMatrix(camera.combined);
         batch.begin();
         world.getPlayer().draw(batch);
+        for (GameEntity e : world.getEntities()) {
+        	e.draw(batch);
+        }
         batch.end();
 
         world.getRayHandler().setCombinedMatrix(camera);

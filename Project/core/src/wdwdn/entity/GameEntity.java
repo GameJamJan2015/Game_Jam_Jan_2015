@@ -18,6 +18,7 @@ public class GameEntity {
     private HashMap<String, Animation> anims;
     private Animation currentAnim;
     protected Sprite sprite;
+    private boolean isDead;
 
     private float stateTime;
 
@@ -28,6 +29,7 @@ public class GameEntity {
         this.sprite = new Sprite();
         this.sprite.setPosition(x, y);
         this.sprite.setSize(width, height);
+        this.isDead = false;
     }
 
     public void update(float delta) {
@@ -59,6 +61,14 @@ public class GameEntity {
 
     public void setAnimation(String name) {
         currentAnim = anims.get(name);
+    }
+    
+    public void remove() {
+    	isDead = true;
+	}
+    
+    public boolean isRemoved() {
+    	return isDead;
     }
 
     // GETTTERS
