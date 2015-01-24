@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="3">
+ <tileset firstgid="1" name="alpha_sprite_sheet" tilewidth="64" tileheight="64">
+  <image source="../ALPHA TEX/alpha_sprite_sheet.png" width="512" height="512"/>
+  <tile id="0">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 2 - Golv" width="100" height="100">
+  <properties>
+   <property name="Collision" value="False"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztl8luwzAMBQXfcsv/f20RoAdDoHaKpOx5wKB2k3h5Y6rpJ6X0AQAAAAAAAAAAAAAAAAAAAAAAAAB4Gfdc/4zG+x6exC/XAvjAx5PBRyzwEQt8xAIfscDHWndWGflfxLuXCM/yju2e16V9717wgQ98xEOr91rf+Ch3X8q1YVt6rfe93l1Zz0Jk3uwjoqM3+ZCSryOl96xus16156PnWd25Xdr37srLR60nfOz3IaW1XuHDbj5Yr2L5qPVUm5mZjBzTuysrHzM9abjPz9OaSe+uvOajZ73Ch52PVk9aPiyegdMoxWK9wodOR/iw9ZEK2/iw8SGltV7dg481vjdmOso/gw/dmcBHHErJ16va+oUPXR8js8Dfc3zgAx/4wMeKj52ZOY93j5o+WulxpEWaOE8K0KP3fOzoHx+xfYwcw7vHJ/nIgw8/H7Vj954HH7F8XAF6xMdz50PK/V5r+7t99Ma7R00Hu7q15GQ3+IiL5Ob+sxSLXkeuzbtHTR9SJ9LvSg7zzlq9trJybaejec/S52pzYHltp4CPWOzyUQs+fHwwH/g4nZHg4yxyH61YPitv5BfN71eAjyeBj1jgIxb4iIWU2vct7+sFAAAAAAAAAAB4I3/xyyDy
+  </data>
+ </layer>
+ <layer name="väggar" width="100" height="100">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmN2SgyAMRt296fu/8U4vOksZhRBDEuFk5kylP6jfKai8juN4AQAAAAAAAAAAAAAAAAAAAAAAAABsxo8B0eewEu887xQ+8LEy+MgFPnKBj1zgIxf4uJedF2XePH/0/8sztiWfn7Wjc8HHdzs6F3x8t6Nzwcd3OzoXr+xb11rr7bPPpN+Nzsp7LGSunX1kdLSTD+1zwWGwXe+n3mfZjs4qanz0yuN6v/P1vC7tfRE+bHxo5qtepviwGx+9woevD8l8ZcVIn9FZefnQ5GThvue9/m50VlHjo1f48PUhma+83N/d59OInK9GaicfXtngQ5cR81WsD6/7UHycU9avIpv6N/jAx6pI56u6zXw1z0cvB6ts8IGPp4GPXOAjF1ofM9HsJzpHSx/SfMqcZlVvbeDqN9E5Ro8Pq6r7wkf/XCXvaavlY6SP6BxX8tGbHyV9ROe4io9W38xX7Xxa71kVPuT5tN6zql19HMe/D8164qza8fmjLM16+8zyXP/Pwt3zn1k7+vg4eb+ezVPlq/SZ3ap6+7w6tug8rZBer8tztl57uspWc2xPx/KcR8aNtj983MvvqvDh60NyHcCHr49W4QMfT8DyGRgfuRi93/X8r+yI9f0V4GMl8JELfOQCH7kYXV+MPt4d+VT0cQA+MoIPAAAAAAAA2IU/6OPaMQ==
+  </data>
+ </layer>
+ <layer name="Statiska objekt" width="100" height="100">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt29EKgjAUAFChfDR6iP7/UyNSKkEd5ubNnQOXRo6Exq67uDUNAAAAAAAAAAAAAOzv1Me5j/G1z+/n+rKN2yimri31ZRvmB0wzP2Lx/IjF/OAo2sztpXum9K9Jl7m9dM+U/gDA27DOB9Yzj8rwP/+/HHW6+ny9HHW6+vwlNV/Ja/Ux5kQTKV9dM/8+8N/2zldzdcalD/JLqf+GfQ3EYDzKSZkf9z4oox19AgCQ3+ce96k2Zd0T2kfjvEUsUcej1nwVdTyeasxX8AvvdgEAOIK28T43kq6p9+wBUM54P8+WzwFnRYDc5JhYjAd8G9ZC1kQAAAAAAG8PemEFmw==
+  </data>
+ </layer>
+ <layer name="Dörrar" width="100" height="100">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2LsOgCAMBVBm+f//dXGRqIMKtOScxPhaaoi3DaUAAAAAAAAAAAAAAAAAMFo9DgCgj9rh+ur+6Z1eX8o2uwBYwJ8ZdvdcXp3zSnYBkckrIIuReWW/HfjCfAXP9Nk5vuaRPPuX9cihzSv5BQCQg3kZ3vHvxGI9APKxnzjHm57Zs89Gq2e0aN8frZ7ZanMmN30mppUzJCPrkYc8A6Bl3gUA6Mu8BQAAAACx7EkbAsg=
+  </data>
+ </layer>
+</map>
