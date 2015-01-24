@@ -21,7 +21,7 @@ public class GameScreen extends Screen {
 
     @Override
     public void show() {
-        this.world = new World(LevelLoader.LoadMap(1));
+        this.world = new World(LevelLoader.LoadMap(level));
         this.renderer = new WorldRenderer(world);
 
     }
