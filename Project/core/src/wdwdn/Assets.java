@@ -68,7 +68,7 @@ public class Assets {
     }
 
     private static void loadRegions(Texture item) {
-        region = new TextureRegion(item, 576, 128, 128, 128);
+        region = new TextureRegion(item, 0, 0, 256, 256);
 
     }
 

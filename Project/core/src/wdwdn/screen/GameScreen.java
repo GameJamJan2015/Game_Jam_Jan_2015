@@ -1,5 +1,6 @@
 package wdwdn.screen;
 
+import com.badlogic.gdx.Gdx;
 import wdwdn.Assets;
 import wdwdn.World;
 import wdwdn.WorldRenderer;
@@ -24,11 +25,14 @@ public class GameScreen extends Screen {
 
     @Override
     public void present(float delta) {
-        renderer.render(getBatch());
 
         getBatch().begin();
-        getBatch().draw(Assets.region, 0,0, 42,42);
+        getBatch().draw(Assets.region, 0,0,  720,480);
         getBatch().end();
+
+        renderer.render(getBatch());
+
+
 
     }
 
