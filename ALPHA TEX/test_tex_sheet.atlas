@@ -1,0 +1,82 @@
+
+test_tex_sheet.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+object 2 height
+  rotate: false
+  xy: 1, 67
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+object 2 width
+  rotate: false
+  xy: 67, 131
+  size: 128, 64
+  orig: 128, 64
+  offset: 0, 0
+  index: -1
+door hor
+  rotate: false
+  xy: 1, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+door ver
+  rotate: false
+  xy: 67, 65
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+floor
+  rotate: false
+  xy: 197, 131
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+monster
+  rotate: false
+  xy: 133, 65
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+note
+  rotate: false
+  xy: 263, 131
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+npc
+  rotate: false
+  xy: 199, 65
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+objectl
+  rotate: false
+  xy: 329, 131
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+player
+  rotate: false
+  xy: 265, 65
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+wall
+  rotate: false
+  xy: 395, 131
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
