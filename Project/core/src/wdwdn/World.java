@@ -38,7 +38,7 @@ import java.util.ArrayList;
 public class World {
     private ArrayList<GameEntity> entities = new ArrayList<GameEntity>(128);
     private Player player;
-    private Light playerLight;
+    public Light playerLight;
     private Light ambLight;
     private TiledMap map;
 
@@ -66,7 +66,7 @@ public class World {
     public World(TiledMap map) {
         this.map = map;
         // Init
-        player = new Player(0, 0);
+        player = new Player(this, 0, 0);
 
         Array<TextureRegion> walk = new Array<TextureRegion>();
         for (int i = 0; i < 8; i++) {
@@ -173,7 +173,8 @@ public class World {
 
         player.update(delta);
 
-        if ((Gdx.input.isKeyPressed(Input.Keys.SPACE) || GameScreen.dialog != null) && !isFlashing) {
+        if ((Gdx.input.isKeyPressed(Input.Keys.SPACE) || GameScreen.dialog != null) 
+        		&& !isFlashing) {
             playerLight.setDistance(3);
         } else {
             playerLight.setDistance(0);

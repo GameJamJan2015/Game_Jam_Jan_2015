@@ -1,5 +1,7 @@
 package wdwdn.entity;
 
+import wdwdn.World;
+
 import com.badlogic.gdx.math.Vector2;
 
 /**
@@ -8,8 +10,8 @@ import com.badlogic.gdx.math.Vector2;
 public class DynamicEntity extends GameEntity {
     private Vector2 velocity;
 
-    public DynamicEntity(float x, float y, float width, float height) {
-        super(x, y, width, height);
+    public DynamicEntity(World world, float x, float y, float width, float height) {
+        super(world, x, y, width, height);
         this.velocity = new Vector2();
     }
 

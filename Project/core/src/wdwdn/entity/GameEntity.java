@@ -5,7 +5,9 @@ import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+
 import wdwdn.Assets;
+import wdwdn.World;
 
 import java.util.HashMap;
 
@@ -19,10 +21,12 @@ public class GameEntity {
     private Animation currentAnim;
     protected Sprite sprite;
     private boolean isDead;
+    protected World world;
 
     private float stateTime;
 
-    public GameEntity(float x, float y, float width, float height) {
+    public GameEntity(World world, float x, float y, float width, float height) {
+    	this.world = world;
         this.anims = new HashMap<String, Animation>();
         this.position = new Vector2(x, y);
         this.bounds = new Rectangle(x - width/2, y - height/2, width, height);

@@ -8,15 +8,12 @@ import wdwdn.World;
 
 
 public abstract class Enemy extends DynamicEntity {
-
-	protected World world;
 	public float radius;
 	protected boolean stopMoving;
 	
 	public Enemy(World world, float x, float y, float width, float height, float radius) {
-		super(x, y, width, height);
+		super(world, x, y, width, height);
 		
-		this.world = world;
 		this.radius = radius;
 		
 		addAnimation("idle", new Animation(1, Assets.pixel));
