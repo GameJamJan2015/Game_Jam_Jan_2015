@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="5">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="8">
  <tileset firstgid="1" name="alpha_sprite_sheet" tilewidth="64" tileheight="64">
   <image source="alpha_sprite_sheet.png" width="512" height="512"/>
   <tile id="0">
@@ -7,6 +7,9 @@
     <property name="Collision" value="True"/>
    </properties>
   </tile>
+ </tileset>
+ <tileset firstgid="65" name="floor_wall_sheet" tilewidth="64" tileheight="64">
+  <image source="floor_wall_sheet.png" width="384" height="64"/>
  </tileset>
  <layer name="Tile Layer 2 - Golv" width="100" height="100">
   <properties>
@@ -21,7 +24,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmLFuwzAQxYIuQf//hzsVyDl20Ugn8STzAdwc2yLhDn0+Ho+niIiIiIiIiIiIiIiIiIiIiIiIiAzlewD0mVbGHrWwRy3sUQt71MIetbBHLexRC3v0UXW0F1vE0W7sEUe7sUcc7cYmcbSXO7s/G+3KHnG0K3vE0a7sEUe7skcc7coecbQre8TRruwRR7uyRxztqnIPoj3tqmqLFjcZo33Zo++ZKzLLTcZoV/boe+aKzHKTMdpV5R5ns0d/g69eSS+zR60ev7NHTpvqo11V7nF2n6v7+n1wPa6uyRjtapUePde0PnNXdhrt0h7to73b4320+517ZJyRbrFTj79GO75rD9qlLc5He7XH+2i39oij3ba02L3J62jf//0uRvy/vdJo1/aI3/8q7Lrj3+OV2HHHs9GOR/ZYrSvtd8b3MbJF5j1pt7N6HM9aabRP6vvIXNb70S6JHiPazni3Vcg8c8vscX3uKxdX11TrS3uc3eiT32U5PF7Xc6878uno992dltHvvDM9o999N3pGv/vqZI0+x+7YoD62qIMtRERERERE5E78AD001eQ=
+   eJztmFGOhCAUBMn+TPZic/8j7ZcJsAIPEPuh1Ullszqj0KWO+gkhfAAAAAAAAAAAAAAAAAAAAAAAAABgKb8LUM9pZ/DhC3z4Ah++wIcv8OELfPgCH77Axxxeo+4FF2nU3eAjjbobfKRRd4OTNOpe3tz9WdRd4SONuit8pFF3hY806q7wkUbdFT7SqLvCRxp1V/hIo+7qaT6+J9TW5ai78uxjZF/fbBu5j1re4GMmI/vCh28fPXmDjxkn+MCHuiuVD8t1HR9rKN1bxj20OIKPMeL8THSUBx++fBy50sfbnget16uzfvJ1rXB+2H3UerB0E07+D9Hy0raseZOPVg+WbkL0N0T/x+vxcY+PUvBxn4+RzPpoRd2l0sdKRvbTG3XvNR+9c505zlvpeefb+7k86u7V1yvL9kd91OZojdqFdx+j28ij7ng3H7O/Bcd31F3OEs+lNdfWsqtyxe+Huld8/I+6W3ykUXc74uITxt8nrsqq5w913y0XR1a8b/cUddf4SM//XThydt5/C+tm7kmtae2zNLYj+fV4J+L55Z3Ull397qm2jd6x5cebuuOVPiznmjWWz474iKPu947zo+Si1stZaveolnFYt7UTo3O2+LD+DtQye6zsxuicS+l5lrN0eMW1dCdq8+udc/49i4+7xrYLx1ys4OMeJ6GwLFQ+c0bv/e5dx8ruWPuv+WjF0mE+jlrUnXnkah9wr4/gYMxPZuZ5UD32p3HWcS2l50sY677Ucc/7RfU8no4l6jG+HVz4ARcAAAAAAADwJv4AKPs47w==
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
@@ -40,7 +43,7 @@
    eJzt2LsOgCAMBVBm+f//dZYoAz5o8ZwFRQeSxtvGUgAAAAAAAAAAAAAAAAAAANZSX7g+u+896737F9vsA8ACnsywq315dcwr2QVEJq+ALL7Mq1rMtMA48xX06bNz3M0jefYs9cihzSv5BQCQg3kZxvh2YlEPgHz8T5xjpGdG67PRznOHesRWm5Xc9JmYVs6QjNQjD3kGQMu8CwDwLvMWAAAAAMSyAxFLAp4=
   </data>
  </layer>
- <layer name="spawn" width="100" height="100">
+ <layer name="spawn" width="100" height="100" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt0UENADAMxLDDsPHnWgJ9r5VmI4iUBAAAAAAAAAAAAAAAAAD+c6YDYKk7HUDLFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeKsAGhoAOQ==
   </data>
