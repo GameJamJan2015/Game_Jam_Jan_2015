@@ -17,7 +17,8 @@ public class Dialogs {
 			"These monsters are relentless. Why am I even trying?",
 			"... The board of Directors has therefore decided that patient 13 should also receive antidepressants as such to help coping with ...",
 			"It's okay",
-			"What? A wall?!"
+			"What? A wall?!",
+			"The Layout is changing, but how?"
 
 	}; 
 }

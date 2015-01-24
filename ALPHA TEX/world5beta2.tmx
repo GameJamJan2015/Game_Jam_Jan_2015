@@ -17,6 +17,14 @@
  <tileset firstgid="86" name="tiles_sheet" tilewidth="64" tileheight="64">
   <image source="tiles_sheet.png" width="512" height="256"/>
  </tileset>
+ <tileset firstgid="118" name="furniture_sheet" tilewidth="64" tileheight="64">
+  <image source="furniture_sheet.png" width="256" height="192"/>
+  <tile id="10">
+   <properties>
+    <property name="Dialog" value="4"/>
+   </properties>
+  </tile>
+ </tileset>
  <layer name="Tile Layer 2 - Golv" width="100" height="100">
   <properties>
    <property name="Collision" value="False"/>
@@ -38,7 +46,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt20EKgzAQAMCAerS0F///1LZUkR5EaY1uzAwE9xBIcHVJxKQEAAAAAAAAAAAAAAAAADF1meO1Mbf0r0mfOV4bc0t/AGDWvFp79iSgcN6jY7jP5cuxT7c//12Ofbr9+cfWeqWu1UfOiUa9AkoRuV7dxkYMzdiIQT5iGcYGAABX1ab5u8BSzLGGDfHVTN+nPHMxRM1HrfUqaj7eaqxX8I/72RMAAIAddMnZg0j6VO/ZA+A43cJ1D/63B3JTY2KRD/g2rYVqWBM9zp4AAAAAAFCMJ6N7AyU=
+   eJzt2dEKwiAUAFA/oX62Wm3/Xg8+FCMsQXfFc+CiD4LidpW7pQQAAAAAAAAAAAAAAAAAMV0a90tz/jJ+JvfG/dKcv4wHAPaur7gdvQgY1Hv+tKhD1B+f/jmvWtQh6g9G5r7vy35DPfnTl/2GevKnr4j7veQghjUHMcgPZuJ9j+WRgxi2HDCaJTnfYTRroaWvrdBCD1Hv81nPqzXF/H4363m1JfUa9U5HLwAAAACgwvKlBRiB7/mxeB6wN8u/x/PRCwAAAAAAhvEE368wDw==
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">
