@@ -1,10 +1,11 @@
 
-package com.caresilabs.screen;
+package wdwdn.screen;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import wdwdn.Assets;
 
 public abstract class Game implements ApplicationListener {
     private Screen screen;
@@ -27,7 +28,7 @@ public abstract class Game implements ApplicationListener {
             screen.dispose();
         }
         // Dispose Assets
-        //Assets.dispose();
+        Assets.dispose();
     }
 
     @Override
