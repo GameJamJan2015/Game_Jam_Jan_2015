@@ -8,12 +8,15 @@
    </properties>
   </tile>
  </tileset>
+ <tileset firstgid="65" name="floor_wall_sheet" tilewidth="64" tileheight="64">
+  <image source="floor_wall_sheet.png" width="384" height="64"/>
+ </tileset>
  <layer name="Tile Layer 2 - Golv" width="100" height="100">
   <properties>
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztlsuOgzAQBC1u+f8fjlbaQ2T5CePpsamWSmtCFnAXtvJJKX0AAAAAAAAAAAAAAAAAAAAAAAAAAF6GRdRzOAmLqOdwEhZRz+EkLKKew0lYRD2Hk7CIeg4nYRH1HE7CIuo57NzdaK5/RqLuRenjtyfr8cj50rG6F3zgAx/xsOq91Tc+6t3Xci0Yl86NflfdlfdaiMybfUR09CYfpeT7SO07T8fsV/31MfKurhzXjtVdqXy0esLHeh+l9PYrfPitD/arWD5aPbXWzJ3MXFPdlZePOz1ZuM/v01uT6q5U62Nkv8KHn49eT1Y+PN6B3ajFY7/Ch01H+PD1kSpjfPj4KKW3X/0GH8+orYWZbkqf4wMfp1FLvl+19q+Ze+HjWUel83e7wQc+dgMfscBHLO76WJk791H3aOmjlxFHVqQb90kBelSvjxX94yO2j5lrqHs8yUcefOh8tK49eh98xPJxBegRH+euj1J+59o6Xu1jNOoen+D1rnuysxt8xCXPlf2txaPXmWdT92jpo9RJ6bOaw7yzXq+9PHm23bGcc+n/WuvA89l2AR+xWOWjFXxofLA+8LE7M8HHXuQ+evF8V97IXyx/XwE+TgIfscBHLPARi1Jav7fUzwsAAAAAAAAAAPBGvqndH+g=
+   eJzt0bENAzEAw8Bvf/+FU6s3wMQ5AhxA1Ps8z0uSJEmSJEmSJEmSJEmSJPlnnqDecJMnqDfc5AnqDTd5gnrDTZ6g3nCTJ6g3fGOTX6Lu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7u2Ppe7tj6Xu7Y+l7k2SJEmS/C8/u9Dfhw==
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
@@ -21,7 +24,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmNtuxCAMBWlfov7/D/dptQSFm2NsJ4ylUZdkF5IzhVyOlNIBAAAAAAAAAAAAAAAAAAAAAAAAAEv5W4D3OT0ZfMQCH7HARyzwEQt8xAIfscBHLPBxj5+geOfi6eNTKz6P7L9qe+eCj3PbOxd8nNveueDj3PbOxSr7GmnB56t9o9/1zsp6LljXzNg7+7ByhI9rH7W1KjX2a61h5TjlmHnbOyuv+dEri+v9ztfzsqT3RfjQ8SFZr3qZ4kNvfvQKH7Y+RtYrLWb69M7KyockJw33Pe/ld72z8pofvcKHrY+R9crK/d0xn4bnejVTO/mwygYfsoxYr3x9WN2H4uOavH4F2ZS/wQc+3sroelW2Wa/W+ejloJUNPvDxNPARC3zEQupjJZJxvHPU9DGaT57Tquq9G6j9xjtH7/mhVWVf+Oif68g2abV8zPThneObfPTWx5E+vHN8i49W36xX7Xxa27QKH+P5tLZp1a4+Uvr6kLxPXFU7Pn/kJXnfvrIkrqXv/6PQOhfv2tHHx8mRrtep/O/oM7tW9casHZt3nlqMXq/zc9Z+91TLVnJsT0fznGfmjbQ/fNzLr1b4sPUxch3Ah62PVuEDH09A8xkYH7GYvd+1/F/ZEe37K8DHm8BHLPARC3zEYvb9ovfx7sinvI8D8BERfAAAAAAAAMAu/AMZLd9G
+   eJzt2E2O4jAQQGGLXY6VRbj/kdiAlLb8U64uuxz7tfSpmYEBph52SI4QwgEAAAAAAAAAAAAAAAAAAAAAAAAACO9Jec/Fs8f11eO25P7Un73nQg96aHucX/Sgx0pKx8+rw+3UfdLHes9q9FqQOhNKf58jee3z9ljvWXn1qM0pNetUl9qsWz4LO/XI7VXx3tFjP2O/qq+Pls91r+/DOx/PJfM+BfenbtOjvYdmv5K2ocf/10ftGM5+NbZHaU6lNaNxP4+s8Z7VqB6a/cqifdyj9h3Ce1Ze66OGHmN7SPYrq9eKzx1z5/Y79fDar3I9rrB3D6/9Kl4PpessO/cYuV/1/gw8jXa/0uxd9EjTziSHHvRYlXS/Ku1f9LDtUZsDx3N60IMeM6DHXLQ9etK8jvccLXtI51NqZKV2bWD1taNdHz3mT4+5e7Q8h/ccV+pR2x/pMa5H6bnZr+jhjR5zuG49NNcTR/XY4fyj1yyte0i9wt8f7/nS49k9fk2OkN6n7r+l5+yWPUqvmXtv3vO0Ij1ev6N/Y3ntKTdbzXt7Osv/c8u60T4fPeixQg/JcYAeY3uwPujxdJbnwPSYS+v33ZGflR1Zf78CPVZCj7nQYy70mEvr9UXv97ujXw/v9wF6zIgeAAAAAIBdfABmpS9d
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
