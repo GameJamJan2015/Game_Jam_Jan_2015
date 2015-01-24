@@ -13,7 +13,7 @@
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztl8luwzAMBQXfcsv/f20RoAdDoHaKpOx5wKB2k3h5Y6rpJ6X0AQAAAAAAAAAAAAAAAAAAAAAAAAB4Gfdc/4zG+x6exC/XAvjAx5PBRyzwEQt8xAIfscDHWndWGflfxLuXCM/yju2e16V9717wgQ98xEOr91rf+Ch3X8q1YVt6rfe93l1Zz0Jk3uwjoqM3+ZCSryOl96xus16156PnWd25Xdr37srLR60nfOz3IaW1XuHDbj5Yr2L5qPVUm5mZjBzTuysrHzM9abjPz9OaSe+uvOajZ73Ch52PVk9aPiyegdMoxWK9wodOR/iw9ZEK2/iw8SGltV7dg481vjdmOso/gw/dmcBHHErJ16va+oUPXR8js8Dfc3zgAx/4wMeKj52ZOY93j5o+WulxpEWaOE8K0KP3fOzoHx+xfYwcw7vHJ/nIgw8/H7Vj954HH7F8XAF6xMdz50PK/V5r+7t99Ma7R00Hu7q15GQ3+IiL5Ob+sxSLXkeuzbtHTR9SJ9LvSg7zzlq9trJybaejec/S52pzYHltp4CPWOzyUQs+fHwwH/g4nZHg4yxyH61YPitv5BfN71eAjyeBj1jgIxb4iIWU2vct7+sFAAAAAAAAAAB4I3/xyyDy
+   eJztlsuOgzAQBC1u+f8fjlbaQ2T5CePpsamWSmtCFnAXtvJJKX0AAAAAAAAAAAAAAAAAAAAAAAAAAF6GRdRzOAmLqOdwEhZRz+EkLKKew0lYRD2Hk7CIeg4nYRH1HE7CIuo57NzdaK5/RqLuRenjtyfr8cj50rG6F3zgAx/xsOq91Tc+6t3Xci0Yl86NflfdlfdaiMybfUR09CYfpeT7SO07T8fsV/31MfKurhzXjtVdqXy0esLHeh+l9PYrfPitD/arWD5aPbXWzJ3MXFPdlZePOz1ZuM/v01uT6q5U62Nkv8KHn49eT1Y+PN6B3ajFY7/Ch01H+PD1kSpjfPj4KKW3X/0GH8+orYWZbkqf4wMfp1FLvl+19q+Ze+HjWUel83e7wQc+dgMfscBHLO76WJk791H3aOmjlxFHVqQb90kBelSvjxX94yO2j5lrqHs8yUcefOh8tK49eh98xPJxBegRH+euj1J+59o6Xu1jNOoen+D1rnuysxt8xCXPlf2txaPXmWdT92jpo9RJ6bOaw7yzXq+9PHm23bGcc+n/WuvA89l2AR+xWOWjFXxofLA+8LE7M8HHXuQ+evF8V97IXyx/XwE+TgIfscBHLPARi1Jav7fUzwsAAAAAAAAAAPBGvqndH+g=
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
@@ -21,7 +21,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmN2SgyAMRt296fu/8U4vOksZhRBDEuFk5kylP6jfKai8juN4AQAAAAAAAAAAAAAAAAAAAAAAAABsxo8B0eewEu887xQ+8LEy+MgFPnKBj1zgIxf4uJedF2XePH/0/8sztiWfn7Wjc8HHdzs6F3x8t6Nzwcd3OzoXr+xb11rr7bPPpN+Nzsp7LGSunX1kdLSTD+1zwWGwXe+n3mfZjs4qanz0yuN6v/P1vC7tfRE+bHxo5qtepviwGx+9woevD8l8ZcVIn9FZefnQ5GThvue9/m50VlHjo1f48PUhma+83N/d59OInK9GaicfXtngQ5cR81WsD6/7UHycU9avIpv6N/jAx6pI56u6zXw1z0cvB6ts8IGPp4GPXOAjF1ofM9HsJzpHSx/SfMqcZlVvbeDqN9E5Ro8Pq6r7wkf/XCXvaavlY6SP6BxX8tGbHyV9ROe4io9W38xX7Xxa71kVPuT5tN6zql19HMe/D8164qza8fmjLM16+8zyXP/Pwt3zn1k7+vg4eb+ezVPlq/SZ3ap6+7w6tug8rZBer8tztl57uspWc2xPx/KcR8aNtj983MvvqvDh60NyHcCHr49W4QMfT8DyGRgfuRi93/X8r+yI9f0V4GMl8JELfOQCH7kYXV+MPt4d+VT0cQA+MoIPAAAAAAAA2IU/6OPaMQ==
+   eJztmNtuxCAMBWlfov7/D/dptQSFm2NsJ4ylUZdkF5IzhVyOlNIBAAAAAAAAAAAAAAAAAAAAAAAAAEv5W4D3OT0ZfMQCH7HARyzwEQt8xAIfscBHLPBxj5+geOfi6eNTKz6P7L9qe+eCj3PbOxd8nNveueDj3PbOxSr7GmnB56t9o9/1zsp6LljXzNg7+7ByhI9rH7W1KjX2a61h5TjlmHnbOyuv+dEri+v9ztfzsqT3RfjQ8SFZr3qZ4kNvfvQKH7Y+RtYrLWb69M7KyockJw33Pe/ld72z8pofvcKHrY+R9crK/d0xn4bnejVTO/mwygYfsoxYr3x9WN2H4uOavH4F2ZS/wQc+3sroelW2Wa/W+ejloJUNPvDxNPARC3zEQupjJZJxvHPU9DGaT57Tquq9G6j9xjtH7/mhVWVf+Oif68g2abV8zPThneObfPTWx5E+vHN8i49W36xX7Xxa27QKH+P5tLZp1a4+Uvr6kLxPXFU7Pn/kJXnfvrIkrqXv/6PQOhfv2tHHx8mRrtep/O/oM7tW9casHZt3nlqMXq/zc9Z+91TLVnJsT0fznGfmjbQ/fNzLr1b4sPUxch3Ah62PVuEDH09A8xkYH7GYvd+1/F/ZEe37K8DHm8BHLPARC3zEYvb9ovfx7sinvI8D8BERfAAAAAAAAMAu/AMZLd9G
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
@@ -29,7 +29,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt29EKgjAUAFChfDR6iP7/UyNSKkEd5ubNnQOXRo6Exq67uDUNAAAAAAAAAAAAAOzv1Me5j/G1z+/n+rKN2yimri31ZRvmB0wzP2Lx/IjF/OAo2sztpXum9K9Jl7m9dM+U/gDA27DOB9Yzj8rwP/+/HHW6+ny9HHW6+vwlNV/Ja/Ux5kQTKV9dM/8+8N/2zldzdcalD/JLqf+GfQ3EYDzKSZkf9z4oox19AgCQ3+ce96k2Zd0T2kfjvEUsUcej1nwVdTyeasxX8AvvdgEAOIK28T43kq6p9+wBUM54P8+WzwFnRYDc5JhYjAd8G9ZC1kQAAAAAAG8PemEFmw==
+   eJzt3NEKgyAUAFCh9djYXvr/T93GirGHSLasa54Dkg+C0q2LSpYSAAAAAAAAAAAAAAAAAMTUF66v9ZnTviVD4fpanzntAWjD/egBVKJ7lsvRg4DKeY/24T7Xr8Q63fr8dyXW6dbnb7n5Sl5rj5gTjXwF1CJyvrpOhRi6qRCDeMQyTgUAAM7qkj77Akt19jVm1M9m3p/yzMUQNR6t5quo8XhpMV/BP25HDwAAADbQJ2cPIhlSu2cPgP30C9ct+N4eKE2OiUU84Ns8F2phTuQ/RgAAAABArgfSbQM2
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100">
@@ -37,7 +37,12 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2LsOgCAMBVBm+f//dXGRqIMKtOScxPhaaoi3DaUAAAAAAAAAAAAAAAAAMFo9DgCgj9rh+ur+6Z1eX8o2uwBYwJ8ZdvdcXp3zSnYBkckrIIuReWW/HfjCfAXP9Nk5vuaRPPuX9cihzSv5BQCQg3kZ3vHvxGI9APKxnzjHm57Zs89Gq2e0aN8frZ7ZanMmN30mppUzJCPrkYc8A6Bl3gUA6Mu8BQAAAACx7EkbAsg=
+   eJzt2LsOgCAMBVBm+f//dZYoAz5o8ZwFRQeSxtvGUgAAAAAAAAAAAAAAAAAAANZSX7g+u+896737F9vsA8ACnsywq315dcwr2QVEJq+ALL7Mq1rMtMA48xX06bNz3M0jefYs9cihzSv5BQCQg3kZxvh2YlEPgHz8T5xjpGdG67PRznOHesRWm5Xc9JmYVs6QjNQjD3kGQMu8CwDwLvMWAAAAAMSyAxFLAp4=
+  </data>
+ </layer>
+ <layer name="Spawnpoints" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0UENADAMxLDDsPHnWgJ9r5VmI4iUBAAAAAAAAAAAAAAAAAD+c6YDYKk7HUDLFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeKsAGhoAOQ==
   </data>
  </layer>
 </map>
