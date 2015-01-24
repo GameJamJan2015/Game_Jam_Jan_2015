@@ -76,7 +76,7 @@
   <object id="17" x="2712.12" y="5115.15"/>
   <object id="19" name="Flashes" x="2640" y="3230" width="94" height="62">
    <properties>
-    <property name="Flash" value=""/>
+    <property name="Flash" value="10"/>
    </properties>
   </object>
  </objectgroup>
