@@ -26,7 +26,7 @@
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
   <properties>
-   <property name="Collision " value="True"/>
+   <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
    eJzt29EKgjAUAFChfDR6iP7/UyNSKkEd5ubNnQOXRo6Exq67uDUNAAAAAAAAAAAAAOzv1Me5j/G1z+/n+rKN2yimri31ZRvmB0wzP2Lx/IjF/OAo2sztpXum9K9Jl7m9dM+U/gDA27DOB9Yzj8rwP/+/HHW6+ny9HHW6+vwlNV/Ja/Ux5kQTKV9dM/8+8N/2zldzdcalD/JLqf+GfQ3EYDzKSZkf9z4oox19AgCQ3+ce96k2Zd0T2kfjvEUsUcej1nwVdTyeasxX8AvvdgEAOIK28T43kq6p9+wBUM54P8+WzwFnRYDc5JhYjAd8G9ZC1kQAAAAAAG8PemEFmw==
