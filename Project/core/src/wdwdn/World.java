@@ -3,7 +3,6 @@ package wdwdn;
 import box2dLight.Light;
 import box2dLight.PointLight;
 import box2dLight.RayHandler;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Color;
@@ -22,9 +21,8 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
-
-import wdwdn.entity.Enemy;
 import wdwdn.entity.Dialog;
+import wdwdn.entity.Enemy;
 import wdwdn.entity.GameEntity;
 import wdwdn.entity.Player;
 import wdwdn.screen.GameScreen;
@@ -44,6 +42,9 @@ public class World {
     public boolean isNextLevel = false;
 
     private float stateTime;
+
+    private boolean isFlashing = false;
+    private float flashTimer;
     /**
      * BOX2D LIGHT STUFF
      */
@@ -109,11 +110,11 @@ public class World {
         player.setX(pl.getProperties().get("x", Float.class) / 64f);
         player.setY(pl.getProperties().get("y", Float.class) / 64f);
         player.update(0);
-        
-        
+
+
         // load mah girl
-        
-        entities.add(new Enemy(this, player.getPosition().x, player.getPosition().y - 3, 1, 1, 4000));
+
+        entities.add(new Enemy(this, player.getPosition().x, player.getPosition().y - 3, 1, 1, 8));
     }
 
     private void InitLights() {
@@ -135,18 +136,18 @@ public class World {
         prevRect = new Rectangle(player.getBounds());
         updatePlayer(delta);
         updateEntities(delta);
-        updateLights();
+        updateLights(delta);
         updateCollision(delta);
     }
 
     private void updateEntities(float delta) {
         for (int i = 0; i < entities.size(); i++) {
-        	GameEntity entity = entities.get(i);
-        	
+            GameEntity entity = entities.get(i);
+
             entity.update(delta);
-            
+
             if (entity.isRemoved())
-            	entities.remove(entity);
+                entities.remove(entity);
         }
     }
 
@@ -178,7 +179,7 @@ public class World {
 
     private boolean isLightning = false;
 
-    private void updateLights() {
+    private void updateLights(float delta) {
         rayHandler.update();
 
         if (!isLightning) {
@@ -197,6 +198,23 @@ public class World {
                 ambLight.setColor(1, 1, 1, .06f);
             }
         }
+
+        if (isFlashing) {
+            flashTimer += delta;
+
+            if (MathUtils.random(0, 5) < 1)
+                ambLight.setColor(1, 1, 1, MathUtils.randomBoolean() ? 0 : .5f);
+
+            if (flashTimer > 12) {
+                isFlashing = false;
+                ambLight.setColor(1, 1, 1, .06f);
+            }
+        }
+    }
+
+    private void startFlashing() {
+        isFlashing = true;
+        flashTimer = 0;
     }
 
     private void updateCollision(float delta) {
@@ -246,9 +264,9 @@ public class World {
                 for (RectangleMapObject rectangleObject : objects.getByType(RectangleMapObject.class)) {
 
                     Rectangle rectangle = rectangleObject.getRectangle(); // map.getProperties().get("height", Integer.class) -
-                    rectangle = new Rectangle(rectangle.x / 64f, rectangle.y / 64f, rectangle.width / 64f, rectangle.height/64f);
+                    rectangle = new Rectangle(rectangle.x / 64f, rectangle.y / 64f, rectangle.width / 64f, rectangle.height / 64f);
 
-                    if (Intersector.overlaps(rectangle, player.getBounds())){
+                    if (Intersector.overlaps(rectangle, player.getBounds())) {
                         // collision happened
                         if (rectangleObject.getName().equals("note1")) {
 
@@ -258,10 +276,15 @@ public class World {
                             isNextLevel = true;
                         }
 
+                        if (rectangleObject.getProperties().containsKey("Flash")) {
+                            startFlashing();
+                            rectangleObject.getProperties().remove("Flash");
+                        }
+
                         if (rectangleObject.getProperties().containsKey("Dialog")) {
                             String d = rectangleObject.getProperties().get("Dialog", String.class).trim();
                             String[] ds = d.split(",");
-                            for(int i = 0; i < ds.length; i++) {
+                            for (int i = 0; i < ds.length; i++) {
                                 ds[i] = Dialogs.Texts[Integer.parseInt(ds[i])];
                             }
                             GameScreen.dialog = new Dialog(ds);
