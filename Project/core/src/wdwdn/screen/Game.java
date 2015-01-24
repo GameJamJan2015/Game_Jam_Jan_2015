@@ -53,10 +53,9 @@ public abstract class Game implements ApplicationListener {
             accu += delta;
             if (accu >= dt) {
                 screen.update(delta);
-
+                screen.present(dt);
                 accu -= dt;
             }
-            screen.present(dt);
         }
     }
 

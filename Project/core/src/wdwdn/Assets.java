@@ -18,6 +18,7 @@ public class Assets {
     public static AssetManager manager;
 
     public static TextureRegion region;
+    public static TextureRegion pixel;
 
     public static BitmapFont font;
 
@@ -68,8 +69,8 @@ public class Assets {
     }
 
     private static void loadRegions(Texture item) {
-        region = new TextureRegion(item, 0, 0, 256, 256);
-
+        region = new TextureRegion(item, 0, 0, 64, 64);
+        pixel = new TextureRegion(item, 30, 30, 4, 4);
     }
 
     public static void playSound (Sound sound) {

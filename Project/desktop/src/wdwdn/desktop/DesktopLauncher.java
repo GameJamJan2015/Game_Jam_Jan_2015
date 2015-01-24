@@ -8,7 +8,6 @@ public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.vSyncEnabled = true;
-		config.samples = 4;
 		new LwjglApplication(new WDWDNStarter(), config);
 	}
 }

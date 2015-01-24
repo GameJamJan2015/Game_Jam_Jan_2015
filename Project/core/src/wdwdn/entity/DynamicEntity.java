@@ -15,9 +15,18 @@ public class DynamicEntity extends GameEntity {
 
     @Override
     public void update(float delta) {
-        super.update(delta);
-
         position.x += velocity.x * delta;
-        position.y += velocity.x * delta;
+        position.y += velocity.y * delta;
+
+        super.update(delta);
+    }
+
+    public void setVelocity(float x, float y) {
+        this.velocity.x = x;
+        this.velocity.y = y;
+    }
+
+    public Vector2 getVelocity() {
+        return velocity;
     }
 }

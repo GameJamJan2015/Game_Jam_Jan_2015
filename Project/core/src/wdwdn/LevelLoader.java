@@ -1,5 +1,6 @@
 package wdwdn;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 
@@ -8,6 +9,10 @@ import com.badlogic.gdx.maps.tiled.TmxMapLoader;
  */
 public class LevelLoader {
     public static TiledMap LoadMap() {
-        return new TmxMapLoader().load("graphics/level1alpha2.tmx");
+        TmxMapLoader.Parameters parms = new TmxMapLoader.Parameters();
+        parms.textureMagFilter = Texture.TextureFilter.Nearest;
+        parms.textureMinFilter = Texture.TextureFilter.Nearest;
+
+        return new TmxMapLoader().load("graphics/level1alpha2.tmx", parms);
     }
 }

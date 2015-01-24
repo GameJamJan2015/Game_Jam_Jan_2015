@@ -6,6 +6,7 @@ package wdwdn.entity;
 public class Player extends DynamicEntity {
     public Player(float x, float y) {
         super(x, y, 1, 1);
+        bounds.width /=2;
     }
 
     @Override

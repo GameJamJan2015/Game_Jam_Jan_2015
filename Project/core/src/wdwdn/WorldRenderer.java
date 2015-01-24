@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.maps.tiled.TiledMapRenderer;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import wdwdn.entity.GameEntity;
 
 /**
  * Created by Simon on 1/23/2015.
@@ -38,6 +39,11 @@ public class WorldRenderer {
 
         tiledMapRenderer.setView(camera);
         tiledMapRenderer.render();
+
+        batch.setProjectionMatrix(camera.combined);
+        batch.begin();
+        world.getPlayer().draw(batch);
+        batch.end();
 
         world.getRayHandler().setCombinedMatrix(camera);
         world.getRayHandler().render();
