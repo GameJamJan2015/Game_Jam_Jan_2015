@@ -13,7 +13,7 @@
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt1kFugzAURVGU/S+6g0yq1BDbteGBz5FQSRMB/RfcbBsAAAAAAAAAAPAqbFxHjyx6sAL3dobSelO7MZ4eWfTIokcWPbLokUWPfOZd5/ecRu/XvF96vTI9suiRRY88rwn7pfdqP7uK2u+cV24rOVpHUrbV1cxhxBpmvfqr516dub/3ehW189bjOt/moMc81qssPevV6HNzbNacWrp7PurXqxHn2nb29ThvvWptv2KPkjPWKz3Krlqv9CizXuWzXl2nZza9s9LjOz3yfc5h1Fz0+K7lWfD/fD49suiRRY8sZ/ZouR7KahqN2raO8zxNz/MxY/56vKX2aDnGk1zdo+V69Jjb4+jYted5mrv3eFqTu/dYweffuvd6do8VzZrtmduTXD1LPfa9Pn4efe7sudZe292VZtJ7/42+X0de213M6DFqfdFj/3c9x9Kj3dnrlR7HZvXwfPTR47n0yGJGWUZ/v+J/9MiiRxY9suiRzfwBAAAAIMsPb6sLXQ==
+   eJzt1uFugyAUgFHjE2zv/7JLsz/GoQIDvMo5CZldm+ruV1mXBQAAAAAAAAAAWBOL++gRix7MwGc7htR+k7toT49Y9IhFj1j0iEWPWPSIz7zzbOfU+jjn+dTjmekRix6x6BHP2uE49Vzua2eR+53zzjWTs30kyppdzhxa7GH2q79qPqs9j48ezyJ33nrc52oOevRjv4qlZr9qfW7O9ZpTSXf3R/5+1eJcy8GxHuP2q9L2M/ZIGbFf6ZF2136lR5r9Kj771Thfm/VRM5vaWelxTY/49nNoNRc9rpXcC/6f96dHLHrEokcsI3uUXA9pOY1araXiPG9Tc3/0mL8ev6L2KHmPN7m7R8n16NG3x9l7557nbZ7e421Nnt5jBvu/9ehx7x4z+N6sj16zHbmeTI/nWHc/z143eq651/Z0qZnUfv5af15bXttT9OjRan/R4/h3Ne+lR7nR+5Ue53r1cH/U0eO99IjFjGJp/f2K/9EjFj1i0SMWPWIzfwAAAACI5QdANAvz
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
@@ -29,7 +29,15 @@
    <property name="Collision " value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt3NEKgyAUANBg29N62Pb/HzvGjEnMGZGp6xy4JCkYibd80GEAAAAAAAAAAAAAgPpOIc4h5nXx/V9t2cYtxD1Eqi7Xlm2YH5BmfrTF96Mt5gf/4lK4nOtzSfsjuRYu5/pc0h4A+Jj+84H1zKN9eM/9K7FOtz5fr8Q63fr8bWm+kteA2uQroBfyFQAAsKfxSwBAzmvPS7zfwh6YuoxHW4wHAAAAAFDbmLgC9EDOasuj9gNAY6azQuMzRAEAAAAAju4J4XEErQ==
+   eJzt29EKgjAUAFChfKqH7P8/NiIlkcxRbl7dOTAcOjAbu3rZ1jQAAAAAAAAAAAAAsL1TX859mV4bn//WlnXc+tL1Ze7aUlvWYXzAPOMjFu+PWIwPjqLNXF+6Z0r7mlwy15fumdIeAHgbvvOB3xlHZfif9y9Hni4//12OPF1+/pIar8S1+uhzookUr8ZzhABTW8erb3mG9QzlpOR/w7oGYtAf5aSMD/GqrHZyBGBfrh8KEN94jftcnbK6hPqRPJ9rvN/iqM+5F5H7o8Z4Fbk/nmqLV/Avc7sAABxB25jPjeTS1Lv3ACjnOnNcg70iQG7WrsRy3/oHQDDD3JE5JAAAAACAtwcukgYm
+  </data>
+ </layer>
+ <layer name="Dörrar" width="100" height="100">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2MsKgzAQBdBsCg101f//2G7MoqGKxbwczgHxtTBh8GZISgAAAAAAAAAAAAAAAACMlrcDAOgjd7j+dX/0zlqf0nP2ACCAlhm291xefeeV7AJWJq+AuxiZV/bbgSv0V3DMOjvH1TySZ22pxz3UeSW/AIB/6B3m0S+38djOr6mjoBhRD//OeaUe747fUI/zRtQD4Az7iXNEWDMjzKGIMJcIc9iTq/NKVh7bqqwzQCTyDICafhcAoC/9FgAAAACs5QOiewKG
   </data>
  </layer>
 </map>
