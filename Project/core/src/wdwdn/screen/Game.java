@@ -45,7 +45,7 @@ public abstract class Game implements ApplicationListener {
     public void render() {
         if (screen != null) {
             Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-            Gdx.gl.glClearColor(1, 1, 1, 1);
+            Gdx.gl.glClearColor(1, 1, 0, 1);
             delta = Gdx.graphics.getDeltaTime();
 
             if (delta > 0.08f) delta = 0.08f; // note: max frame time to avoid spiral of death

@@ -27,15 +27,12 @@ public class GameScreen extends Screen {
 
     @Override
     public void present(float delta) {
-
+        getBatch().setProjectionMatrix(renderer.getCamera().combined);
         getBatch().begin();
-        getBatch().draw(Assets.region, 0,0,  720,480);
+        getBatch().draw(Assets.region, 0,0,  10,10);
         getBatch().end();
 
         renderer.render(getBatch());
-
-
-
     }
 
     @Override

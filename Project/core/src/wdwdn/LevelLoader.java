@@ -8,6 +8,6 @@ import com.badlogic.gdx.maps.tiled.TmxMapLoader;
  */
 public class LevelLoader {
     public static TiledMap LoadMap() {
-        return new TmxMapLoader().load("maps/level.tmx");
+        return new TmxMapLoader().load("graphics/level1alpha2.tmx");
     }
 }
