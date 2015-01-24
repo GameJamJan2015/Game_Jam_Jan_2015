@@ -13,6 +13,6 @@ public class Player extends DynamicEntity {
     public void update(float delta) {
         super.update(delta);
 
-        sprite.setFlip(getVelocity().x > 0, false);
+        sprite.setFlip(getVelocity().x < 0, false);
     }
 }

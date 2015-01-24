@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/core/src/wdwdn/World.java" line="97" />
-    <bookmark url="file://$PROJECT_DIR$/core/src/wdwdn/World.java" line="122" />
+    <bookmark url="file://$PROJECT_DIR$/core/src/wdwdn/World.java" line="107" />
+    <bookmark url="file://$PROJECT_DIR$/core/src/wdwdn/World.java" line="132" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33df2f70-fb71-44ab-8ea5-e8466b59f7fa" name="Default" comment="" />
@@ -77,19 +77,23 @@
       <file leaf-file-name="World.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49903288" vertical-offset="2592" max-vertical-offset="8066">
-              <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.6187259" vertical-offset="1875" max-vertical-offset="10434">
+              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
               <folding>
-                <element signature="e#1292#1427#0" expanded="true" />
-                <element signature="e#1426#1427#0" expanded="true" />
-                <element signature="e#6526#6527#0" expanded="true" />
-                <element signature="e#6559#6560#0" expanded="true" />
-                <element signature="e#6591#6592#0" expanded="true" />
-                <element signature="e#6617#6618#0" expanded="true" />
-                <element signature="e#6654#6655#0" expanded="true" />
-                <element signature="e#6683#6684#0" expanded="true" />
-                <element signature="e#6733#6734#0" expanded="true" />
-                <element signature="e#6764#6765#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#911#923#0" expanded="true" />
+                <element signature="e#1199#1206#0" expanded="true" />
+                <element signature="e#1278#1289#0" expanded="true" />
+                <element signature="e#1332#1467#0" expanded="true" />
+                <element signature="e#1466#1467#0" expanded="true" />
+                <element signature="e#8158#8159#0" expanded="true" />
+                <element signature="e#8191#8192#0" expanded="true" />
+                <element signature="e#8223#8224#0" expanded="true" />
+                <element signature="e#8249#8250#0" expanded="true" />
+                <element signature="e#8286#8287#0" expanded="true" />
+                <element signature="e#8315#8316#0" expanded="true" />
+                <element signature="e#8365#8366#0" expanded="true" />
+                <element signature="e#8396#8397#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +114,7 @@
       <file leaf-file-name="DynamicEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/DynamicEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1332">
+            <state vertical-scroll-proportion="0.0" vertical-offset="296" max-vertical-offset="1332">
               <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding />
             </state>
@@ -120,7 +124,7 @@
       <file leaf-file-name="Assets.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1889" max-vertical-offset="3626">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2222" max-vertical-offset="3626">
               <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
               <folding />
             </state>
@@ -131,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="888">
-              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -147,13 +151,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LevelLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/wdwdn/LevelLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="888">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GameEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/GameEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="2849">
-              <caret line="18" column="11" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1702" max-vertical-offset="2923">
+              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2051#2052#0" expanded="true" />
+                <element signature="e#2081#2082#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,7 +199,6 @@
         <option value="$PROJECT_DIR$/core/src/box2dLight/RayHandler.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/SplashScreen.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/WDWDNStarter.java" />
-        <option value="$PROJECT_DIR$/core/src/wdwdn/LevelLoader.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/WorldRenderer.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/Game.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/GameScreen.java" />
@@ -189,8 +206,9 @@
         <option value="$PROJECT_DIR$/core/src/wdwdn/Assets.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/entity/DynamicEntity.java" />
         <option value="$PROJECT_DIR$/core/assets/graphics/level1alpha2.tmx" />
-        <option value="$PROJECT_DIR$/core/src/wdwdn/entity/GameEntity.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/entity/Player.java" />
+        <option value="$PROJECT_DIR$/core/src/wdwdn/LevelLoader.java" />
+        <option value="$PROJECT_DIR$/core/src/wdwdn/entity/GameEntity.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/World.java" />
       </list>
     </option>
@@ -236,6 +254,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -438,8 +458,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -688,7 +706,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28249338" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28116712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -723,11 +741,12 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="Math.abs(player.getPosition().y - (tile.getY() + tile.getHeight()/2))" language="JAVA" custom="" />
+        <watch expression="((TiledMapTileLayer) map.getLayers().get(&quot;spawn&quot;)).getObjects()" language="JAVA" custom="" />
+        <watch expression="pl.getProperties().get(&quot;x&quot;,Float.class) / 64f" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
@@ -736,39 +755,25 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/box2dLight/PointLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1469" max-vertical-offset="3589">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/LevelLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="185" max-vertical-offset="481">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/World.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="2923">
           <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
           <folding>
-            <element signature="e#1292#1427#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#6526#6527#0" expanded="true" />
-            <element signature="e#6559#6560#0" expanded="true" />
-            <element signature="e#6591#6592#0" expanded="true" />
-            <element signature="e#6617#6618#0" expanded="true" />
-            <element signature="e#6654#6655#0" expanded="true" />
-            <element signature="e#6683#6684#0" expanded="true" />
-            <element signature="e#6733#6734#0" expanded="true" />
-            <element signature="e#6764#6765#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#911#923#0" expanded="true" />
+            <element signature="e#1199#1206#0" expanded="true" />
+            <element signature="e#1278#1289#0" expanded="true" />
+            <element signature="e#1332#1467#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#8158#8159#0" expanded="true" />
+            <element signature="e#8191#8192#0" expanded="true" />
+            <element signature="e#8223#8224#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8286#8287#0" expanded="true" />
+            <element signature="e#8315#8316#0" expanded="true" />
+            <element signature="e#8365#8366#0" expanded="true" />
+            <element signature="e#8396#8397#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -850,8 +855,6 @@
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1042,16 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/LevelLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5367505" vertical-offset="0" max-vertical-offset="1034">
-          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/Screen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326886" vertical-offset="63" max-vertical-offset="1554">
@@ -1063,14 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33299494" vertical-offset="1559" max-vertical-offset="3256">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.5.3/dc9bac8b2438e9d9620bbd14cd46223e8bf7cf9c/gdx-backend-lwjgl-1.5.3-sources.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326886" vertical-offset="6094" max-vertical-offset="12839">
-          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1102,26 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/GameScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8336557" vertical-offset="322" max-vertical-offset="2331">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1889" max-vertical-offset="3626">
-          <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/WorldRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="2183">
@@ -1144,6 +1109,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10871694" vertical-offset="0" max-vertical-offset="1998">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/box2dLight/PointLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1210" max-vertical-offset="3589">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/assets/graphics/world1beta1.tmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/LevelLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="888">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.5.3/dc9bac8b2438e9d9620bbd14cd46223e8bf7cf9c/gdx-backend-lwjgl-1.5.3-sources.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3783784" vertical-offset="1024" max-vertical-offset="12839">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="888">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1158,45 +1164,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/GameEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="2849">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1702" max-vertical-offset="2923">
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3330116" vertical-offset="358" max-vertical-offset="2257">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/Player.java">
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Assets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="888">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/box2dLight/PointLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1210" max-vertical-offset="3589">
-          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2222" max-vertical-offset="3626">
+          <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49903288" vertical-offset="2592" max-vertical-offset="8066">
-          <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.6187259" vertical-offset="1875" max-vertical-offset="10434">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
           <folding>
-            <element signature="e#1292#1427#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#6526#6527#0" expanded="true" />
-            <element signature="e#6559#6560#0" expanded="true" />
-            <element signature="e#6591#6592#0" expanded="true" />
-            <element signature="e#6617#6618#0" expanded="true" />
-            <element signature="e#6654#6655#0" expanded="true" />
-            <element signature="e#6683#6684#0" expanded="true" />
-            <element signature="e#6733#6734#0" expanded="true" />
-            <element signature="e#6764#6765#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#911#923#0" expanded="true" />
+            <element signature="e#1199#1206#0" expanded="true" />
+            <element signature="e#1278#1289#0" expanded="true" />
+            <element signature="e#1332#1467#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#8158#8159#0" expanded="true" />
+            <element signature="e#8191#8192#0" expanded="true" />
+            <element signature="e#8223#8224#0" expanded="true" />
+            <element signature="e#8249#8250#0" expanded="true" />
+            <element signature="e#8286#8287#0" expanded="true" />
+            <element signature="e#8315#8316#0" expanded="true" />
+            <element signature="e#8365#8366#0" expanded="true" />
+            <element signature="e#8396#8397#0" expanded="true" />
           </folding>
         </state>
       </provider>

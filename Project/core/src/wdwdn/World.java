@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapLayers;
+import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Intersector;
@@ -51,11 +52,20 @@ public class World {
     public World(TiledMap map) {
         this.map = map;
         // Init
-        player = new Player(51, 50);
+        player = new Player(0,0);
         player.addAnimation("idle", new Animation(1, Assets.region));
         player.setAnimation("idle");
 
         InitLights();
+        LoadWorld();
+    }
+
+    private void LoadWorld() {
+        MapObject pl = ((MapLayer) map.getLayers().get("spawn")).getObjects().get("player");
+
+        player.setX(pl.getProperties().get("x",Float.class) / 64f);
+        player.setY(pl.getProperties().get("y",Float.class) / 64f);
+        player.update(0);
     }
 
     private void InitLights() {
@@ -133,6 +143,11 @@ public class World {
     private void updateCollision(float delta) {
         MapLayers layers = map.getLayers();
 
+
+        triggerCollision((int) player.getBounds().x, (int) (player.getBounds().y),
+                (int) (player.getBounds().x + player.getBounds().width), (int) (player.getBounds().y + player.getBounds().height));
+
+
         getTiles((int) player.getBounds().x, (int) (player.getBounds().y),
                 (int) (player.getBounds().x + player.getBounds().width), (int) (player.getBounds().y + player.getBounds().height), tiles);
 
@@ -153,6 +168,31 @@ public class World {
                // break;
             }
         }
+
+    }
+
+    private void triggerCollision(int startX, int startY, int endX, int endY) {
+        MapLayers layers = map.getLayers();
+        for (MapLayer layer : layers) {
+            if (layer.getProperties().containsKey("Collision")) {
+                if (layer.getProperties().get("Collision").toString().toLowerCase().equals("false"))
+                    continue;
+            }
+            if (layer instanceof TiledMapTileLayer == false) {
+                continue;
+            }
+
+            for (int y = startY; y <= endY; y++) {
+                for (int x = startX; x <= endX; x++) {
+                    TiledMapTileLayer.Cell cell = ((TiledMapTileLayer) layer).getCell(x, y);
+                    if (cell != null) {
+                        if (cell.getTile().getId() == 11) {
+                            ((TiledMapTileLayer) layer).setCell(x, y, null);
+                        }
+                    }
+                }
+            }
+        }
     }
 
     private void getTiles(int startX, int startY, int endX, int endY, Array<Rectangle> tiles) {
@@ -167,6 +207,10 @@ public class World {
                 if (layer.getProperties().get("Collision").toString().toLowerCase().equals("false"))
                     continue;
             }
+            if (layer instanceof TiledMapTileLayer == false) {
+                continue;
+            }
+
             for (int y = startY; y <= endY; y++) {
                 for (int x = startX; x <= endX; x++) {
                     TiledMapTileLayer.Cell cell = ((TiledMapTileLayer) layer).getCell(x, y);
@@ -193,10 +237,10 @@ public class World {
 
 
         // ambient
-        Light amb = new PointLight(rayHandler, 128, new Color(1,1,1,.04f), 8, 0, 0);
+        Light amb = new PointLight(rayHandler, 128, new Color(1,1,1, .033f), 5.5f, 0, 0);
 
         amb.setSoft(true);
-        amb.setSoftnessLength(10);
+        amb.setSoftnessLength(12);
         amb.attachToBody(player);
         lights.add(amb);
         ambLight = amb;
