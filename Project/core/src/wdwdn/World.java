@@ -3,6 +3,7 @@ package wdwdn;
 import box2dLight.Light;
 import box2dLight.PointLight;
 import box2dLight.RayHandler;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Color;
@@ -21,10 +22,12 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
+
 import wdwdn.entity.Dialog;
 import wdwdn.entity.Enemy;
 import wdwdn.entity.GameEntity;
 import wdwdn.entity.Player;
+import wdwdn.entity.ScaryGirl;
 import wdwdn.screen.GameScreen;
 
 import java.util.ArrayList;
@@ -114,7 +117,7 @@ public class World {
 
         // load mah girl
 
-        entities.add(new Enemy(this, player.getPosition().x, player.getPosition().y - 3, 1, 1, 8));
+        entities.add(new ScaryGirl(this, player.getPosition().x, player.getPosition().y - 3, 1, 1, 8));
     }
 
     private void InitLights() {
@@ -170,7 +173,7 @@ public class World {
 
         player.update(delta);
 
-        if (Gdx.input.isKeyPressed(Input.Keys.SPACE) || GameScreen.dialog != null) {
+        if ((Gdx.input.isKeyPressed(Input.Keys.SPACE) || GameScreen.dialog != null) && !isFlashing) {
             playerLight.setDistance(3);
         } else {
             playerLight.setDistance(0);
@@ -178,18 +181,17 @@ public class World {
     }
 
     private boolean isLightning = false;
+	private float flashMaxTime;
 
     private void updateLights(float delta) {
         rayHandler.update();
 
         if (!isLightning) {
-            if (MathUtils.random(0, 1000) <= 1) {
+            if (MathUtils.random(0, 1000) <= 1 && !isFlashing) {
                 isLightning = true;
                 stateTime = 0;
             }
-        }
-
-        if (isLightning) {
+        }else {
             float a = (float) Math.sin(stateTime * 5.5f) * .35f;
             ambLight.setColor(1, 1, 0, a);
             //rayHandler.setAmbientLight(1, 1, 0, a);
@@ -205,16 +207,17 @@ public class World {
             if (MathUtils.random(0, 5) < 1)
                 ambLight.setColor(1, 1, 1, MathUtils.randomBoolean() ? 0 : .5f);
 
-            if (flashTimer > 12) {
+            if (flashTimer >= flashMaxTime) {
                 isFlashing = false;
                 ambLight.setColor(1, 1, 1, .06f);
             }
         }
     }
 
-    private void startFlashing() {
+    public void startFlashing(float time) {
         isFlashing = true;
         flashTimer = 0;
+        flashMaxTime = time;
     }
 
     private void updateCollision(float delta) {
@@ -277,7 +280,7 @@ public class World {
                         }
 
                         if (rectangleObject.getProperties().containsKey("Flash")) {
-                            startFlashing();
+                            startFlashing(rectangleObject.getProperties().get("Flash", Float.class));
                             rectangleObject.getProperties().remove("Flash");
                         }
 
