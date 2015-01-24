@@ -49,11 +49,6 @@
    eJzt2LsOgCAMBVBm+f//dZYoAz5o8ZwFRQeSxtvGUgAAAAAAAAAAAAAAAAAAANZSX7g+u+896737F9vsA8ACnsywq315dcwr2QVEJq+ALL7Mq1rMtMA48xX06bNz3M0jefYs9cihzSv5BQCQg3kZxvh2YlEPgHz8T5xjpGdG67PRznOHesRWm5Xc9JmYVs6QjNQjD3kGQMu8CwDwLvMWAAAAAMSyAxFLAp4=
   </data>
  </layer>
- <layer name="objekt" width="100" height="100">
-  <data encoding="base64" compression="zlib">
-   eJzt0csJwCAQQEFrSNoyH/Ppv5VcFwlCTgqZOT1h0QVTAgAAAAAAAAAAAAAAAID/mXovAIOaey/AK//yTQ69hF5Db6H30CX0Ud17Nt68qvPdmAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYHwPHHwDXg==
-  </data>
- </layer>
  <objectgroup name="spawn">
   <object id="3" name="player" x="2812" y="2248" width="60" height="44"/>
  </objectgroup>
