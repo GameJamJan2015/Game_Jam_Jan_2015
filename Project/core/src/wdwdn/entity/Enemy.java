@@ -7,10 +7,11 @@ import wdwdn.Assets;
 import wdwdn.World;
 
 
-public class Enemy extends DynamicEntity {
+public abstract class Enemy extends DynamicEntity {
 
-	private World world;
+	protected World world;
 	public float radius;
+	protected boolean stopMoving;
 	
 	public Enemy(World world, float x, float y, float width, float height, float radius) {
 		super(x, y, width, height);
@@ -30,14 +31,15 @@ public class Enemy extends DynamicEntity {
 			Vector2 differenceToPlayer = world.getPlayer().getPosition().cpy().sub(position);
 			differenceToPlayer.nor();
 			
-			position.add(differenceToPlayer.scl(delta * 1));
+			if(stopMoving == false)
+				position.add(differenceToPlayer.scl(delta * 1));
 			
-			if (range < 1) {
-				remove();
-			}
+			updateRange(range);
 		}
 	}
 
+	protected abstract void updateRange(float range);
+	
 	public float getRange(Vector2 pos){
 		return pos.cpy().sub(position).len();
 	}
