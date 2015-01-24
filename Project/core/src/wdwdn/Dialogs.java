@@ -18,7 +18,8 @@ public class Dialogs {
 			"... The board of Directors has therefore decided that patient 13 should also receive antidepressants as such to help coping with ...",
 			"It's okay",
 			"What? A wall?!",
-			"The Layout is changing, but how?"
+			"The Layout is changing, but how?",
+			"Please just let me die..."
 
 	}; 
 }
