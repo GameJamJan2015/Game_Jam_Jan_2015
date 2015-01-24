@@ -13,6 +13,6 @@ public class LevelLoader {
         parms.textureMagFilter = Texture.TextureFilter.Nearest;
         parms.textureMinFilter = Texture.TextureFilter.Nearest;
 
-        return new TmxMapLoader().load("graphics/world3beta2.tmx", parms);
+        return new TmxMapLoader().load("graphics/world1beta2.tmx", parms);
     }
 }

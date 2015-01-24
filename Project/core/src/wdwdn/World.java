@@ -356,7 +356,7 @@ public class World {
 
 
         // ambient
-        Light amb = new PointLight(rayHandler, 128, new Color(1, 1, 1, .033f), 5.5f, 0, 0);
+        Light amb = new PointLight(rayHandler, 128, new Color(1, 1, 1, .06f), 5.5f, 0, 0);
 
         amb.setSoft(true);
         amb.setSoftnessLength(12);
