@@ -11,6 +11,8 @@ import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapLayers;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.math.Intersector;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
@@ -28,6 +30,7 @@ public class World {
     private Player player;
     private TiledMap map;
 
+    private float stateTime;
     /**
      * BOX2D LIGHT STUFF
      */
@@ -46,7 +49,7 @@ public class World {
     public World(TiledMap map) {
         this.map = map;
         // Init
-        player = new Player(50, 50);
+        player = new Player(51, 50);
         player.addAnimation("idle", new Animation(1, Assets.region));
         player.setAnimation("idle");
 
@@ -65,7 +68,10 @@ public class World {
         initPointLights();
         /** BOX2D LIGHT STUFF END */}
 
+    Rectangle prevRect;
     public void update(float delta) {
+        stateTime += delta;
+        prevRect = new Rectangle(player.getBounds());
         updatePlayer(delta);
         updateEntities(delta);
         updateLights();
@@ -81,21 +87,38 @@ public class World {
     public void updatePlayer(float delta) {
         Vector2 vel = new Vector2();
         if (Gdx.input.isKeyPressed(Input.Keys.LEFT))
-            vel.x = -1;
+            vel.x = -2;
         if (Gdx.input.isKeyPressed(Input.Keys.RIGHT))
-            vel.x = 1;
+            vel.x = 2;
         if (Gdx.input.isKeyPressed(Input.Keys.UP))
-            vel.y = 1;
+            vel.y = 2;
         if (Gdx.input.isKeyPressed(Input.Keys.DOWN))
-            vel.y = -1;
+            vel.y = -2;
 
         player.setVelocity(vel.x, vel.y);
 
         player.update(delta);
     }
 
+    private boolean isLightning = false;
     private void updateLights() {
         rayHandler.update();
+
+        if (!isLightning) {
+            if (MathUtils.random(0, 1000) <= 1) {
+                isLightning = true;
+                stateTime = 0;
+            }
+        }
+
+        if (isLightning) {
+            float a = (float) Math.sin(stateTime * 5.5f)*.35f;
+            rayHandler.setAmbientLight(1, 1, 0, a);
+            if (a < -.01f) {
+                isLightning = false;
+                rayHandler.setAmbientLight(1, 1, 1, .02f);
+            }
+        }
     }
 
     private void updateCollision(float delta) {
@@ -103,27 +126,22 @@ public class World {
 
         getTiles((int) player.getBounds().x, (int) (player.getBounds().y),
                 (int) (player.getBounds().x + player.getBounds().width), (int) (player.getBounds().y + player.getBounds().height), tiles);
+
         for (Rectangle tile : tiles) {
             if (player.getBounds().overlaps(tile)) {
-                float dx = player.getPosition().x - (tile.x + tile.width / 2);
-                float dy = player.getPosition().y - (tile.y + tile.height / 2);
-                if (Math.abs(dx) > Math.abs(dy)) {
-                    boolean left = (dx < 0);
-                    if (left && player.getVelocity().x > 0) {
-                        player.getPosition().x = tile.x - player.getBounds().width / 2;
-                    } else {
-                        player.getPosition().x = tile.x + tile.width + player.getBounds().width / 2;
-                    }
-                } else {
-                    boolean top = (dy < 0);
-                    if (top && player.getVelocity().y < 0) {
-                        player.getPosition().y = tile.y - player.getBounds().height / 2;
-                        //
-                    } else {
-                        player.getPosition().y = tile.y + tile.height + player.getBounds().height / 2;
-                    }
-                    //break;
+
+                if (Math.abs(player.getPosition().x - (tile.getX() + tile.getWidth()/2)) > .1f) {
+                    player.setX(prevRect.x + player.getBounds().width / 2);
+                    prevRect.x = player.getBounds().x;
                 }
+
+                if (Math.abs(player.getPosition().y - (tile.getY() + tile.getHeight()/2)) > .1f) {
+                    player.setY(prevRect.y + player.getBounds().height / 2);
+                    prevRect.y = player.getBounds().y;
+                }
+
+                player.update(0);
+               // break;
             }
         }
     }
@@ -156,7 +174,7 @@ public class World {
     // Box2d lights
     void initPointLights() {
         clearLights();
-        Light light = new PointLight(rayHandler, 32, Color.BLUE, 3, 0, 0);
+        Light light = new PointLight(rayHandler, 32, Color.WHITE, 3, 0, 0);
 
         light.setSoft(true);
         light.setSoftnessLength(10);

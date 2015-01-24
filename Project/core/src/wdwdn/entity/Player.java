@@ -12,5 +12,7 @@ public class Player extends DynamicEntity {
     @Override
     public void update(float delta) {
         super.update(delta);
+
+        sprite.setFlip(getVelocity().x > 0, false);
     }
 }
