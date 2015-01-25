@@ -25,17 +25,15 @@ public class Player extends DynamicEntity {
         super.update(delta);
 
         if(world.playerLight.getDistance() > .08f && GameScreen.dialog == null){
-        	if (lifeBattery > 10)
-        		addLifeBattery(-delta * 12);
+        	if (lifeBattery > 15)
+        		addLifeBattery(-delta * 7);
         	
-        	if (lifeBattery < 10)
+        	if (lifeBattery < 15)
         		recharge = true;
         	
         } else {
-        	addLifeBattery( delta * 1.5f);
+        	addLifeBattery( delta * 2.2f);
         }
-        
-        Gdx.app.log("", "suuppp: " + lifeBattery);
         
         sprite.setFlip(getVelocity().x < 0, false);
     }
@@ -47,7 +45,7 @@ public class Player extends DynamicEntity {
     public void addLifeBattery(float value) {
 		this.lifeBattery += value;
 		
-		if (this.lifeBattery > 20) {
+		if (this.lifeBattery > 25) {
 			recharge = false;
 		}
 		

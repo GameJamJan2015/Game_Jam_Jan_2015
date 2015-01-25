@@ -10,6 +10,7 @@ public class DesktopLauncher {
 		config.vSyncEnabled = true;
 		config.width = 1280;
 		config.height = 720;
+		config.title = "The Asylum";
 		new LwjglApplication(new WDWDNStarter(), config);
 	}
 }

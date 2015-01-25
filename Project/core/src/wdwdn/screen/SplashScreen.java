@@ -13,6 +13,7 @@ public class SplashScreen extends Screen {
 	public void update(float delta) {
 		if (Assets.manager.update()) {
 			Assets.loadFinished();
+			Assets.playMusic();
 			setScreen(new GameScreen(1));
 		}
 	}

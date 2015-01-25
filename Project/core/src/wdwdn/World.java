@@ -158,13 +158,13 @@ public class World {
 
     public void updatePlayer(float delta) {
         Vector2 vel = new Vector2();
-        if (Gdx.input.isKeyPressed(Input.Keys.LEFT))
+        if (Gdx.input.isKeyPressed(Input.Keys.LEFT) ||  Gdx.input.isKeyPressed(Input.Keys.A))
             vel.x = -1;
-        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT))
+        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT) ||  Gdx.input.isKeyPressed(Input.Keys.D))
             vel.x = 1;
-        if (Gdx.input.isKeyPressed(Input.Keys.UP))
+        if (Gdx.input.isKeyPressed(Input.Keys.UP) ||  Gdx.input.isKeyPressed(Input.Keys.W))
             vel.y = 1;
-        if (Gdx.input.isKeyPressed(Input.Keys.DOWN))
+        if (Gdx.input.isKeyPressed(Input.Keys.DOWN) ||  Gdx.input.isKeyPressed(Input.Keys.S))
             vel.y = -1;
 
         vel.nor().scl(speed);
@@ -176,7 +176,7 @@ public class World {
         if ((Gdx.input.isKeyPressed(Input.Keys.SPACE) || GameScreen.dialog != null) 
         		&& !isFlashing && player.canUseLight()) {
             playerLight.setDistance(3);
-            playerLight.setColor(1,1,1, .05f + (player.getLifeBatteryPercentage() * .34f));
+            playerLight.setColor(1,1,1, .1f + (player.getLifeBatteryPercentage() * .34f));
         } else {
             playerLight.setDistance(0);
         }
@@ -194,7 +194,7 @@ public class World {
                 stateTime = 0;
             }
         }else {
-            float a = (float) Math.sin(stateTime * 5.5f) * .35f;
+            float a = (float) Math.sin(stateTime * 5.5f) * .65f;
             ambLight.setColor(1, 1, 0, a);
             //rayHandler.setAmbientLight(1, 1, 0, a);
             if (a < -.01f) {

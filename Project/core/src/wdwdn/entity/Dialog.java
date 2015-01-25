@@ -28,18 +28,20 @@ public class Dialog {
         if (!Gdx.input.isKeyPressed(Keys.SPACE))
             keyFix = false;
 
-        if (Gdx.input.isKeyJustPressed(Keys.SPACE) && keyFix != true) {
+        time += delta;
 
+        if ((Gdx.input.isKeyJustPressed(Keys.SPACE) || time > 5.5f ) && keyFix != true) {
             if (index + 1 >= texts.length) {
                 removeDialog = true;
             } else {
                 index++;
+                time = 0;
             }
         }
     }
 
     public void draw(Batch batch) {
-        batch.draw(Assets.pixel, 200, 0, 1280 - 400, 200);
+        batch.draw(Assets.pixel, 200, 40, 1280 - 400, 160);
 
         Assets.font.setColor(Color.WHITE);
         Assets.font.setScale(.4f);

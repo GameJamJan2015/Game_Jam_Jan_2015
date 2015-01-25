@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="23">
+ <tileset firstgid="1" name="alpha_sprite_sheet" tilewidth="64" tileheight="64">
+  <image source="alpha_sprite_sheet.png" width="512" height="512"/>
+  <tile id="0">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="65" name="floor_wall_sheet" tilewidth="64" tileheight="64">
+  <image source="floor_wall_sheet.png" width="704" height="64"/>
+ </tileset>
+ <tileset firstgid="76" name="sign_numb_sheet" tilewidth="64" tileheight="64">
+  <image source="sign_numb_sheet.png" width="960" height="64"/>
+ </tileset>
+ <tileset firstgid="91" name="tiles_sheet" tilewidth="64" tileheight="64">
+  <image source="tiles_sheet.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="123" name="furniture_sheet" tilewidth="64" tileheight="64">
+  <image source="furniture_sheet.png" width="256" height="320"/>
+ </tileset>
+ <layer name="Tile Layer 2 - Golv" width="100" height="100">
+  <properties>
+   <property name="Collision" value="False"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmO2KwjAQRYP/fCwR9/0faVlQkNnJ9ySTJufCYVtbW3NPE2XvIYQ7AAAAAAAAAAAAAAAAAAAAAAAAAMBhWMR7DDthEe8x7IRFvMewExbxHsNOWMR7DDthEe8x7IRFvMewExbxHsOVuyvN7U1JvHvx9PF4M2K75Li2790LPvCBj/Ww6j3VNz7i3cfyKNyWvaXOj72/5FzvrmbPBWuehtc62cdIR/jI+9Ai15HYOb3bJevVaT5antWR27F97668fKR6snbwitxH2/fuapYPLbn1avT8OPn7Y8X1Ch//u3kmjlul5preXc3y0dKThXu5z/yo66S3G3y0+QiRbWsfM56BqxHLjPUKHzYd4WOujxDZxsccH1py69V38NGHHOtPQzfa670+Xolj+Jjv49T5ITvSIter1PpVcy989HWkHW/tRrtWao3Cx3wfzA98rAw+1qLVx8i03Me7R0sfuZQ4siIU3uclzvPu0Xt+jOi/xseua9nKPnLzAh9jfMi0XMO7x118pK5deh98zPGRW6c+3Bbo8TQfJ80PLbF+5PHR61VpvHvsQXZQ+//2ldA+u3e/+Li2j29kSteMUf2m8hB/v+Pdo6UPrRPttZhD2VlJt6n0fLarE3tGW8asvS81D0Y8K1cHH2thOeYgzo+l9HvX8rNdBcsxh8w1JPjAx+rUxNJH7fVO8WHttuT745OZz8qJ/MXy9xXgYyfwsRb4WAt8rIWW1O8t788LAAAAAAAAAABwIr927nIL
+  </data>
+ </layer>
+ <layer name="väggar" width="100" height="100">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmdFuhCAQRXlr+mP1//+oNVlSljLMgMBgPTc5WVBUuFfYXf0IIXwAAAAAAAAAAAAAAAAAAAAAAAAAwFQ+J+A9pjtDHntBHntBHntBHntBHntBHntBHntBHtc4fvh6MaNs2V+qe/viQXiNPUwsW/aX6t7ekMd73dsb8nive3vjBXn4ei99zwZj+auhnNZTzy1tvb1alYeXWq795DxWZUQe5Tzy9SquE0HYd4S29axWDoXt+TVYr+rKfRxdlureXnnlUfOptp88xuTRs15pnpLHuPmhiTzW5lHzKW4rzRuN/Lj8Otqx3l6tyqNnvRqRvZZ73tbbq9lYfBjlTelaee6jr3k3Sh7l26T9q7K/cs07co5zxXoVPe3Vk/JY4U08rldPzuMQyle8kc5l1VPykN5tR1l+t0aRRx+lsbZ6UxJ57JVH1Mg8nvZ/UPo/HHWEv+vXIbTVxPzQ0Twq7S95Ewr1kGyXzmUVefz6YPEmJJ8hqaf7yWNNHpLIY10ePbqahyZvLz3z6Hnebn0m33qdnpy9fa/l0TrWK/e5pjyP1mNa5O39yPkxSvm50rr1t/R5TG2MVnlnsXsevefI5e3xnfIY8V0Qj/H28irpWLSxattG6RDK1mNOeftKHn/l7S15vMvb254szk/r+w+pPlrauxft+ackb7+1LFLNvN9nS+u7t9fk8T7/70I6nnzexzFa3tGOVnqdlr5FpePz9rgnk9L9pW2zPFuxPHOyvAtr7Vt+v3l7PDMPy1yzytK2J49U3v6umB9SFjVfSiq1teRr3ebt7ao88rFKbc5ybT2aMT+8/fSaH5LyPGqyeNjSN28vPfJoOZclj1V9uwunWv4Dk8eaTIKwLVTalEi9svzeXXWv3B2r/7U8NGl5lPpRk7dnOzI6D1ibR9igz/+ZnjyivPv+3yh5XFPa1rvvd0dS7dng034T7YBF3n18OmSxD2QBAAAAAAAAT+IbutSDwg==
+  </data>
+ </layer>
+ <layer name="Statiska objekt" width="100" height="100">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2UEKwyAQAEC/0Pe2TWte3h48tIRiGtCsOAOLHgSDiStrUgIAAAAAAAAAAAAAAACAmK6N+7U594yfyaNxvzbnnvEAwNbtHfezHwIG9bl/WtQh6o9v/+SrFnWI+oOROe/7st5wnP3Tl/WG4+yfviKu91KCGHIJYrA/mInvPZZnCWJYS8BoliS/w2hypaWvtdJCD1HP81nzVU4x7+9mzVdrUq8BAAAAMJflRwswAvf5sXgfsDXLv8fL2Q8AAAAAAAzjBUB9Mfg=
+  </data>
+ </layer>
+ <layer name="Dörrar" width="100" height="100" opacity="0.9">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2LsOgCAMBVBm+f//dZYoAz5o8ZwFRQeSxtvGUgAAAAAAAAAAAAAAAAAAANZSX7g+u+896737F9vsA8ACnsywq315dcwr2QVEJq+ALL7Mq1rMtMA48xX06bNz3M0jefYs9cihzSv5BQCQg3kZxvh2YlEPgHz8T5xjpGdG67PRznOHesRWm5Xc9JmYVs6QjNQjD3kGQMu8CwDwLvMWAAAAAMSyAxFLAp4=
+  </data>
+ </layer>
+ <objectgroup name="spawn" opacity="0.97">
+  <object id="3" name="player" x="2812" y="2248" width="60" height="44"/>
+  <object id="8" name="end" x="2444" y="5644" width="226" height="26"/>
+ </objectgroup>
+ <objectgroup name="notes">
+  <properties>
+   <property name="Dialog" value="2"/>
+  </properties>
+  <object id="9" name="note1" x="2712" y="2649.33" width="16" height="12">
+   <properties>
+    <property name="Dialog" value="0"/>
+   </properties>
+  </object>
+  <object id="10" name="note2" x="2582.67" y="5080" width="20" height="14.6667">
+   <properties>
+    <property name="Dialog" value="3"/>
+   </properties>
+  </object>
+  <object id="11" name="note41212" x="1536.36" y="3936.36" width="260.606" height="27.2727">
+   <properties>
+    <property name="Dialog" value="2"/>
+   </properties>
+  </object>
+  <object id="22" name="flash" x="1354" y="2932" width="108" height="38">
+   <properties>
+    <property name="Flash" value="6"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="notetiles" width="100" height="100">
+  <properties>
+   <property name="Collision" value="False"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAIAyDDa287eLgHElAFAAAAAAAAAAAAAAAAAAAAcDPpAAAAAAAAAAAAAAAAAAAAPOh0AAAAAAAAAAB4t8ZoAQo=
+  </data>
+ </layer>
+</map>

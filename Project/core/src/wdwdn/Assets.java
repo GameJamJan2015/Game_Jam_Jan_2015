@@ -17,6 +17,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class Assets {
     public static AssetManager manager;
     public static Texture player;
+    public static Texture menu;
     public static TextureRegion region;
     public static TextureRegion pixel;
 
@@ -37,8 +38,8 @@ public class Assets {
 
         // Load item
         TextureLoader.TextureParameter param = new TextureLoader.TextureParameter();
-        param.minFilter = Texture.TextureFilter.Linear;
-        param.magFilter = Texture.TextureFilter.Linear;
+        param.minFilter = Texture.TextureFilter.Nearest;
+        param.magFilter = Texture.TextureFilter.Nearest;
         manager.load("graphics/lamp.png", Texture.class, param);
 
         // Load item
@@ -47,22 +48,27 @@ public class Assets {
         param.magFilter = Texture.TextureFilter.Nearest;
         manager.load("graphics/walking_player_sheet.png", Texture.class, param);
 
+        param = new TextureLoader.TextureParameter();
+        param.minFilter = Texture.TextureFilter.Nearest;
+        param.magFilter = Texture.TextureFilter.Nearest;
+        manager.load("graphics/menu.png", Texture.class, param);
 
         // Load Font
         BitmapFontLoader.BitmapFontParameter fontParam = new BitmapFontLoader.BitmapFontParameter();
         fontParam.genMipMaps = true;
-        fontParam.minFilter = Texture.TextureFilter.MipMapLinearLinear;
-        fontParam.magFilter = Texture.TextureFilter.Linear;
+        fontParam.minFilter = Texture.TextureFilter.Nearest;
+        fontParam.magFilter = Texture.TextureFilter.Nearest;
         manager.load("font/bit.fnt", BitmapFont.class, fontParam);
 
         // Music
-        //manager.load("sound/music.mp3", Music.class);
+        manager.load("sound/music.mp3", Music.class);
     }
 
     public static void loadFinished() {
 
         Texture items = manager.get("graphics/lamp.png", Texture.class);
         player = manager.get("graphics/walking_player_sheet.png", Texture.class);
+        menu = manager.get("graphics/menu.png", Texture.class);
 
         loadRegions(items);
 
@@ -70,8 +76,8 @@ public class Assets {
         font = manager.get("font/bit.fnt", BitmapFont.class);
         font.setUseIntegerPositions(false);
 
-        // music = manager.get("sound/music.mp3");
-        //music.setLooping(true);
+        music = manager.get("sound/music.mp3");
+        music.setLooping(true);
         playMusic();
     }
 
@@ -85,7 +91,7 @@ public class Assets {
     }
 
     public static void playMusic() {
-        if (music != null) if (prefs.getBoolean("music", false)) music.play();
+        if (music != null) if (prefs.getBoolean("music", true)) music.play();
     }
 
     public static void PauseMusic() {
