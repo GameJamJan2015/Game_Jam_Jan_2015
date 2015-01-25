@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" backgroundcolor="#641d80" nextobjectid="23">
+ <tileset firstgid="1" name="alpha_sprite_sheet" tilewidth="64" tileheight="64">
+  <image source="alpha_sprite_sheet.png" width="512" height="512"/>
+  <tile id="0">
+   <properties>
+    <property name="Collision" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="65" name="floor_wall_sheet" tilewidth="64" tileheight="64">
+  <image source="floor_wall_sheet.png" width="704" height="64"/>
+ </tileset>
+ <tileset firstgid="76" name="sign_numb_sheet" tilewidth="64" tileheight="64">
+  <image source="sign_numb_sheet.png" width="960" height="64"/>
+ </tileset>
+ <tileset firstgid="91" name="tiles_sheet" tilewidth="64" tileheight="64">
+  <image source="tiles_sheet.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="123" name="furniture_sheet" tilewidth="64" tileheight="64">
+  <image source="furniture_sheet.png" width="256" height="320"/>
+  <tile id="10">
+   <properties>
+    <property name="Dialog" value="4"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="143" name="character_sheet" tilewidth="64" tileheight="64">
+  <image source="character_sheet.png" width="256" height="64"/>
+ </tileset>
+ <layer name="Tile Layer 2 - Golv" width="100" height="100">
+  <properties>
+   <property name="Collision" value="False"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmuGO2yAQBlH/3WPFF7ev10duK8XSdrOwgDfBgVlpdMRxsPnG4CSXr5TSFwAAAAAAAAAAAAAAAAAAAAAAAADAYkTU6DHMRESNHsNMRNToMcxERI0ew0xE1OgxzEREjR7DTETU6DHMRESNHsMnZ1dbPx7U1OhcRvq4PXhFu+Z56/HoXPCBj1Yfe8P+v/+yPcBHjI+90K514zld2UepbpVtnVtpf/1YevT2HZ3Vu+eCZis8V4N+/ZG9t81iZR9625GXXPtL2bdkjo9nH1bp9Se3z9l2zXq1mo/WdUjndKa9G9tXv59beedyas3de8+Fj2cfVnnr1RkH3j6r3z8i1yt9vbd8XsSHncOx7bvwfFS19Dk6q3f56Mkpwr1+zPxoy+RsNvjo85EybSubW6atKX2WxMf/PqxqXa8sF7toez48V9YxZ0RmH3Wtbhkn8lit82VlHynT9rLZVP4R7lf0YZW3XsmS/R3fR1lt2W/rvUQfZyb0WH82ZpNDzhPtqGZ+lL7nxUefj8OFnBtyLrJelcmVXq9K61eub3z0+fByaMnGWqtK61XN/6Lw0e5De+g5Fj7O+bhl+pTbv/HxNh+1WL8Fwkesj1dWz3FG5xjpw6saR1GkjuOkC+Q4en605nwXlPrCR5yPrYD2UuNjxXtLlI+Si4PdwCp8xPm4F7A+++ltyTkOPvxtx7Uvs9/U37vat8YH8yPGR26eyN8BHy7w8ezDqlw++nlvrdL3C30vKbn2Su4zOscz6Awivm+vuZ+XfgPfi3Xuo/O9gg8PPU+i+p3Bh0RX7ZrxKm+/nGPKv7JG5xjpo7SGy205hzozz6VXZ87t07Gu0d4xW6/L0dsfPvDxTiLHnNT+uaq970ae26cQOebk9KHBBz6uTktF+mjtbxUf0W5r7h9HvfNaWZF/Ffn+CvAxE/i4Fvi4Fvi4FlaV3m+NPl8AAAAAAAAAAIAV+QOUZ3wO
+  </data>
+ </layer>
+ <layer name="väggar" width="100" height="100">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmVuOqzAQRPsvmmXNzyDN/hd0L9JYMo4f7WebcEo6ig022FXgEPISkRcAAAAAAAAAAAAAAAAAAAAAAAAATOVrAtZzujPksRfksRfksRfksRfksRfksRfksRfk0cfxn58/ZpQ1+2N1a18skL+5y8SyZn+sbu0NeVzr1t58Wh7fchV56JiVRyjyiHsffs86ZELZr/uea9pae7UqDyvVnPvJeazKiDzieaTWKknsO7w2vWWJbA/PwXqVV+jj6HKqbu2VVR45n3L7yWNMHi3rVclT8hh3f5REHmvzyPnktqV+s+QI+4XnKfW19mpVHi3r1YjsS7mHba29mo3Gh5I3OYXn+gn2h7lrz/mpuHnG5h4rx7yRyDElKI/QE/J4Sf965RTWR+tJefR6U9OvVU/O40iUc95oRB5lUv9tO2meY2s8bdUn5+Hrt9OnGpHH/fPg9+B1DTrkff0K+2jF/aHLo+RDyhutXFvymJtHTSapY9X0tfbqDnloMnFtyGNeHi3qzaMkay8t82h53659Jy8Sf24o9amRte+5PGrn2nOdl3Qkyto+NbL2fuT9MUrhsfy69ln67JObo1bWWeyeR+sxQll7fKc8RnwXuD7WXvbiz6U019K2UToSZW2fU9a+kse7rL0lj6usvW3J4vzMPedL8NmzxmtV81tFvLGXZO13KQunlvftM/Oo1TmW38x+a6/J43r/3wV/PrE1QOR9jVq9XtWMzcmfn7XHLZnEvC1t07x70rxzKv0f3zK28Hqz9nhmHpp7TStN25Y8fFn7u+L+SGWR8yWmWFtNvtpt1t6uyiOca6rNWS49p5bUe63cjdY5pxTmkZPGw5qxWXtpkUfNsTR5rBrbXThV83uYPNZkIoltkmkTw3mlfd5dda3cHa3/qTw0KuURG0dO1p7tyOg8YG0essGYP5mWPJysx/5pxDzOyW9rPfa7k1Lu3eDTnol2QCPrMT4dstgHsgAAAAAAAIAn8Q/5kYTh
+  </data>
+ </layer>
+ <layer name="Statiska objekt" width="100" height="100">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2ktugzAQAFBfoafKodrSwjYf5chh4UWrtiI0sT2W35NG9gKJkcGGMaQEAAAAAAAAAAAAAAAAADG9Fu5vnfOe40fyUbi/dc57jucx19YJAFDE2xrvrZOATn2dPyXqEPXHd3vWqxJ1iPqDnnne12W8+c1xjdMa59aJBGf+1GW84f/Mn7oijveUgxjmHMRgfjCSvff7JQdlfOYghiUH9GZK3mfgWWrti88bLXUtGy3UEPV5Pup6NaeY+3ejrldLUq8BAI87tE4AAAB2mP5oYXT+Y+uD/fxYXA/4aZRvjy+tEwAAAAAAunEDqWQ3wQ==
+  </data>
+ </layer>
+ <layer name="Dörrar" width="100" height="100" opacity="0.9">
+  <properties>
+   <property name="Collision" value="True"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2TEOgCAQBECfZ/z/g6whamE0LMdMg4LFxQuLidsGAAAAAAAAAAAAAAAAAABQy/7D9dX909rTs6s4RhcABXyZYXfz8qrNK9kFJJNXwCzkFTALeQVUJM+y6AcAQD7/zMfxvQzv2DtZ9ANgTns3pkmtqxJneBb9aCVnVHJtqbwroBKZBkDP2QAAAAAAAACs5AS7FwzJ
+  </data>
+ </layer>
+ <objectgroup name="spawn" opacity="0.97">
+  <object id="3" name="player" x="2812" y="2248" width="60" height="44"/>
+  <object id="8" name="end" x="2444" y="5644" width="226" height="26"/>
+ </objectgroup>
+ <objectgroup name="notes">
+  <object id="15" name="gsdlgs" x="2762" y="2272" width="160" height="52.6667">
+   <properties>
+    <property name="Dialog" value="6"/>
+   </properties>
+  </object>
+  <object id="16" name="Changinglayout" x="1751.52" y="4554.55" width="27.2727" height="109.091">
+   <properties>
+    <property name="Dialog" value="14"/>
+   </properties>
+  </object>
+  <object id="19" name="Flashes" x="2640" y="3230" width="94" height="62">
+   <properties>
+    <property name="Flash" value="10"/>
+   </properties>
+  </object>
+  <object id="20" name="ntoentnoeonetntoenet" x="3594" y="3154" width="38" height="22">
+   <properties>
+    <property name="Dialog" value="8"/>
+   </properties>
+  </object>
+  <object id="22" name="afasdfasdfasdfasfd" x="2691" y="2369" width="77" height="77">
+   <properties>
+    <property name="Dialog" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="notetiles" width="100" height="100">
+  <properties>
+   <property name="Collision" value="False"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIA6CXt7cxPh0kIAEAAAAAAAAAAAAAAAAAAAAAAAD4adoBAAAAAAAAAAAAAAAAAAAAAAAAAE5akLcAhg==
+  </data>
+ </layer>
+</map>
