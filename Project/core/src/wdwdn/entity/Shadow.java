@@ -39,7 +39,7 @@ public class Shadow extends Enemy {
 		
 		//if(getRange(world.getPlayer().getPosition()) < 3.0f)
 		//{
-			world.getPlayer().addLifeBattery(-Math.max(radius/2 - getRange(world.getPlayer().getPosition()), 0 ) * delta * 2.0f);
+			world.getPlayer().addLifeBattery(-Math.max(radius/2 - getRange(world.getPlayer().getPosition()), 0 ) * delta * 2.4f);
 		//}	
 	}
 	@Override
