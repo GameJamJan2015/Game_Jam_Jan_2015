@@ -1,6 +1,7 @@
 package wdwdn.entity;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 
 import wdwdn.Assets;
@@ -10,13 +11,12 @@ import wdwdn.World;
 public abstract class Enemy extends DynamicEntity {
 	public float radius;
 	protected boolean stopMoving;
-	protected float speed = 1;
+	protected float speed = 1;		
 	
 	public Enemy(World world, float x, float y, float width, float height, float radius) {
 		super(world, x, y, width, height);
 		
-		this.radius = radius;
-		
+		this.radius = radius;		
 		addAnimation("idle", new Animation(1, Assets.pixel));
 		setAnimation("idle");
 	}
@@ -42,6 +42,13 @@ public abstract class Enemy extends DynamicEntity {
 		return pos.cpy().sub(position).len();
 	}
 	
+	
+	@Override
+	public void remove() {
+		super.remove();
+		
+		World.enemyIsSpawned = false;
+	}
 	
 	
 }
