@@ -38,7 +38,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmV1u6yAYRHmL7rL6Uu9/R7eWikooPx8YGFyfkY6CMbZhxpDEfjnnXgAAAAAAAAAAAAAAAAAAAAAAAAAwlX8TUI/pzpDHXpDHXpDHXpDHXpDHXpDHXpDHXpDHNY4vPr+ZUbbsT22rfVHgvsfuJpYt+1Pbam/I431b7Q15vG+rvVFBHlrv4+9ZjzOWj4b2qX2Wtk/K46pGnMNyDbVXqjxa/SWPsXnk1iqX2Xe49FrVU3aJ+vgarFdlxT6OLue21V6p8ij5VNpPHmPy6Fmvap6Sx7j5UVPJ0w9Dm1o5t632SpVHySdfl/vPUiI+Lr5O7Vi1V6vy6FmvRmRfyz1uq/ZqNhYfRnlz6jM6T5z76GveDT/O1NhT5V5vPgJ69YQ8Xm7NekUebXms8MYf16sn53EE9bn95DGH3LttL8vvWC/y6CM11hEij73y8BqZB/8H39eg1P64zirmhy2Pmg8Wb1xi2wX1uXNZRR4/Pli8ccGnC7bD/eSxJo+cyGNdHj26mkdNai+VefQ8b299Jm+9Tk/Oat8teVjHeuU+r+nIlK3HtEjt/cj5MUrxueL7w3qO0hitUmexex6954il9vhOeYz4LvDHqL28SjiW2lhrdaN0ZMrWY06pfSWP31J7Sx7vUnvbk8X52fv+Y5Za370cztYftd+1LELNvN9nq9Z3tdfk8T7/70I4nngd8mMc8c6jVeF1WvrmFY5P7XFPJqn7q1ZneY7U8pyq9C6stW/x/ab2eGYelrlmlaVtTx6h1P6umB+5LEq+pJRqa8nXWqf2dlUe8Vhzbc5yaT2aMT/UfqrmR05xHiVZPGzpm9pLRR4t57Lksapvd+FUy7s78liTicvUuUKbFKFXlt+7q+6Vu2P1v5RHTbU8Uv0oSe3ZjozOA9bm4Tbo81+mJw8vdd//GimPSwrbqvt+d3IqPRt82m+iHbBI3cenQxb7QBYAAAAAAADwJP4DGK2Fug==
+   eJztmlFypSAURPl7NcvKz7j/Hc28qlDDY7hwQaQxnq46FUBU6FZiNK8QwgsAAAAAAAAAAAAAAAAAAAAAAAAALuXXBajndGfIYy/IYy/IYy/IYy/IYy/IYy/IYy/I4xzHX35/c0XZs71UV/uiIHzPPVxY9mwv1dXekMdnXe0NeXzW1d6oIA+t9/nv2Uhwlo+O/qVtnr5PyuOsZhzDcw61V6o8ev0lj7l5WGtVMLYdobxWjZRDoT0/B+tVXbmPs8tWXe2VKo+aT7Xt5DEnj5H1quUpecy7P1qqefrl6NMqW3W1V6o8aj7FNutvlhr5fvl5WvuqvVqVx8h6NSP7Vu55X7VXV+PxYZY3pXPluc8+590oeZS3Wdt7zvOVMKon5PEKa9armEUpW6+elMcKb+J+o3pyHodRPuONdSyvnpKH9W07yvMcG0UeY5TmOkPksVceUTPz4O/BzzWotD1v84r7w5dHywePN6FQD0m7dSyvyOOfDx5vQvIzJPV0O3msycMSeazLY0Rn82hJ7aUyj5H37b3v5L3nGclZ7Xstj/T/BjxzPXOdt3QYZe8+PVJ7P/P+mKX8WGnd+yz93qc2R6/UWeyex+gxcqk9vlMeM34XxH3UXp4lnUtrrq22WTqMsneft9S+ksf/UntLHp9SezuSxftn7Tk/GO097xB71fvt5Qi+8aj9bmWR6srr/Wq1xq72mjw+7/+7kM4nX4fiHGd88+hVep6esUWl81N7PJJJ6fpqtbXeI/W+p6p9C+sdW369qT2+Mg/PveaVp+9IHqnU/q64P6wsar6UVOrrydfbpvZ2VR75XK0+73JtPbri/lD7qbo/LOV51OTxsGdsai8VefQcy5PHqrHdhbd6vt2Rx5pMgtEWKn1KRK+8z7urrpW74/XfysOjVh6lcdSk9mxHZucBa/MIG4z5JzOSR5R67D+Nksc1pX3VY787lmrvBp/2TLQDHqnH+HTIYh/IAgAAAAAAAJ7EH0zchpI=
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
@@ -54,7 +54,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2DEOgCAMBVBmuf99nTXKACotvreg6EDS+NtYCgAAAAAAAAAAAAAAAAAAwFrqC9dX961nrXf/Ypt9AFjAkxl2ty+vjnklu4DI5BWQxZd5VYuZFuhnvoI2fXaO0TySZ89SjxzkFQBATuZl6OPbiUU9APLxP3GOnp4Zrc9GO88I9YitnlZy03diWjlDMlKPPOQZAGfmXQCAd5m3AAAAACCWHVTdAnI=
+   eJzt2jsOhCAUBVD72ZgZ978fG5shajGiXOGcxPijeEhyfQXTBAAAAAAAAAAAAAAAAAAA0Jf5huu9+7N3Z2NH8W1dAHSgZoYdPZdXv3klu4Bk8gp4Cxk1hqV1AVCB/gpIdDWP5Fld1gMAgBG02jegXwYAoBV7Z5+X1v//U0/aHK5Im8vo61Gai3OS5NpS+VZAT2QaACX/BgCAe322AwAAAADIsAIVPw14
   </data>
  </layer>
  <objectgroup name="spawn" opacity="0.97">
