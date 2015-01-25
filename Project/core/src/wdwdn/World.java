@@ -309,7 +309,7 @@ public class World {
 				// break;
 			}
 		}
-
+        rectPool.freeAll(tiles);
 	}
 
 	private void triggerCollision(int startX, int startY, int endX, int endY) {
@@ -407,6 +407,7 @@ public class World {
 						.toLowerCase().equals("false"))
 					continue;
 			}
+
 			if (layer instanceof TiledMapTileLayer == false) {
 				continue;
 			}
@@ -418,6 +419,7 @@ public class World {
 					if (cell != null) {
 						if (((TiledMapTileLayer) layer).getCell(x, y).getTile()
 								.getProperties().containsKey("Collision")) {
+
 							if (((TiledMapTileLayer) layer).getCell(x, y)
 									.getTile().getProperties().get("Collision")
 									.toString().toLowerCase().equals("false"))

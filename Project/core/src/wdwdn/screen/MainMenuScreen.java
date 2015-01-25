@@ -17,7 +17,7 @@ public class MainMenuScreen extends Screen{
     @Override
     public void update(float delta) {
         if (Gdx.input.isKeyJustPressed(Input.Keys.ENTER))
-            setScreen(new GameScreen(1));
+            setScreen(new GameScreen(3));
     }
 
     @Override

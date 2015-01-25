@@ -28,7 +28,7 @@ boolean hasJumped = false;
 
 			if (timer > 4) {
 				if(getRange(world.getPlayer().getPosition() ) < 2.5f)
-					world.getPlayer().addLifeBattery(-25);
+					world.getPlayer().addLifeBattery(-35);
 				remove();
 				Assets.playSound(Assets.girlscream, .23f);
 			} else if (timer > 2 && !hasJumped) {
