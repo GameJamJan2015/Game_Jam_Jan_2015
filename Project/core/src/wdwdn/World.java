@@ -174,7 +174,7 @@ public class World {
         player.update(delta);
 
         if ((Gdx.input.isKeyPressed(Input.Keys.SPACE) || GameScreen.dialog != null) 
-        		&& !isFlashing) {
+        		&& !isFlashing && player.canUseLight()) {
             playerLight.setDistance(3);
         } else {
             playerLight.setDistance(0);
