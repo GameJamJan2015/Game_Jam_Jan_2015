@@ -39,7 +39,7 @@ public class Assets {
         TextureLoader.TextureParameter param = new TextureLoader.TextureParameter();
         param.minFilter = Texture.TextureFilter.Linear;
         param.magFilter = Texture.TextureFilter.Linear;
-        manager.load("graphics/libgdx.png", Texture.class, param);
+        manager.load("graphics/lamp.png", Texture.class, param);
 
         // Load item
         param = new TextureLoader.TextureParameter();
@@ -61,7 +61,7 @@ public class Assets {
 
     public static void loadFinished() {
 
-        Texture items = manager.get("graphics/libgdx.png", Texture.class);
+        Texture items = manager.get("graphics/lamp.png", Texture.class);
         player = manager.get("graphics/walking_player_sheet.png", Texture.class);
 
         loadRegions(items);
@@ -76,7 +76,7 @@ public class Assets {
     }
 
     private static void loadRegions(Texture item) {
-        region = new TextureRegion(item, 0, 0, 64, 64);
+        region = new TextureRegion(item, 0, 0, 400, 100);
         pixel = new TextureRegion(item, 30, 30, 4, 4);
     }
 

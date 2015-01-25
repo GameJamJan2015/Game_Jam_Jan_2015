@@ -63,8 +63,10 @@ public class GameScreen extends Screen {
 			dialog.draw(getBatch());
 		
 		// Draw life bar
-		getBatch().draw(Assets.pixel, 40, 600, (world.getPlayer().getLifeBattery()/100)*300, 64);
-
+        getBatch().draw(Assets.region, 40, 600, 300, 64);
+        getBatch().setColor(0,1,0,1);
+        getBatch().draw(Assets.pixel, 56, 621, (world.getPlayer().getLifeBattery()/100)*225, 21);
+        getBatch().setColor(1,1,1,1);
 		getBatch().end();
 	}
 
