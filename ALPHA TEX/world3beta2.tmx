@@ -9,15 +9,15 @@
   </tile>
  </tileset>
  <tileset firstgid="65" name="floor_wall_sheet" tilewidth="64" tileheight="64">
-  <image source="floor_wall_sheet.png" width="512" height="64"/>
+  <image source="floor_wall_sheet.png" width="704" height="64"/>
  </tileset>
- <tileset firstgid="73" name="sign_numb_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="76" name="sign_numb_sheet" tilewidth="64" tileheight="64">
   <image source="sign_numb_sheet.png" width="960" height="64"/>
  </tileset>
- <tileset firstgid="88" name="tiles_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="91" name="tiles_sheet" tilewidth="64" tileheight="64">
   <image source="tiles_sheet.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="120" name="furniture_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="123" name="furniture_sheet" tilewidth="64" tileheight="64">
   <image source="furniture_sheet.png" width="256" height="320"/>
   <tile id="10">
    <properties>
@@ -38,7 +38,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmEtywyAQBdmpcqxsfP8jZRNVMAFmGD4DVr+qrkSWLYnXFpJ8hRAuAAAAAAAAAAAAAAAAAAAAAAAAAJjK1wS8x3Qy+NgLfOwFPvYCH3uBj73Ax17gYy/w0cdrU7x78SD8jj1M/F+zPrfs3Q0+3pe9u8HH+7J3N17gw7f7EmHC/7l12vd6d7X6XFidln0/2ccqR/jI+yjNVaGyftQclu4n3We87N2V1/khZcX1/snX8zTW+yJ8jPFhma+kTvEx7vyQgo+1PjTz1Shatund1Soflp5GuJe8p+/17mo2mh5GdZPbFz50PjTzVeu+vn+x5gk+rrBuvsKH3seKbu7PWfNkHzPmq9K2tHmSj9770Dv4sDEr+NjLx52RPngezM9XuX7SdVI4P3Q+pB403YTMcoheL21LG3z89aDpJkR/Q7Qcr8fHGh+l4GOdD0t6fUjx7tLTx0ws+2mNd+81H61j7fmeS5F+G5A+0xLv7r3nK832rT5qY9TG28XuPqzbSOPd8Wk+eq8F92e8u+wlHos0Vum1URlx/fDuFR//490tPt7j3a3FxRXsvyfOivUZRYp335KLnsz0MTreXePj/fw/hTu5eeBVWNdzT6qNtM/Ssd1J5+OTiMeXdlJ7bfRvT7VttB5b+n3z7nimD825po3mvRYfcbz7XXF+lFzUesmldo+qOQ7ttk7COmaND+11oJbe78ppWMdcSsuznKbDEXPpSdTG1zrm9HMaH6uO7RTusWjBxxonofBaqLwnR+v97qrvyulo+6/5kKLpMD2OWrw725HRPmCtj7DBMX8yPc+D3sf+aeQ6rqX0fAm27ksdt/y+6D2OT0cT72N8OrjYB1wAAAAAAADAk/gBuhmBSQ==
+   eJztmllu4zAUBPlnzLHmJ7r/jSYCTAzNcHmkSDYVVQOFSLI2dlnylpdz7gUAAAAAAAAAAAAAAAAAAAAAAAAAU/kzAfWY7gw+9gIfe4GPvcDHXuBjL/CxF/jYC3xc4/jm682MacvjqXl1Lwrce+xu4rTl8dS8uht8fM6ru8HH57y6GxX40HYfv8563ITpcD7s3LKuuqtVPlRpOfaTfaxyhI+0j9y9ymUeO4J1rk67xPL4GNyvyol7HD2dm1d3pfJR6qn0OD7G+Oi5X9U6xce466MWfKz1UerJL8t9ZikRbxcfp7atuqtVPnruVyPc17zH66q7mo2lh1HdnPmK9hN7H33Mu+HHmRp7avpKN3/f9OYJPl5u3f0KH3YfK7rx2/XmyT6OzPSVbnL7suYpPnK/bftY3sf64KOP1FhHBB97+fAZ6YPPg5/3oMP9vH/F21jD9WHzUevB0o1LzLtgeW5f1uDjfw+Wblzw1wXz4eP4WOMjF3ys89GTqz5qUXep9NHzfbv1O/nW4/R4Vvde8tE61ivP81piH63btETd/cjrY1TifYXz1vfS5zalMVqjdrG7j959xFF3fCcfI14L/DbqLq8SjqU21tqyUTky09Ztzqh7xcfPqLvFx2fU3fa4OP9af/8I52f6sH5O8Tmc7X2Yuu+aizCt/c700Zrauai7xsfn9X8XwvHE9wE/xtz/Fs70kTtm7dx8wvGpO+5xkuq2tszy3YrlOyfLa0PrucXPN3XHM31YrjVrLOv2+Aij7nfF9ZFzUeolldS6Fr/WZepuV/mIx5pb55wu3Y9mXB/qPlXXRy6xj1IsHbacm7pLhY+WfVl8rDq3u3Cm5bc7fKxx4jLLXGGdFGFXlve7q54rd8faf8lHLTUfqfMoRd3Zjoz2AWt9uA3O+TfT48NHfe6/jVTHpYTrqs/97uRS+m7wae+JdsAS9Tk+HVzsAy4AAAAAAADgSfwD2kyENQ==
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
@@ -46,7 +46,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2stqxCAUAFA/of3badMm0FUfP90sXMwwU/Kg6hXPgYsuBMVEk2uSEgAAAAAAAAAAAAAAAADEdClc3+pzT/uRvBWub/W5pz0AcO9ljdfWg4BOXa+fEnmI/OPWkf2qRB4i/6Bnnvd1mW8e+Vzja43v1gMJrtX6+WjQZwT2KzjP+qkr4nxPOYhhzkEM1gcjOXq//+SgjPccxLDkgN5MyfsM/Jda5+LzRkldy0YJNUR9no+6X80p5vndqPvVkuRrnPfUegAAAAAAJ0x/lDA6/7H1wXl+LK4H3Bvl2+Nz6wEAAAAAAN34BdXFNjI=
+   eJzt2stqxCAUAFA/of3eadMm0FUf39wsXMwwU/Kg6hXPgYsuBMVEk2uSEgAAAAAAAAAAAAAAAADEdClc3+pzT/uRvBWub/W5pz0AcO9ljdfWg4BOXa+fEnmI/OPWkf2qRB4i/6Bnnvd1mW8e+Vzja43v1gMJrtX6+WjQZwT2KzjP+qkr4nxPOYhhzkEM1gcjOXq//+SgjPccxLDkgN5MyfsM/Jda5+LzRkldy0YJNUR9no+6X80p5vndqPvVkuRrnPfUegAAAAAAJ0x/lDA6/7H1wXl+LK4H3Bvl2+Nz6wEAAAAAAN34BRZuN38=
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">

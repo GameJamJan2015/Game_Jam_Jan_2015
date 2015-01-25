@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="22">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="23">
  <tileset firstgid="1" name="alpha_sprite_sheet" tilewidth="64" tileheight="64">
   <image source="alpha_sprite_sheet.png" width="512" height="512"/>
   <tile id="0">
@@ -9,28 +9,23 @@
   </tile>
  </tileset>
  <tileset firstgid="65" name="floor_wall_sheet" tilewidth="64" tileheight="64">
-  <image source="floor_wall_sheet.png" width="512" height="64"/>
+  <image source="floor_wall_sheet.png" width="704" height="64"/>
  </tileset>
- <tileset firstgid="73" name="sign_numb_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="76" name="sign_numb_sheet" tilewidth="64" tileheight="64">
   <image source="sign_numb_sheet.png" width="960" height="64"/>
  </tileset>
- <tileset firstgid="88" name="tiles_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="91" name="tiles_sheet" tilewidth="64" tileheight="64">
   <image source="tiles_sheet.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="120" name="furniture_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="123" name="furniture_sheet" tilewidth="64" tileheight="64">
   <image source="furniture_sheet.png" width="256" height="320"/>
-  <tile id="10">
-   <properties>
-    <property name="Dialog" value="4"/>
-   </properties>
-  </tile>
  </tileset>
  <layer name="Tile Layer 2 - Golv" width="100" height="100">
   <properties>
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmG1uwyAQBVH+5VhulN7/SFWlVLLoLuZjYTHMk0a1Y8cObwyJ+gwhPAEAAAAAAAAAAAAAAAAAAAAAAAAANsMi3mNYCYt4j2ElLOI9hpWwiPcYVsIi3mNYCYt4j2ElLOI9hpWwiPcY7txdbh4fcuLdi6eP40OP7Zzj0r53L/jABz7mw6r3VN/40LvXcmRux72lztfen3Oud1ej54I1L8Nr7eyjpyN8XPuQEq8j2jmt2znr1W4+ap7VntvavndXXj5SPVk7eCv3kfa9uxrlQ8rVetV7fuz8/THjeoWP/928EsetUnJN765G+ajpycJ9vM/8KOuktRt81PkIyra1jxHPwN3QMmK9wodNR/gY6yMo2/gY40PK1Xp1Dj7aiMf6XdGN9Hqrj3fiGD7G+9h1fsQdSYnXq9T6VXIvfLR1JB2v7Ua6VmqNwsd4H8wPfMwMPuai1kfP1NzHu0dLH1fRHH2dqH3uU/6le68+d67GnPJh3T8+5vZRcg3vHlfyEQcffj5S1869Dz7G+MjlMUGP+Fh3fkjR+omP916vcuPdYwtxB6X/b58J6bN794uPe/s4Eyd3zejVbypH9Pcc7x4tfUidSK9pDuPOcrpNpeWz3R3tGa0Zs/S+1Dzo8azcHXzMheWYQ3S+ltzvXcvPdhcsxxwurhGDD3zMTkksfZRebxcf1m5zvj/+MvJZ2ZHfWP6+AnysBD7mAh9zgY+5kJL6veX9eQEAAAAAAAAAAHbkB6PccgI=
+   eJztmNGKwjAQRYNvfpaI+/+fJAsuyOwknaSTTJqcC4dtbW3NPU2UvaeU7gAAAAAAAAAAAAAAAAAAAAAAAAAAm+GR6DGshEeix7ASHokew0p4JHoMK+GR6DGshEeix7ASHokew0p4JHoMV+7OmtsHS6J7ifTx+NBj23Jc24/uBR/4wMd8ePVe6hsf+e5zeRi3ZW+l83Pvt5wb3dXoueDN0/FaO/vo6Qgfxz60yHUkd87Zbct6tZuPlme153ZuP7qrKB+lnrwdvDL30fajuxrlQ8vRetV7fuz8/THjeoWP/908C8e9UnPN6K5G+WjpycO93Gd+1HVytht8tPlImW1vHyOegauRy4j1Ch8+HeFjrI+U2cbHGB9ajtar7+DjHHKsPw3daK+f9fEqHMPHeB+7zg/ZkRa5XpXWr5p74eNcR9rx1m60a5XWKHyM98H8wMfM4GMuWn30TMt9onv09HEUiyMvUsN90gQ9Rs+PHv3jY24fNdeI7nElHzL4iPNRurb1PvgY48PKbYIe8bHu/NCS60ce771eWRPd4xlkB7X/b58J7bNH94uPa/v4Rsa6ZvTqt5SH+Pud6B49fWidaK/lHMrOLN2WcuazXZ3cM9oyZu19pXnQ41m5OviYC88xJ3F+LtbvXc/PdhU8x5wOriHBBz5mpyaePmqvt4sPb7eW74+/jHxWduQ3nr+vAB8rgY+5wMdc4GMutJR+b0V/XgAAAAAAAAAAgB15A/fRcf8=
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
@@ -38,7 +33,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmFlygzAUBN+fKxfL/Y+Un1DBipandSTTU9WVYGxA00aAX2b2AgAAAAAAAAAAAAAAAAAAAAAAAICpfE1APaaTwcde4GMv8LEX+NgLfOwFPvYCH3uBjz6+N0XdiwL7HbtN/N+zPras7gYf78vqbvDxvqzuRgU+tN2nsAn/x9Z536vuavW5sDo1+36yj1WO8BH3kZqrLLN+1BwW7ifc531Z3ZXq/ChlxfX+ydfzMK33RfgY46Nlvip1io9x50cp+FjrwzNfjaJmm+quVvlo6WmE+5L38L3qrmbj6WFUN7F94cPnwzNfrXLfs88TWTVfmeHD62NFN9fnWvNkH8xXWh+996FX8NFGb1K94mMvH1dG+uB5MD5fxfoJ15XC+eHzUerB041Flu32empb3uDjrwdPN3b7a7fl+3p8rPGRCj7W+WhJr49S1F0qfcykZT+1Ufee81E71p7veSml3wZKn6mJunv1fOXZfquP3Bi9UbvY3UfrNsKoOz7NR++14PqMuste7mMpjbX02qiMuH6oe8XH/6i7xcd71N22uHhZ+++JszLr+UPdd8nFU6LuGh/v5/8pXImd99+JdT33pN6U9pk6tivhfHwS9/GFneReG/3bU24btccWft/UHc/04TnXvPG8t8XHPep+V5wfKRe5XmLJ3aN6jsO7rZNoHbPHh/c6kEvvd+U0WsecSs2znKfDEXPpSeTGVzvm8HMeH6uO7RSusXjBxxonlnjNMu+JUXu/u+q7cjre/nM+SvF0GB5HLurOdmS0D1jrwzY45k+m53lQfeyfRqzjXFLPl9DWfarjmt8X1eP4dDxRH+PTwcU+4AIAAAAAAACexA9cl4DR
+   eJztmdFuhCAQRXlr+mP1//+oNVlSljLMgMBgPTc5WVBUuFfYXf0IIXwAAAAAAAAAAAAAAAAAAAAAAAAAwFQ+J+A9pjtDHntBHntBHntBHntBHntBHntBHntBHtc4fvh6MaNs2V+qe/viQXiNPUwsW/aX6t7ekMd73dsb8nive3vjBXn4ei99zwZj+auhnNZTzy1tvb1alYeXWq795DxWZUQe5Tzy9SquE0HYd4S29axWDoXt+TVYr+rKfRxdlureXnnlUfOptp88xuTRs15pnpLHuPmhiTzW5lHzKW4rzRuN/Lj8Otqx3l6tyqNnvRqRvZZ73tbbq9lYfBjlTelaee6jr3k3Sh7l26T9q7K/cs07co5zxXoVPe3Vk/JY4U08rldPzuMQyle8kc5l1VPykN5tR1l+t0aRRx+lsbZ6UxJ57JVH1Mg8nvZ/UPo/HHWEv+vXIbTVxPzQ0Twq7S95Ewr1kGyXzmUVefz6YPEmJJ8hqaf7yWNNHpLIY10ePbqahyZvLz3z6Hnebn0m33qdnpy9fa/l0TrWK/e5pjyP1mNa5O39yPkxSvm50rr1t/R5TG2MVnlnsXsevefI5e3xnfIY8V0Qj/H28irpWLSxattG6RDK1mNOeftKHn/l7S15vMvb254szk/r+w+pPlrauxft+ackb7+1LFLNvN9nS+u7t9fk8T7/70I6nnzexzFa3tGOlnZNqW9R6fi8Pe7JpHR/adssz1Ysz5ws78Ja+5bfb94ez8zDMtessrTtySOVt78r5oeURc2XkkptLflat3l7uyqPfKxSm7NcW49mzA9vP73mh6Q8j5osHrb0zdtLjzxazmXJY1Xf7sKplv/A5LEmkyBsC5U2JVKvLL93V90rd8fqfy0PTVoepX7U5O3ZjozOA9bmETbo83+mJ48o777/N0oe15S29e773ZFUezb4tN9EO2CRdx+fDlnsA1kAAAAAAADAk/gGkXCDwQ==
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
@@ -46,7 +41,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2kGOgyAUAFCO0N52Wmd0086ml64LFjNxGq0Z8BPeS35gQSJBAT+aEgAAAAAAAAAAAAAAAADE9FG4vnbNLe178lm4vnbNLe0BgKXLHNejOwGN+jl/SuQh8o/f3lmvSuQh8g9aZr+vy3jzl9sc9zm+j+5IcOZPXcYb9jN/6oo43kMOYhhzEIP5QU/efd4fOSjjKwcxTDmgNUPyPgP/pda5+LhSUte0UkINUffzXterMcU8v+t1vZqSfI39Tkd3AAAAAGCH4UUJvfMfWxuc58fifsBSL98ez0d3AAAAAABoxhNYczWY
+   eJzt2dEKwiAUAFA/ob63Wm1fXg8+FCMsQXfFc+CiD4LidpW7pQQAAAAAAAAAAAAAAAAAMV0a90tz/jJ+JvfG/dKcv4wHAPaur7gdvQgY1Hv+tKhD1B+f/jmvWtQh6g9G5r7vy35DPfnTl/2GevKnr4j7veQghjUHMcgPZuJ9j+WRgxi2HDCaJTnfYTRroaWvrdBCD1Hv81nPqzXF/H4363m1JfUa9U5HLwAAAACgwvKlBRiB7/mxeB6wN8u/x/PRCwAAAAAAhvEEOCoyCA==
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">
@@ -80,13 +75,18 @@
     <property name="Dialog" value="2"/>
    </properties>
   </object>
+  <object id="22" name="flash" x="1354" y="2932" width="108" height="38">
+   <properties>
+    <property name="Flash" value="6"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer name="notetiles" width="100" height="100">
   <properties>
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztzjEBAAAIAyCra3I7eLgHElAFAAAAAAAAAAAAAAAAAAAAcDPpAAAAAAAAAAAAAAAAAAAAPOh0AAAAAAAAAAB4t1MxAQQ=
+   eJztzjEBAAAIAyDDa287eLgHElAFAAAAAAAAAAAAAAAAAAAAcDPpAAAAAAAAAAAAAAAAAAAAPOh0AAAAAAAAAAB4t8ZoAQo=
   </data>
  </layer>
 </map>

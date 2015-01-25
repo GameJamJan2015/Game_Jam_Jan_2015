@@ -9,15 +9,15 @@
   </tile>
  </tileset>
  <tileset firstgid="65" name="floor_wall_sheet" tilewidth="64" tileheight="64">
-  <image source="floor_wall_sheet.png" width="512" height="64"/>
+  <image source="floor_wall_sheet.png" width="704" height="64"/>
  </tileset>
- <tileset firstgid="73" name="sign_numb_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="76" name="sign_numb_sheet" tilewidth="64" tileheight="64">
   <image source="sign_numb_sheet.png" width="960" height="64"/>
  </tileset>
- <tileset firstgid="88" name="tiles_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="91" name="tiles_sheet" tilewidth="64" tileheight="64">
   <image source="tiles_sheet.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="120" name="furniture_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="123" name="furniture_sheet" tilewidth="64" tileheight="64">
   <image source="furniture_sheet.png" width="256" height="320"/>
   <tile id="10">
    <properties>
@@ -30,7 +30,7 @@
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmutugzAMRtH+7bHatXv/R5omFS3y7OCAiVNyLB2NW4F8hyS02ueyLJ8AAAAAAAAAAAAAAAAAAAAAAAAAAJMRUdltuBIRld2GKxFR2W24EhGV3YYrEVHZbbgSEZXdhisRUdltuBIRld2Gd87OWx8vPJWdS6aP24szlj37tfXsXPCBD3yMR1TutbzxYWdv1c25LHP7rfsLebz2+buxT65nZ9W7L0RwFxw9bsb+URtHIpxotJ5zJh9ayfHHOubosryONl7N5mPPs3r2fK+tZ2eV5aOWU7SDp3EdbT07q14+tNoar87uHzPPH5Hj1eI4Bh9tPtZtX5X9UdVyzuysevnYk1OEe7lO/2jL5Gg2rT6+8OEa16N8aJTfGVcf67iZnVUvH1r1GK8sD+v6rD6yxivpQxuvVmb2sRjLZ/mo/Z41ow+tzngPLc+Ljz9km78reVjjlbZ9j4/SxVPZj49+Pjy/u8/gQ2aklRyvauNXy7UsH1tuWq7zzsiMPH1hbzbludb8n8W69Y6Fj34+HsXfR7GOjz4+Hg6kC3z06x/rsuYEH34fR0v+f0NZe66TnWOkj63yvu9GsOy4zjJAjtn9wzrempc980ZtLsFHmw+PA8/55br3HNk5juRDZuXpI7U5onY/2nnx8T+jlmfa2uYZu/Dh96HlZvUT63mv3Y/l92OAHEfyUcuqNl5px8tze+b2ZYAcI31oZeUj9+8Zb1o+U5a2ba3sHI8gs2z9vb11PGk9xvu5h3Hv2fmO4sObeasP6/ir+CiRJccoq1q8tHzH08oznmXnGOlDy0TbZjksaytbT2n3tjXPZOcYhfWM1nx43G71jT3nWz+nzSPZOY7sQ/u+LucBfGy3OdKHrHK898671n1o78zZOY7uY+s3jqM+5JyenePIPmRu1rtUz3t7F1qq1cfWey0+znfb8q7b81mZkd+q9QmeaXzMDD7GAh9jgY+x0Kr2vpV9vwAAAAAAAAAAADPyA0hFewQ=
+   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
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
@@ -38,7 +38,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmFlygzAUBN+fKxfL/Y+Un1DBipandSTTU9WVYGxA00aAX2b2AgAAAAAAAAAAAAAAAAAAAAAAAICpfE1APaaTwcde4GMv8LEX+NgLfOwFPvYCH3uBjz6+N0XdiwL7HbtN/N+zPras7gYf78vqbvDxvqzuRgU+tN2nsAn/x9Z536vuavW5sHOe7GNHR0/ykZqrLLN+1BwW7ifc531Z3ZXq/ChlxfX+ydfzMK33RfgY46Nlvip1io9x50cp+FjrwzNfjaJmm+quVvlo6WmE+5L38L3qrmbj6WFUN7F94cPnwzNfrXLfs88TWTVfmeHD62NFN9fnWvNkH8xXWh+j7lnx0UZvUr3iYy8fV0b64Hkwfn8V6ydcVwrnh89HqQdPNxZZttvrqW15g4+/Hjzd2O2v3Zbv6/Gxxkcq+FjnoyW9PkpRd6n0MZOW/dRG3XvOR+1Ye77npZR+Gyh9pibq7tXzlWf7rT5yY/RG7WJ3H63bCKPu+DQfvdeC6zPqLnu5j6U01tJrozLi+qHuFR//o+4WH+9Rd9vi4mXtvyfOyqznD3XfJRc9meljdNRd4+P9/D+FK7Hz/juxruee1JvSPlPHdiWcj0/iPr6wk9xro397ym2j9tjC75u645k+POeaN573tvi4R93vivMj5SLXSyy5e1TPcXi3dRKtY/b48F4Hcun9rpxG65hTqXmW83Q4Yi49idz4asccfs7jY9WxncI1Fi/4WOPEEq9Z5j0xau93V31XTsfbf85HKZ4Ow+PIRd3Zjoz2AWt92AbH/Mn0PA+qj/3TiHWcS+r5Etq6T3Vc8/uiehyfjifqY3w6uNgHXAAAAAAAAMCT+AEm8oFd
+   eJztmVFu5CAQRPmLcrH4/jfaWApaTGhoMNAQXklPARtsqBocz/DhnPsAAAAAAAAAAAAAAAAAAAAAAAAAgKF8DsB6TjtDHmtBHmtBHmtBHmtBHmtBHmtBHmtBHu+4vvn6YURZcz5Vt/bFAvczdzewrDmfqlt7Qx7PurU35PGsW3tjBXnYeh//n/W4AeXUOU3bk/LYQSfnsWJGJ+UhPauccO4K2mjKX5k2Tmifqlt7ZbU+Sop97F2W6tZeWeWR8yl3njz65NHyvCp5Sh791kdJ5DE3j5xP/pj0nSVH3C++T6mvtVez8mh5XvXIvpR73Nbaq9FofOjlTepece6977kbKY/iY9L5Wdm/ueeO3POc8bzynrbqpDxmeOP7terkPC6h/MYb6VpanZKHtLdd897qRR5tpOZa601K5LFWHl498+D74PMZdLnf71txH61YH7o8Sj5ovHGJuguOS9fSijz++6DxxgV/XVAPz5PHnDwkkce8PFr0No+SrL20zKPl93btd5va+7TkbO17Lo/aub75nJcU51Hbp0bW3vdcH70UXyusa9+l7z65OWplncXqebReI5a1xzvl0eN/ge9j7eVbwrmU5lo61kuXUNb2uWXtK3n8lrW35PGUtbctWdx/pf0Pr1R9ZB6lvWJpL6Yka79LWYSq9XdkHrUqjcXaa/J4rv9dCOcTP6f8HKU92pF5lPaFpbF5hfOz9rglk5S3pWOa31Zq9+ClvbDascWfN2uPR+ahWWtaadq25BHK2t8Z60PKIudLSqm2mny1x6y9nZVHPFepzV3OPY9GrA9rP63Wh6Q4j5w0HtaMzdpLizxqrqXJY9bYduFWzd4deczJxAnHXKZNitArzfvurM/K7mj9z+VRUimP1DhysvZsRXrnAXPzcAuM+S/TkoeX9dj/GimPcwrbWo99dyTlfhs87Z1oBTSyHuPpkMU6kAUAAAAAAACcxD+QFYRL
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">
@@ -46,7 +46,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2kGOgyAUAFCO0N52Wmd0086ml64LFjNxGq0Z8BPeS35gQSJBAT+aEgAAAAAAAAAAAAAAAADE9FG4vnbNLe178lm4vnbNLe0BgKXLHNejOwGN+jl/SuQh8o/f3lmvSuQh8g9aZr+vy3jzl9sc9zm+j+5IcOZPXcYb9jN/6oo43kMOYhhzEIP5QU/efd4fOSjjKwcxTDmgNUPyPgP/pda5+LhSUte0UkINUffzXterMcU8v+t1vZqSfI39Tkd3AAAAAGCH4UUJvfMfWxuc58fifsBSL98ez0d3AAAAAABoxhNYczWY
+   eJzt2kGOgyAUAFCO0J53Wmd0086mZ64LFjNxGq0Z8BPeS35gQSJBAT+aEgAAAAAAAAAAAAAAAADE9FG4vnbNLe178lm4vnbNLe0BgKXLHNejOwGN+jl/SuQh8o/f3lmvSuQh8g9aZr+vy3jzl9sc9zm+j+5IcOZPXcYb9jN/6oo43kMOYhhzEIP5QU/efd4fOSjjKwcxTDmgNUPyPgP/pda5+LhSUte0UkINUffzXterMcU8v+t1vZqSfI39Tkd3AAAAAGCH4UUJvfMfWxuc58fifsBSL98ez0d3AAAAAABoxhOsjjbi
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">
@@ -78,7 +78,7 @@
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztzjENAAAIA7BpRzkadhCeVkETAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWvMdAAAAAAAAAADgzALvdwCD
+   eJztzjENAAAIA7CZxzcadhCeVkETAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWvMdAAAAAAAAAADgzAJV2gCG
   </data>
  </layer>
 </map>
