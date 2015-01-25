@@ -176,6 +176,7 @@ public class World {
         if ((Gdx.input.isKeyPressed(Input.Keys.SPACE) || GameScreen.dialog != null) 
         		&& !isFlashing && player.canUseLight()) {
             playerLight.setDistance(3);
+            playerLight.getColor().a = .05f + player.getBatteryPercentage() * .5f;
         } else {
             playerLight.setDistance(0);
         }
