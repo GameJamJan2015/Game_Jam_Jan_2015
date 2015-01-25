@@ -26,7 +26,7 @@ public class Shadow extends Enemy {
 		
 		
 		timer = MathUtils.random(10, 15);
-		speed = 0.5f;
+		speed = 0.9f;
 	}
 	public void update(float delta) {
 		super.update(delta);

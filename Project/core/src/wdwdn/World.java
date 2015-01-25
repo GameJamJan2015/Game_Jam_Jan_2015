@@ -72,6 +72,7 @@ public class World {
 
 	public World(TiledMap map) {
 		this.map = map;
+        enemyIsSpawned = false;
 		// Init
 		player = new Player(this, 0, 0);
 

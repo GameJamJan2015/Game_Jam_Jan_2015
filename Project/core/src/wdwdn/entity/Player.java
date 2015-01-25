@@ -26,7 +26,7 @@ public class Player extends DynamicEntity {
 
         if(world.playerLight.getDistance() > .08f && GameScreen.dialog == null){
         	if (lifeBattery > 15)
-        		addLifeBattery(-delta * 12);
+        		addLifeBattery(-delta * 13);
         	
         	if (lifeBattery < 15)
         		recharge = true;
