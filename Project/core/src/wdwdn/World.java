@@ -49,6 +49,7 @@ public class World {
 
 	private float stateTime;
 	private float thunderTimer;
+	private float startTimer;
 
 	private boolean isFlashing = false;
 	private float flashTimer;
@@ -162,8 +163,9 @@ public class World {
 	}
 
 	private void updateAI(float delta) {
-
-		if (enemyIsSpawned == false) {
+		startTimer += delta;
+		
+		if (enemyIsSpawned == false && startTimer > 45) {
 
 			if (getPlayer().getLifeBattery() < 50f) {
 				if (MathUtils.random(0, 1500) <= 2) {
@@ -374,7 +376,6 @@ public class World {
 					TiledMapTileLayer.Cell cell = ((TiledMapTileLayer) layer)
 							.getCell(x, y);
 					if (cell != null) {
-						Gdx.app.log("", "" + cell.getTile().getId());
 						if (cell.getTile().getId() == 72) {
 							cell.setTile((map.getTileSets().getTile(73)));
 							cell.getTile().getProperties()
