@@ -31,7 +31,7 @@ public class Shadow extends Enemy {
 	public void update(float delta) {
 		super.update(delta);
 		
-		timer -= delta * 2;
+		timer -= delta;
 		
 		if(timer < 0 ){
 			remove();

@@ -20,6 +20,8 @@ public class Assets {
     public static Texture menu;
     public static Texture gameover;
     public static Texture shadow;
+    public static Texture characters;
+
     public static TextureRegion region;
     public static TextureRegion pixel;
 
@@ -72,6 +74,11 @@ public class Assets {
         param.magFilter = Texture.TextureFilter.Nearest;
         manager.load("graphics/shadow.png", Texture.class, param);
 
+        param = new TextureLoader.TextureParameter();
+        param.minFilter = Texture.TextureFilter.Nearest;
+        param.magFilter = Texture.TextureFilter.Nearest;
+        manager.load("graphics/character_sheet.png", Texture.class, param);
+
         // Load Font
         BitmapFontLoader.BitmapFontParameter fontParam = new BitmapFontLoader.BitmapFontParameter();
         fontParam.genMipMaps = true;
@@ -98,6 +105,7 @@ public class Assets {
         menu = manager.get("graphics/menu.png", Texture.class);
         gameover = manager.get("graphics/gameover.png", Texture.class);
         shadow = manager.get("graphics/shadow.png", Texture.class);
+        characters = manager.get("graphics/character_sheet.png", Texture.class);
 
         loadRegions(items);
 

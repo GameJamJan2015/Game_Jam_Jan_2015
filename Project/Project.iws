@@ -73,8 +73,8 @@
       <file leaf-file-name="World.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.0" vertical-offset="13213" max-vertical-offset="17760">
-              <caret line="373" column="70" selection-start-line="373" selection-start-column="70" selection-end-line="373" selection-end-column="70" />
+            <state vertical-scroll-proportion="-12.0" vertical-offset="13583" max-vertical-offset="18130">
+              <caret line="383" column="70" selection-start-line="383" selection-start-column="70" selection-end-line="383" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1330#1342#0" expanded="true" />
@@ -87,20 +87,20 @@
                 <element signature="e#2582#2597#0" expanded="true" />
                 <element signature="e#2828#2843#0" expanded="true" />
                 <element signature="e#3072#3087#0" expanded="true" />
-                <element signature="e#12361#12362#0" expanded="true" />
-                <element signature="e#12385#12386#0" expanded="true" />
-                <element signature="e#12414#12415#0" expanded="true" />
-                <element signature="e#12431#12432#0" expanded="true" />
-                <element signature="e#12461#12462#0" expanded="true" />
-                <element signature="e#12481#12482#0" expanded="true" />
-                <element signature="e#12528#12529#0" expanded="true" />
-                <element signature="e#12550#12551#0" expanded="true" />
+                <element signature="e#12751#12752#0" expanded="true" />
+                <element signature="e#12775#12776#0" expanded="true" />
+                <element signature="e#12804#12805#0" expanded="true" />
+                <element signature="e#12821#12822#0" expanded="true" />
+                <element signature="e#12851#12852#0" expanded="true" />
+                <element signature="e#12871#12872#0" expanded="true" />
+                <element signature="e#12918#12919#0" expanded="true" />
+                <element signature="e#12940#12941#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="world1.tmx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="world1.tmx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/assets/graphics/world1.tmx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3626">
@@ -110,12 +110,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shadow.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shadow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/Shadow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="296" max-vertical-offset="2109">
-              <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-              <folding />
+            <state vertical-scroll-proportion="0.5" vertical-offset="444" max-vertical-offset="1924">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding>
+                <element signature="e#505#520#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,22 +171,19 @@
       <file leaf-file-name="Assets.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3219" max-vertical-offset="5476">
-              <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3330" max-vertical-offset="5772">
+              <caret line="107" column="80" selection-start-line="107" selection-start-column="80" selection-end-line="107" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/Game.java">
+      <file leaf-file-name="ScaryGirl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/ScaryGirl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1226" max-vertical-offset="3478">
-              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
-              <folding>
-                <element signature="e#1706#1707#0" expanded="true" />
-                <element signature="e#1770#1771#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1739">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -237,10 +236,11 @@
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/GameOverScreen.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/GameScreen.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/entity/Player.java" />
-        <option value="$PROJECT_DIR$/core/src/wdwdn/entity/Shadow.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/NextLevelScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/wdwdn/Assets.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/World.java" />
+        <option value="$PROJECT_DIR$/core/src/wdwdn/Assets.java" />
+        <option value="$PROJECT_DIR$/core/src/wdwdn/entity/ScaryGirl.java" />
+        <option value="$PROJECT_DIR$/core/src/wdwdn/entity/Shadow.java" />
       </list>
     </option>
   </component>
@@ -764,7 +764,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -779,7 +779,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3143236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22837925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22837925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27320954" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1203,14 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/Shadow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="296" max-vertical-offset="2109">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/NextLevelScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="2442">
@@ -1221,18 +1213,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3219" max-vertical-offset="5476">
-          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.0" vertical-offset="13213" max-vertical-offset="17760">
-          <caret line="373" column="70" selection-start-line="373" selection-start-column="70" selection-end-line="373" selection-end-column="70" />
+        <state vertical-scroll-proportion="-12.0" vertical-offset="13583" max-vertical-offset="18130">
+          <caret line="383" column="70" selection-start-line="383" selection-start-column="70" selection-end-line="383" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1330#1342#0" expanded="true" />
@@ -1245,14 +1229,14 @@
             <element signature="e#2582#2597#0" expanded="true" />
             <element signature="e#2828#2843#0" expanded="true" />
             <element signature="e#3072#3087#0" expanded="true" />
-            <element signature="e#12361#12362#0" expanded="true" />
-            <element signature="e#12385#12386#0" expanded="true" />
-            <element signature="e#12414#12415#0" expanded="true" />
-            <element signature="e#12431#12432#0" expanded="true" />
-            <element signature="e#12461#12462#0" expanded="true" />
-            <element signature="e#12481#12482#0" expanded="true" />
-            <element signature="e#12528#12529#0" expanded="true" />
-            <element signature="e#12550#12551#0" expanded="true" />
+            <element signature="e#12751#12752#0" expanded="true" />
+            <element signature="e#12775#12776#0" expanded="true" />
+            <element signature="e#12804#12805#0" expanded="true" />
+            <element signature="e#12821#12822#0" expanded="true" />
+            <element signature="e#12851#12852#0" expanded="true" />
+            <element signature="e#12871#12872#0" expanded="true" />
+            <element signature="e#12918#12919#0" expanded="true" />
+            <element signature="e#12940#12941#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1262,6 +1246,32 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3626">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3330" max-vertical-offset="5772">
+          <caret line="107" column="80" selection-start-line="107" selection-start-column="80" selection-end-line="107" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/ScaryGirl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1739">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/entity/Shadow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5" vertical-offset="444" max-vertical-offset="1924">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#505#520#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
