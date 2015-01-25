@@ -46,7 +46,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2dEKwiAUAFA/of62Wm3Ql9eDD8WIrYF6xXPgog+C4uaVu6UEAAAAAAAAAAAAAAAAADFdCve35twzfiT3wv2tOfeMBwDWru+4tV4EdOrz/JSoQ9Qf3/7JVyXqEPUHPXPf12W/4bhW5+fZYM4I5Cs4zvmpK+J+TzmIYc5BDM4HI/G+x/LIQQxLDujNlOR36M280VLXstFCDVHv81Hz1Zxifr8bNV8tSb3GcafWCwAAAAA4YPrRAvTA9/xYPA9YG+Xf47n1AgAAAACAbrwApKUxWw==
+   eJzt2stqxCAUAFA/of3badMm0FUfP90sXMwwU/Kg6hXPgYsuBMVEk2uSEgAAAAAAAAAAAAAAAADEdClc3+pzT/uRvBWub/W5pz0AcO9ljdfWg4BOXa+fEnmI/OPWkf2qRB4i/6Bnnvd1mW8e+Vzja43v1gMJrtX6+WjQZwT2KzjP+qkr4nxPOYhhzkEM1gcjOXq//+SgjPccxLDkgN5MyfsM/Jda5+LzRkldy0YJNUR9no+6X80p5vndqPvVkuRrnPfUegAAAAAAJ0x/lDA6/7H1wXl+LK4H3Bvl2+Nz6wEAAAAAAN34BdXFNjI=
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">
@@ -62,7 +62,6 @@
   <object id="8" name="end" x="2444" y="5644" width="226" height="26"/>
  </objectgroup>
  <objectgroup name="notes">
-  <object id="10" name="note2" x="2582.67" y="5080" width="20" height="14.6667"/>
   <object id="15" name="gsdlgs" x="2762" y="2272" width="160" height="52.6667">
    <properties>
     <property name="Dialog" value="6"/>
@@ -89,7 +88,7 @@
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztzjEBAAAIA6BVsH9ZE+zVBxKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM18BwAAAAAAAACAcwu/jgAS
+   eJztwTEBAAAAwqD1T+1lC6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAbnEAAAQ==
   </data>
  </layer>
 </map>

@@ -9,16 +9,16 @@
   </tile>
  </tileset>
  <tileset firstgid="65" name="floor_wall_sheet" tilewidth="64" tileheight="64">
-  <image source="floor_wall_sheet.png" width="384" height="64"/>
+  <image source="floor_wall_sheet.png" width="512" height="64"/>
  </tileset>
- <tileset firstgid="71" name="sign_numb_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="73" name="sign_numb_sheet" tilewidth="64" tileheight="64">
   <image source="sign_numb_sheet.png" width="960" height="64"/>
  </tileset>
- <tileset firstgid="86" name="tiles_sheet" tilewidth="64" tileheight="64">
+ <tileset firstgid="88" name="tiles_sheet" tilewidth="64" tileheight="64">
   <image source="tiles_sheet.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="118" name="furniture_sheet" tilewidth="64" tileheight="64">
-  <image source="furniture_sheet.png" width="256" height="192"/>
+ <tileset firstgid="120" name="furniture_sheet" tilewidth="64" tileheight="64">
+  <image source="furniture_sheet.png" width="256" height="320"/>
   <tile id="10">
    <properties>
     <property name="Dialog" value="4"/>
@@ -46,7 +46,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2dEKwiAUAFA/oX62Wm3/Xg8+FCMsQXfFc+CiD4LidpW7pQQAAAAAAAAAAAAAAAAAMV0a90tz/jJ+JvfG/dKcv4wHAPaur7gdvQgY1Hv+tKhD1B+f/jmvWtQh6g9G5r7vy35DPfnTl/2GevKnr4j7veQghjUHMcgPZuJ9j+WRgxi2HDCaJTnfYTRroaWvrdBCD1Hv81nPqzXF/H4363m1JfUa9U5HLwAAAACgwvKlBRiB7/mxeB6wN8u/x/PRCwAAAAAAhvEE368wDw==
+   eJzt2tFugyAUAFA+of3btW762q4/XR942OIarRl4CeckN/BAIkEBL5oSAAAAAAAAAAAAAAAAAMT0Ubi+ds0t7XvyWbi+ds0t7QGApcsc16M7AY36OX9K5CHyj9/eWa9K5CHyD1pmv6/LePOX2xz3Ob6P7khw5k9dxhv2M3/qijjeQw5iGHMQg/lBT9593h85KOMrBzFMOaA1Q/I+A/+l1rn4uFJS17RSQg1R9/Ne16sxxTy/63W9mpJ8jf1OR3cAAAAAYIfhRQm98x9bG5znx+J+wFIv3x7PR3cAAAAAAGjGE83NNbA=
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">

@@ -19,13 +19,18 @@
  </tileset>
  <tileset firstgid="120" name="furniture_sheet" tilewidth="64" tileheight="64">
   <image source="furniture_sheet.png" width="256" height="320"/>
+  <tile id="10">
+   <properties>
+    <property name="Dialog" value="4"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="Tile Layer 2 - Golv" width="100" height="100">
   <properties>
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmNGKwjAQRYNvfpaI+/+fJAsuyOwknaSTTJqcC4dtbW3NPU2UvaeU7gAAAAAAAAAAAAAAAAAAAAAAAAAAm+GR6DGshEeix7ASHokew0p4JHoMK+GR6DGshEeix7ASHokew0p4JHoMV+7OmtsHS6J7ifTx+NBj23Jc24/uBR/4wMd8ePVe6hsf+e5zeRi3ZW+l83Pvt5wb3dXoueDN0/FaO/vo6Qgfxz60yHUkd87Zbct6tZuPlme153ZuP7qrKB+lnrwdvDL30fajuxrlQ8vRetV7fuz8/THjeoWP/908C8e9UnPN6K5G+WjpycO93Gd+1HVytht8tPlImW1vHyOegauRy4j1Ch8+HeFjrI+U2cbHGB9ajtar7+DjHHKsPw3daK+f9fEqHMPHeB+7zg/ZkRa5XpXWr5p74eNcR9rx1m60a5XWKHyM98H8wMfM4GMuWn30TMt9onv09HEUiyMvUsN90gQ9Rs+PHv3jY24fNdeI7nElHzL4iPNRurb1PvgY48PKbYIe8bHu/NCS60ce771eWRPd4xlkB7X/b58J7bNH94uPa/v4Rsa6ZvTqt5SH+Pud6B49fWidaK/lHMrOLN2WcuazXZ3cM9oyZu19pXnQ41m5OviYC88xJ3F+LtbvXc/PdhU8x5wOriHBBz5mpyaePmqvt4sPb7eW74+/jHxWduQ3nr+vAB8rgY+5wMdc4GMutJR+b0V/XgAAAAAAAAAAgB15A/fRcf8=
+   eJztmG1uwyAQBVH+5VhulN7/SFWlVLLoLuZjYTHMk0a1Y8cObwyJ+gwhPAEAAAAAAAAAAAAAAAAAAAAAAAAANsMi3mNYCYt4j2ElLOI9hpWwiPcYVsIi3mNYCYt4j2ElLOI9hpWwiPcY7txdbh4fcuLdi6eP40OP7Zzj0r53L/jABz7mw6r3VN/40LvXcmRux72lztfen3Oud1ej54I1L8Nr7eyjpyN8XPuQEq8j2jmt2znr1W4+ap7VntvavndXXj5SPVk7eCv3kfa9uxrlQ8rVetV7fuz8/THjeoWP/928EsetUnJN765G+ajpycJ9vM/8KOuktRt81PkIyra1jxHPwN3QMmK9wodNR/gY6yMo2/gY40PK1Xp1Dj7aiMf6XdGN9Hqrj3fiGD7G+9h1fsQdSYnXq9T6VXIvfLR1JB2v7Ua6VmqNwsd4H8wPfMwMPuai1kfP1NzHu0dLH1fRHH2dqH3uU/6le68+d67GnPJh3T8+5vZRcg3vHlfyEQcffj5S1869Dz7G+MjlMUGP+Fh3fkjR+omP916vcuPdYwtxB6X/b58J6bN794uPe/s4Eyd3zejVbypH9Pcc7x4tfUidSK9pDuPOcrpNpeWz3R3tGa0Zs/S+1Dzo8azcHXzMheWYQ3S+ltzvXcvPdhcsxxwurhGDD3zMTkksfZRebxcf1m5zvj/+MvJZ2ZHfWP6+AnysBD7mAh9zgY+5kJL6veX9eQEAAAAAAAAAAHbkB6PccgI=
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
@@ -41,7 +46,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2dEKwiAUAFA/of62Wm2/Xg8+FCMsQXfFc+CiD4LidpW7pQQAAAAAAAAAAAAAAAAAMV0a90tz/jJ+JvfG/dKcv4wHAPaur7gdvQgY1Hv+tKhD1B+f/jmvWtQh6g9G5r7vy35DPfnTl/2GevKnr4j7veQghjUHMcgPZuJ9j+WRgxi2HDCaJTnfYTRroaWvrdBCD1Hv81nPqzXF/H4363m1JfUa9U5HLwAAAACgwvKlBRiB7/mxeB6wN8u/x/PRCwAAAAAAhvEEnK0w2Q==
+   eJzt2kGOgyAUAFCO0N52Wmd0086ml64LFjNxGq0Z8BPeS35gQSJBAT+aEgAAAAAAAAAAAAAAAADE9FG4vnbNLe178lm4vnbNLe0BgKXLHNejOwGN+jl/SuQh8o/f3lmvSuQh8g9aZr+vy3jzl9sc9zm+j+5IcOZPXcYb9jN/6oo43kMOYhhzEIP5QU/efd4fOSjjKwcxTDmgNUPyPgP/pda5+LhSUte0UkINUffzXterMcU8v+t1vZqSfI39Tkd3AAAAAGCH4UUJvfMfWxuc58fifsBSL98ez0d3AAAAAABoxhNYczWY
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">
