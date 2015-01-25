@@ -216,8 +216,12 @@ public class World {
         if (isFlashing) {
             flashTimer += delta;
 
-            if (MathUtils.random(0, 5) < 1)
-                ambLight.setColor(1, 1, 1, MathUtils.randomBoolean() ? 0 : .5f);
+            if (MathUtils.random(0, 5) < 1) {
+                boolean rnd = MathUtils.randomBoolean();
+                ambLight.setColor(1, 1, 1,  rnd ? 0 : .5f);
+                if (!rnd)
+                    Assets.playSound(Assets.noise);
+            }
 
             if (flashTimer >= flashMaxTime) {
                 isFlashing = false;

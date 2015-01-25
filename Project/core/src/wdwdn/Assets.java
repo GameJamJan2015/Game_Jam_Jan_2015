@@ -18,6 +18,7 @@ public class Assets {
     public static AssetManager manager;
     public static Texture player;
     public static Texture menu;
+    public static Texture gameover;
     public static TextureRegion region;
     public static TextureRegion pixel;
 
@@ -27,6 +28,7 @@ public class Assets {
 
     public static Sound thunder;
     public static Sound rain;
+    public static Sound noise;
 
     public static Preferences prefs;
 
@@ -56,6 +58,11 @@ public class Assets {
         param.magFilter = Texture.TextureFilter.Nearest;
         manager.load("graphics/menu.png", Texture.class, param);
 
+        param = new TextureLoader.TextureParameter();
+        param.minFilter = Texture.TextureFilter.Nearest;
+        param.magFilter = Texture.TextureFilter.Nearest;
+        manager.load("graphics/gameover.png", Texture.class, param);
+
         // Load Font
         BitmapFontLoader.BitmapFontParameter fontParam = new BitmapFontLoader.BitmapFontParameter();
         fontParam.genMipMaps = true;
@@ -68,6 +75,7 @@ public class Assets {
 
         manager.load("sound/thunder_fade.ogg", Sound.class);
         manager.load("sound/rain.ogg", Sound.class);
+        manager.load("sound/noise.ogg", Sound.class);
     }
 
     public static void loadFinished() {
@@ -75,6 +83,7 @@ public class Assets {
         Texture items = manager.get("graphics/lamp.png", Texture.class);
         player = manager.get("graphics/walking_player_sheet.png", Texture.class);
         menu = manager.get("graphics/menu.png", Texture.class);
+        gameover = manager.get("graphics/gameover.png", Texture.class);
 
         loadRegions(items);
 
@@ -88,6 +97,7 @@ public class Assets {
 
         thunder = manager.get("sound/thunder_fade.ogg");
         rain = manager.get("sound/rain.ogg");
+        noise = manager.get("sound/noise.ogg");
     }
 
     private static void loadRegions(Texture item) {

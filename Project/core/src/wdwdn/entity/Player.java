@@ -26,13 +26,13 @@ public class Player extends DynamicEntity {
 
         if(world.playerLight.getDistance() > .08f && GameScreen.dialog == null){
         	if (lifeBattery > 15)
-        		addLifeBattery(-delta * 7);
+        		addLifeBattery(-delta * 9);
         	
         	if (lifeBattery < 15)
         		recharge = true;
         	
         } else {
-        	addLifeBattery( delta * 2.35f);
+        	addLifeBattery( delta * 2.15f);
         }
         
         sprite.setFlip(getVelocity().x < 0, false);

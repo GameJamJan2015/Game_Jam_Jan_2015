@@ -45,6 +45,9 @@ public class GameScreen extends Screen {
 			setScreen(new NextLevelScreen(level + 1));
 		}
 
+		if (world.getPlayer().getLifeBattery() <= 0)
+			setScreen(new GameOverScreen());
+
 		if (dialog != null && dialog.removeDialog == true) {
 			dialog = null;
 		}
@@ -66,7 +69,7 @@ public class GameScreen extends Screen {
         getBatch().draw(Assets.region, 40, 600, 300, 64);
         getBatch().setColor(0,1,0,1);
         getBatch().draw(Assets.pixel, 56, 621, (world.getPlayer().getLifeBattery()/100)*225, 21);
-        getBatch().setColor(1,1,1,1);
+        getBatch().setColor(1, 1, 1, 1);
 
 		getBatch().end();
 	}
