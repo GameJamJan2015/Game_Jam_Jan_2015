@@ -8,7 +8,7 @@ import wdwdn.Assets;
  */
 public class NextLevelScreen extends Screen {
 
-    private String[] texts = new String[]{"Deeper, but higher", "moahaha"};
+    private String[] texts = new String[]{"So much HATE..", "You CAN!", "Tears.", "Its Okey, you can wake up"};
     int level;
     float time;
 
