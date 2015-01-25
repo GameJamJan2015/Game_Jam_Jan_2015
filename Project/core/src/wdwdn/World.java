@@ -128,6 +128,7 @@ public class World {
 	private void spawnShadow(float x, float y) {
 		entities.add(new Shadow(this, x, y, 8));
 		enemyIsSpawned = true;
+        Assets.playSound(Assets.chase);
 	}
 
 	private void InitLights() {
@@ -364,13 +365,16 @@ public class World {
 							.getCell(x, y);
 					if (cell != null) {
 						Gdx.app.log("", "" + cell.getTile().getId());
-						if (cell.getTile().getId() == 72
-								|| cell.getTile().getId() == 100000) { // todo
-							// ((TiledMapTileLayer) layer).setCell(x, y, null);
+						if (cell.getTile().getId() == 72) {
 							cell.setTile((map.getTileSets().getTile(73)));
 							cell.getTile().getProperties()
 									.put("Collision", "false");
 						}
+                        if (cell.getTile().getId() == 74) {
+                            cell.setTile((map.getTileSets().getTile(75)));
+                            cell.getTile().getProperties()
+                                    .put("Collision", "false");
+                        }
 					}
 				}
 			}

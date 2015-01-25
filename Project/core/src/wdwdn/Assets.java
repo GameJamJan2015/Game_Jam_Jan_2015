@@ -30,6 +30,9 @@ public class Assets {
     public static Sound thunder;
     public static Sound rain;
     public static Sound noise;
+    public static Sound girlscream;
+    public static Sound girlspawn;
+    public static Sound chase;
 
     public static Preferences prefs;
 
@@ -82,6 +85,10 @@ public class Assets {
         manager.load("sound/thunder_fade.ogg", Sound.class);
         manager.load("sound/rain.ogg", Sound.class);
         manager.load("sound/noise.ogg", Sound.class);
+
+        manager.load("sound/girlspawn.mp3", Sound.class);
+        manager.load("sound/girlscream.mp3", Sound.class);
+        manager.load("sound/chase.mp3", Sound.class);
     }
 
     public static void loadFinished() {
@@ -105,6 +112,10 @@ public class Assets {
         thunder = manager.get("sound/thunder_fade.ogg");
         rain = manager.get("sound/rain.ogg");
         noise = manager.get("sound/noise.ogg");
+
+        girlscream = manager.get("sound/girlscream.mp3");
+        girlspawn = manager.get("sound/girlspawn.mp3");
+        chase = manager.get("sound/chase.mp3");
     }
 
     private static void loadRegions(Texture item) {
