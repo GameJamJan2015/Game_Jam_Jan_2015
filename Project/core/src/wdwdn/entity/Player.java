@@ -1,6 +1,7 @@
 package wdwdn.entity;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.g2d.Batch;
 
 import wdwdn.World;
 import wdwdn.screen.GameScreen;
@@ -52,5 +53,9 @@ public class Player extends DynamicEntity {
 		
 		if(this.lifeBattery > 100)
 			this.lifeBattery = 100;
+	}
+    
+    public float getLifeBattery() {
+		return lifeBattery;
 	}
 }

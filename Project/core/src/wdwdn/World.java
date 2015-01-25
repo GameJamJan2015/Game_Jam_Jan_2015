@@ -391,7 +391,7 @@ public class World {
         return map;
     }
 
-    public GameEntity getPlayer() {
+    public Player getPlayer() {
         return player;
     }
 
