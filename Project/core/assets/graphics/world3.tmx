@@ -28,7 +28,7 @@
  <tileset firstgid="143" name="character_sheet" tilewidth="64" tileheight="64">
   <image source="character_sheet.png" width="256" height="64"/>
  </tileset>
- <layer name="Tile Layer 2 - Golv" width="100" height="100" visible="0">
+ <layer name="Tile Layer 2 - Golv" width="100" height="100">
   <properties>
    <property name="Collision" value="False"/>
   </properties>
@@ -49,7 +49,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2ktugzAQAFAfIT1VDpWWFKSu+lGOHBZetGorQlrbY/k9aWQWSB4ZbBhDSgAAAAAAAAAAAAAAAAAQ06nw8Vaft5w/knPh460+bzmfv7m0TgCAIh7XeGqdBHTq8/wpUYeoP77as16VqEPUH/TM874u481PXtd4W+O9dSLBtZo/Lw36jMB6Bfczf+qKON5TDmKYcxCD+cFI9t7vHzko4zkHMSw5oDdT8j4D/6XWvvi80VLXstFCDVGf56OuV3OKuX836nq1JPUa9zu0TgCAMI6tEwAAgB2mX1oYnf/Y+mA/PxbXA74b5dvjQ+sEAAAAAIBuXAGViDhW
+   eJzt2ktugzAQAFBfoafKodrSwjYf5chh4UWrtiI0sT2W35NG9gKJkcGGMaQEAAAAAAAAAAAAAAAAADG9Fu5vnfOe40fyUbi/dc57jucx19YJAFDE2xrvrZOATn2dPyXqEPXHd3vWqxJ1iPqDnnne12W8+c1xjdMa59aJBGf+1GW84f/Mn7oijveUgxjmHMRgfjCSvff7JQdlfOYghiUH9GZK3mfgWWrti88bLXUtGy3UEPV5Pup6NaeY+3ejrldLUq8BAI87tE4AAAB2mP5oYXT+Y+uD/fxYXA/4aZRvjy+tEwAAAAAAunEDqWQ3wQ==
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">
@@ -96,7 +96,7 @@
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T+1lC6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAbnEAAAQ==
+   eJztzgENAAAIA6CXt7cxPh0kIAEAAAAAAAAAAAAAAAAAAAAAAAD4adoBAAAAAAAAAAAAAAAAAAAAAAAAAE5akLcAhg==
   </data>
  </layer>
 </map>
