@@ -25,6 +25,9 @@ public class Assets {
 
     public static Music music;
 
+    public static Sound thunder;
+    public static Sound rain;
+
     public static Preferences prefs;
 
 
@@ -62,6 +65,9 @@ public class Assets {
 
         // Music
         manager.load("sound/music.mp3", Music.class);
+
+        manager.load("sound/thunder_fade.ogg", Sound.class);
+        manager.load("sound/rain.ogg", Sound.class);
     }
 
     public static void loadFinished() {
@@ -79,6 +85,9 @@ public class Assets {
         music = manager.get("sound/music.mp3");
         music.setLooping(true);
         playMusic();
+
+        thunder = manager.get("sound/thunder_fade.ogg");
+        rain = manager.get("sound/rain.ogg");
     }
 
     private static void loadRegions(Texture item) {
@@ -87,7 +96,11 @@ public class Assets {
     }
 
     public static void playSound(Sound sound) {
-        if (sound != null) if (prefs.getBoolean("sound", true)) sound.play(1);
+        playSound(sound, .3f);
+    }
+
+    public static void playSound(Sound sound, float vol) {
+        sound.play(vol);
     }
 
     public static void playMusic() {
@@ -113,7 +126,7 @@ public class Assets {
     }
 
     public static boolean isMusicEnabled() {
-        return prefs.getBoolean("music", false);
+        return prefs.getBoolean("music", true);
     }
 
     public static void dispose() {

@@ -16,6 +16,8 @@ import com.badlogic.gdx.maps.MapObjects;
 import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.maps.tiled.tiles.AnimatedTiledMapTile;
+import com.badlogic.gdx.maps.tiled.tiles.StaticTiledMapTile;
 import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
@@ -45,6 +47,7 @@ public class World {
     public boolean isNextLevel = false;
 
     private float stateTime;
+    private float thunderTimer;
 
     private boolean isFlashing = false;
     private float flashTimer;
@@ -189,9 +192,16 @@ public class World {
         rayHandler.update();
 
         if (!isLightning) {
-            if (MathUtils.random(0, 1000) <= 1 && !isFlashing) {
-                isLightning = true;
-                stateTime = 0;
+            thunderTimer += delta;
+
+            if (thunderTimer > 8) {
+                if (MathUtils.random(0, 800) <= 1 && !isFlashing) {
+                    isLightning = true;
+                    stateTime = 0;
+                    Assets.playSound(Assets.thunder);
+                    Assets.playSound(Assets.rain, .2f);
+                    thunderTimer = 0;
+                }
             }
         }else {
             float a = (float) Math.sin(stateTime * 5.5f) * .65f;
@@ -306,8 +316,10 @@ public class World {
                 for (int x = startX; x <= endX; x++) {
                     TiledMapTileLayer.Cell cell = ((TiledMapTileLayer) layer).getCell(x, y);
                     if (cell != null) {
-                        if (cell.getTile().getId() == 11 || cell.getTile().getId() == 10) {
+                        Gdx.app.log(""  , "" + cell.getTile().getId());
+                        if (cell.getTile().getId() == 72 || cell.getTile().getId() == 100000) { //todo
                            // ((TiledMapTileLayer) layer).setCell(x, y, null);
+                            cell.setTile((map.getTileSets().getTile(73)));
                             cell.getTile().getProperties().put("Collision", "false");
                         }
                     }

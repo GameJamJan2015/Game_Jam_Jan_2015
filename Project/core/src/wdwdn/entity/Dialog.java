@@ -43,10 +43,11 @@ public class Dialog {
     public void draw(Batch batch) {
         batch.draw(Assets.pixel, 200, 40, 1280 - 400, 160);
 
-        Assets.font.setColor(Color.WHITE);
+        Assets.font.setColor(Color.BLACK);
         Assets.font.setScale(.4f);
         Assets.font.drawWrapped(batch, texts[index], 300, 150, 1280 - 600,
                 HAlignment.CENTER);
+        Assets.font.setColor(Color.WHITE);
     }
 
 }

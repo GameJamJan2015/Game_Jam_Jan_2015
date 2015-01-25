@@ -1,5 +1,6 @@
 package wdwdn.screen;
 
+import com.badlogic.gdx.Gdx;
 import wdwdn.Assets;
 
 public class SplashScreen extends Screen {
@@ -14,7 +15,8 @@ public class SplashScreen extends Screen {
 		if (Assets.manager.update()) {
 			Assets.loadFinished();
 			Assets.playMusic();
-			setScreen(new GameScreen(1));
+			Gdx.input.setCursorCatched(true);
+			setScreen(new MainMenuScreen());
 		}
 	}
 
