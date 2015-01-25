@@ -10,6 +10,7 @@ import wdwdn.World;
 public abstract class Enemy extends DynamicEntity {
 	public float radius;
 	protected boolean stopMoving;
+	protected float speed = 1;
 	
 	public Enemy(World world, float x, float y, float width, float height, float radius) {
 		super(world, x, y, width, height);
@@ -29,7 +30,7 @@ public abstract class Enemy extends DynamicEntity {
 			differenceToPlayer.nor();
 			
 			if(stopMoving == false)
-				position.add(differenceToPlayer.scl(delta * 1));
+				position.add(differenceToPlayer.scl(delta * speed));
 			
 			updateRange(range);
 		}

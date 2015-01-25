@@ -30,6 +30,7 @@ import wdwdn.entity.Enemy;
 import wdwdn.entity.GameEntity;
 import wdwdn.entity.Player;
 import wdwdn.entity.ScaryGirl;
+import wdwdn.entity.Shadow;
 import wdwdn.screen.GameScreen;
 
 import java.util.ArrayList;
@@ -120,8 +121,11 @@ public class World {
 
         // load mah girl
 
-        entities.add(new ScaryGirl(this, player.getPosition().x, player.getPosition().y - 3, 1, 1, 8));
     }
+
+	private void spawnShadow(float x, float y) {
+		entities.add(new Shadow(this, x ,y , 8));
+	}
 
     private void InitLights() {
         /** BOX2D LIGHT STUFF BEGIN */
@@ -144,9 +148,21 @@ public class World {
         updateEntities(delta);
         updateLights(delta);
         updateCollision(delta);
+        updateAI(delta);
     }
 
-    private void updateEntities(float delta) {
+    private void updateAI(float delta) {
+		
+    	if(getPlayer().getLifeBattery() < 50f){
+    		if (MathUtils.random(0, 1000) < 2) {
+    			Vector2 position = getPlayer().getPosition().cpy().add(-2, 1);
+    			spawnShadow(position.x, position.y);
+    		}
+		}
+		
+	}
+
+	private void updateEntities(float delta) {
         for (int i = 0; i < entities.size(); i++) {
             GameEntity entity = entities.get(i);
 
@@ -296,7 +312,7 @@ public class World {
                         }
 
                         if (rectangleObject.getProperties().containsKey("Flash")) {
-                            startFlashing(rectangleObject.getProperties().get("Flash", Float.class));
+                            startFlashing(rectangleObject.getProperties().get("Flash", Integer.class));
                             rectangleObject.getProperties().remove("Flash");
                         }
 

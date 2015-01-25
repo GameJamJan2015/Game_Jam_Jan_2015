@@ -51,6 +51,9 @@ public class Player extends DynamicEntity {
 		
 		if(this.lifeBattery > 100)
 			this.lifeBattery = 100;
+		
+		if (this.lifeBattery <= 0)
+			this.lifeBattery = 0;
 	}
     
     public float getLifeBattery() {
