@@ -19,8 +19,9 @@ public class ScaryGirl extends Enemy {
 		if (stopMoving == true) {
 			timer += delta;
 
-			if (timer > 3)
+			if (timer > 3) {
 				remove();
+			}
 		}
 
 	}
