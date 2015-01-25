@@ -26,7 +26,10 @@ public class NextLevelScreen extends Screen {
         time += delta;
 
         if (time > 3.5f) {
-            setScreen(new GameScreen(level));
+        	if (level == 6)
+        		setScreen(new GameOverScreen());
+        	else
+        		setScreen(new GameScreen(level));
         }
     }
 

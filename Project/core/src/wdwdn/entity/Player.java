@@ -32,7 +32,7 @@ public class Player extends DynamicEntity {
         		recharge = true;
         	
         } else {
-        	addLifeBattery( delta * 2.03f);
+        	addLifeBattery( delta * 1.95f);
         }
         
         sprite.setFlip(getVelocity().x < 0, false);

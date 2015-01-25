@@ -33,7 +33,7 @@
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
@@ -57,7 +57,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2UkKhDAQBVD3fTHx/gfqjRuDLY1TfpL3QBzBioU/gtMEAAAAAAAAAAAAAAAAAADQl/mB7b39o3NH145iqV0AdODODPt1XF5t80p2AcnkFdAKeQW0Ql4Bia7mkTy7l34AAPTPP/N6fC/DOd6dLPoB0Ka5WL993xGlzZln6kkbwxVpYxm9H6VaGfWP5NpSeVZAT2QaACVzAwDAsz7rAgAAAABk+AJTlg6b
+   eJzt2VsKgCAQBdCWJ+1/QX0nJdHLcTznpyc4NnQNWhYAAAAAAAAAAAAAAAAAAIBcygf7R8eta617Z7H2LgASeDPDzs7Lq31eyS4gMnkFjEJeAaOQV0BET/NInr1LPwAA8vPPvB/fy3CPdycW/QAYU6m2f487o2hr5p16os3hiWhzmb0ftV4ZdUXk2qLyrIBMZBoANWsDAAAAAAAAMJMNoiwOhQ==
   </data>
  </layer>
  <objectgroup name="spawn" opacity="0.97">

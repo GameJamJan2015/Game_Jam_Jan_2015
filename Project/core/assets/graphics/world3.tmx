@@ -57,7 +57,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2UEOQDAQBdDuXaxx/wPZ2BAshPgd7yUNpYuJiV+J1gAAAAAAAAAAAAAAAAAAAGrpL5wfza/uXa39i/nrAqCAJzPs7Lq82uaV7AKSyStgFPIKGIW8AiqSZ1n0AwAgn3/m3/G9DPd4d7LoB8CY+u6YJrWuSuzhWfRjKzmjkmtL5VkBlcg0APbsDQAA75rWAQAAAABkWABsgQzf
+   eJzt2TEOgCAQBECfZ/z/g6whamE0LMdMg4LFxQuLidsGAAAAAAAAAAAAAAAAAABQy/7D9dX909rTs6s4RhcABXyZYXfz8qrNK9kFJJNXwCzkFTALeQVUJM+y6AcAQD7/zMfxvQzv2DtZ9ANgTns3pkmtqxJneBb9aCVnVHJtqbwroBKZBkDP2QAAAAAAAACs5AS7FwzJ
   </data>
  </layer>
  <objectgroup name="spawn" opacity="0.97">
