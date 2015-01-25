@@ -25,12 +25,15 @@
    </properties>
   </tile>
  </tileset>
+ <tileset firstgid="143" name="character_sheet" tilewidth="64" tileheight="64">
+  <image source="character_sheet.png" width="256" height="64"/>
+ </tileset>
  <layer name="Tile Layer 2 - Golv" width="100" height="100">
   <properties>
    <property name="Collision" value="False"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmmtugzAQBq3+67GaJu39b1RVCpK1Wa8fbFiDZ6VRCTiAvwE7oflMKX0CAAAAAAAAAAAAAAAAAAAAAAAAACyGR0X34Up4VHQfroRHRffhSnhUdB+uhEdF9+FKeFR0H66ER0X34Up4VHQfzpxda308aanoXCJ9fD15x3LLdu11dC74wEevj0dn+9sTfPj4eBjLrW5qTlf2YdVX47LMzWovX+cea22jszr6XpDcjG0tyPdv2dfWaazsQ67b8srHfiv7nszx8epDKzn+lNrsXW4Zr1bz0TsOyZz2LD+U9avP51repZx6c6995sLHqw+tauPVHge1NqvPH57jlbzee78v4qOc97ex3at69hmd1VE+RnLycC9fc3/0ZbI3G3yM+UiFZW8fR1wDZ6NUR4xXObVnM6PHPBtWRu8cr6xnL/hgvJqFUtXGq7xGfPQ+O+45ztmQff3pzKZEjw8N6zkvPo73ser9ITPSSo5X1vjVcyx87MtI2z6ajbavlv9F4eM4H9wf+JgZfMzFqI931shxonP09FGrFkdepIHjpAlyjL4/enO+Z1j7woefj5uB9NLiY8W5xcuH5WLjoaAVPvx83A20735yXaocBx/1ddu1n2d/E3/vom2Lj1Y+JshxZh+l+yT/HfDmwsNHmiBHTx9alfKR22tjlZwv5FxiubZKtonOcQ8yA4/n7S3zufUb+FG0c4/OdwYfNeR94rXfK/jIkdU6ZrzL22/lmPnfvKJz9PRhjeH5upJDmVnNZa32nNvZ0a7R0T5r7ysxuj984ONIPPucRPtStc67nud2Fjz7nCr7kOADH7PTU54+eve3ig9vty3zx1ZHXisr8l+en68AH1cCH3OBj7nAx1xoZX3eij5fAAAAAAAAAACAFfkDPNV0pA==
+   eJztmutuozAQRq3+62M1Tbqvt4+8WylI1mQ8vjBhDD4jHZWAA/g7YCc0nymlTwAAAAAAAAAAAAAAAAAAAAAAAACAxfCo6D5cCY+K7sOV8KjoPlwJj4ruw5XwqOg+XAmPiu7DlfCo6D5cCY+K7sOZs2utjyctFZ1LpI+vJ+9YbtmuvY7OBR/46PXx6Gj/9z+3J/jw8fEwllvd1Jyu7MOqr8ZlmZvVXr7OPdbaRmd19L0guRnbWpDv37KvrdNY2Ydct+WVj/1W9j2Z4+PVh1Zy/Cm12bvcMl6t5qN3HJI57Vl+KOtXn8+1vEs59eZe+8yFj1cfWtXGqz0Oam1Wnz88xyt5vfd8X8SHnsO27tvY7lU9+4zO6igfIzl5uJevuT/6MtmbDT7GfKTCsrePI66Bs1GqI8arnNqzmdFjng0ro3eOV9azF3wwXs1CqWrjVV4jPnqfHfcc52zIvv50ZlOix4eG9ZwXH8f7WPX+kBlpJccra/zqORY+9mWkbR/NRttXy/+i8HGcD+4PfMwMPuZi1Mc7a+Q40Tl6+qhViyMv0sBx0gQ5Rt8fvTnfM6x94cPPx81AemnxseLc4uXDcrHxUNAKH34+7gbadz+5LlWOg4/6uu3az7O/ib930bbFRysfE+Q4s4/SfZL/Dnhz4eEjTZCjpw+tSvnI7bWxSs4Xci6xXFsl20TnuAeZgcfz9pb53PoN/CjauUfnO4OPGvI+8drvFXzkyGodM97l7U/lmPnfvKJz9PRhjeH5upJDmVnNZa32nNvZ0a7R0T5r7ysxuj984ONIPPucRPtStc67nud2Fjz7nCr7kOADH7PTU54+eve3ig9vty3zx1ZHXisr8luen68AH1cCH3OBj7nAx1xoZX3eij5fAAAAAAAAAACAFfkHa0908w==
   </data>
  </layer>
  <layer name="väggar" width="100" height="100">
