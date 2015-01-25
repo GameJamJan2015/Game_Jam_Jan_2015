@@ -1,14 +1,15 @@
 package wdwdn.entity;
 
+import wdwdn.Assets;
 import wdwdn.World;
 
 public class ScaryGirl extends Enemy {
 
 	float timer;
 
-	public ScaryGirl(World world, float x, float y, float width, float height,
+	public ScaryGirl(World world, float x, float y,
 			float radius) {
-		super(world, x, y, width, height, radius);
+		super(world, x, y, 1, 1, radius);
 
 	}
 
@@ -21,6 +22,7 @@ public class ScaryGirl extends Enemy {
 
 			if (timer > 3) {
 				remove();
+				Assets.playSound(Assets.girlscream, .23f);
 			}
 		}
 

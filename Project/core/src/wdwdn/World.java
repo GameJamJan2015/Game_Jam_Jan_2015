@@ -130,6 +130,11 @@ public class World {
 		enemyIsSpawned = true;
         Assets.playSound(Assets.chase);
 	}
+	private void spawnGirl(float x, float y) {
+		entities.add(new ScaryGirl(this, x, y, 8));
+		enemyIsSpawned = true;
+        Assets.playSound(Assets.girlspawn);
+	}
 
 	private void InitLights() {
 		/** BOX2D LIGHT STUFF BEGIN */
@@ -166,6 +171,11 @@ public class World {
 							.add(-2, 1);
 					spawnShadow(position.x, position.y);
 				}
+			}
+			else if (MathUtils.random(0, 2000) < 2) {
+				Vector2 position = getPlayer().getPosition().cpy()
+						.add(MathUtils.randomBoolean() ? -1 : 1, MathUtils.randomBoolean() ? -1 : 1);
+				spawnGirl(position.x, position.y);
 			}
 		}
 	}
