@@ -35,6 +35,8 @@ public class NextLevelScreen extends Screen {
 
     @Override
     public void present(float delta) {
+        if (level == 6) return;
+
         getBatch().begin();
         Assets.font.setColor(0, 0, 0, 1);
         Assets.font.setScale(.7f);

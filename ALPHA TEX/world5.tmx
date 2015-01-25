@@ -25,7 +25,7 @@
    </properties>
   </tile>
  </tileset>
- <layer name="Tile Layer 2 - Golv" width="100" height="100">
+ <layer name="Tile Layer 2 - Golv" width="100" height="100" opacity="0.98">
   <properties>
    <property name="Collision" value="False"/>
   </properties>
@@ -38,7 +38,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmtFurSAQReetuT9W//+Pek1KipSBAZGBunayckBBYW/lWE8/ROQDAAAAAAAAAAAAAAAAAAAAAAAAAB7l3wN4z2lnyGMtyGMtyGMtyGMtyGMtyGMtyGMtyOMex38+v3mibNmfq3v74oF8z10eLFv25+re3pDHte7tDXlc697eeEEevt6n37MBeaAc12PPLW29vZqVxw56cx4rZvSmPLS1SpR9R9Tmblky29NzsF6Vlfo4uqzVvb3yyqPkU2k/eYzJo2e9qnlKHuPuj5rIY24eJZ/CNu1vlhJpv/Q8tb7eXs3Ko2e9GpF9Lfe0rbdXT2PxYZQ3uXOluY8+527kPEq3aftnZX/nnDtyznPGehU87dWb8pjhTejXqzfncSjlO95ox7LqLXlov20HWZ5bg8ijj9xcR4g81sojaGQe/D14XYMO+b1+pX2s4v6w5VHzweKNZOoSbdeOZRV5/Phg8UaiT4nq8X7ymJOHJvKYl0eP7uZRk7eXnnn0vG+3vpMXyT831Pq0yNv3Uh6tc71zndd0KGVrnxZ5ez/y/hil9Fhx3fosffYpzdEq7yxWz6P3GKm8Pd4pjxHfBaGPt5d3iedSm2tt2ygdStna55S3r+TxW97eksdV3t72ZHF+lp7zJfnseYfYquBt6/8Q1eTtdy2LnAc7qjZ2b6/J43r/70I8n3QdCnO0/EY7WrVzamMLiufn7XFPJrnrq7bN8u7Juu7XfgtrHVt6vXl7/GQelnvNKkvbnjxiefs74/7Qsij5klOurSVf6zZvb2flkc5Va3OWS+vRE/eHt59e94emNI+SLB62jM3bS488Wo5lyWPW2HbhVMtvd+QxJxNRtkmhTY7glfV5d9a1sjtW/7U8LKrlkRtHSd6ercjoPGBuHrLAmP8yPXkEeY/9r5HzuKS4rffYd0dT6d3g256JVsAi7zG+HbJYB7IAAAAAAACAN/EFJ4WESA==
+   eJztmlturDAQBf03ysYu+9/RDVIsQcftbhvjNqGOVArPAZ8aCJnJJ6X0AQAAAAAAAAAAAAAAAAAAAAAAAIBb+bqB6DE9GXysBT7WAh9rgY+1wMda4GMt8LEW+LjG9s2/H+6Y9qwvzUf3EkH6GXu6cdqzvjQf3Q0+zvPR3eDjPB/dTRT4iO1e/p7NpBumj/PHzj3bRnc1y8cT8mYfKzp6kw/tXpWUddthm6vTqbBcHoP7VT2yx9HT2nx0V1E+aj3V1uNjjI+e+5XVKT7GXR9W8DHXR62nvEz7m6WG3E8ex9o3uqtZPnruVyPcW97lttFd3Y2nh1HdlI4lvY8+5tModSSXaeu9r5+MY3nzBh+fdM/9SgYfbT5GdaMFH9d8bMq01Y0WfPjRvtvO8Ty3ykg3+KhTGuvI4GMtHzJXfPD34PketKXf9y+5jzdcHz4fVg+ebmrJ6/Ex14f0ItfjY44PLfiY56MnV31Yie4y0kfP5+3ez+RTKj83WPu0JLr3mo/WsV55n1vZlGnvPi2J7n7k9TEq8rWO895n6X2f2hi9iXaxuo/e15CJ7vhJPkb8Lsj7RHd5leNYrLFay0ZlU6a9++yJ7hUfvxPdLT7Oie62x8X+s/acn8TPns8QW5O7bf0fIivRfVsuSh08Mda5R3eNj/P1/xSO45H3oTzGlu9oR8U6pnZuOcfxRXfc46T0/rKWeT578t73re/CWs9Nvt+iO77Th+da88azbY+PY6L7nXF9aC5qvZRS2tbj17ssuttZPuRYtW326dr96I7rI7rPqOtDi/RRi6fDlnOL7jLCR8treXzMOrensKfluzt8zHGSlGWpsk2J3JX3eXfWe+XpePvXfHhi+SidRy3Rna3IaB8w10da4Jz/Mj0+cqLP/a9R6riW47bR5/50tNQ+G3zbM9EKeBJ9jm8HF+uACwAAAAAAAHgT/wFYkoNT
   </data>
  </layer>
  <layer name="Statiska objekt" width="100" height="100">

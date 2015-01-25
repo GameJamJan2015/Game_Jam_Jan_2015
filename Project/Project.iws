@@ -100,21 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="world5.tmx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/assets/graphics/world5.tmx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2923">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainMenuScreen.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainMenuScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/MainMenuScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53571427" vertical-offset="148" max-vertical-offset="2035">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="2035">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,11 +148,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Assets.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Assets.java">
+      <file leaf-file-name="NextLevelScreen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/NextLevelScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3330" max-vertical-offset="5772">
-              <caret line="107" column="80" selection-start-line="107" selection-start-column="80" selection-end-line="107" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="2627">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="world5.tmx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/assets/graphics/world5.tmx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2923">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -233,7 +235,6 @@
         <option value="$PROJECT_DIR$/core/src/wdwdn/entity/Dialog.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/GameOverScreen.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/GameScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/wdwdn/screen/NextLevelScreen.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/Assets.java" />
         <option value="$PROJECT_DIR$/core/assets/graphics/world3.tmx" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/entity/Player.java" />
@@ -241,6 +242,7 @@
         <option value="$PROJECT_DIR$/core/src/wdwdn/entity/ScaryGirl.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/World.java" />
         <option value="$PROJECT_DIR$/core/src/wdwdn/screen/MainMenuScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/wdwdn/screen/NextLevelScreen.java" />
       </list>
     </option>
   </component>
@@ -1152,16 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/NextLevelScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="2553">
-          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/Assets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3330" max-vertical-offset="5772">
@@ -1234,14 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/graphics/world5.tmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2923">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/LevelLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="888">
@@ -1264,11 +1248,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/MainMenuScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53571427" vertical-offset="148" max-vertical-offset="2035">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="2035">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/wdwdn/screen/NextLevelScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="2627">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/assets/graphics/world5.tmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2923">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
