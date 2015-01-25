@@ -19,7 +19,9 @@ public class Dialogs {
 			"It's okay",
 			"What? A wall?!",
 			"The Layout is changing, but how?",
-			"Please just let me die..."
+			"Please just let me die...", //15
+			"Who are you?",
+			"Are you new here?"
 
 	}; 
 }

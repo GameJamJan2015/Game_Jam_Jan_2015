@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="26">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" nextobjectid="28">
  <tileset firstgid="1" name="alpha_sprite_sheet" tilewidth="64" tileheight="64">
   <image source="alpha_sprite_sheet.png" width="512" height="512"/>
   <tile id="0">
@@ -44,7 +44,7 @@
    <property name="Collision" value="True"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2UEOwiAQAEC+4HvVavsCn6wHDjbGUGugS5hJNnAggdAuZNuUAAAAAAAAAAAAAAAAACCmc+V+ac4t40dyq9wvzbllPP95HL0AAKq4vOJ69CKgU+/5U6MOUX+s/XJe1ahD1B/0zH3flv2G/eRPW/Yb9pM/bUXc7ykHMcw5iEF+MBLveyz3HMSw5IDeTMn5Dr2ZCy1tLYUWWoh6n496Xs0p5ve7Uc+rJanXAAAAABjL9KUF6IHv+bF4HvBplH+Pp6MXAAAAAAB04wlENjKI
+   eJzt2VGOgjAQANBewfOussIF1BvrBzEYgqCr7XT7XjJpaUhoCm0zJSUAAAAAAAAAAAAAAAAAiOnny/W1Z265vyW/t7hM6tP280L7K/WlZz67ZrvL+i3390g5p9IdAP6l/S0OpTsBlZrOn2/kIfKPR6+sV3/JPZbyCvnHZ8gryrDf52W84X3mT17GG+a2nsGaP3lFHO9uDGLoxyAG84OW+N5jOY5BDMMYUJsuWd+hNv1KSV7DSgk5RN3PW12v+hTz/K7V9WpI8jUAAAAA2tItlAA1cJ4fi/cBc638e9yV7gAAAAAAUI0r1n816A==
   </data>
  </layer>
  <layer name="Dörrar" width="100" height="100" opacity="0.9">
@@ -86,6 +86,16 @@
   <object id="25" name="csca" x="2689.33" y="2369.33" width="69.3333" height="78.6667">
    <properties>
     <property name="Dialog" value="1"/>
+   </properties>
+  </object>
+  <object id="26" name="youre" x="2500" y="2430.67" width="61.3333" height="65.3333">
+   <properties>
+    <property name="Dialog" value="16,17"/>
+   </properties>
+  </object>
+  <object id="27" name="yoo" x="1022.67" y="3329.33" width="64" height="57.3333">
+   <properties>
+    <property name="Dialog" value="17"/>
    </properties>
   </object>
  </objectgroup>
