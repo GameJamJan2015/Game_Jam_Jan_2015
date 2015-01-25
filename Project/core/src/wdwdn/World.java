@@ -109,6 +109,7 @@ public class World {
 
         InitLights();
         LoadWorld();
+
     }
 
     private void LoadWorld() {
